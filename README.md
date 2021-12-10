@@ -67,14 +67,16 @@ tracking_id 부분에 추가함.
 다섯번째 도전 중 bigdecimal과 관련된 오류가 계속 발생함. 호환성 문제라고 판단. ruby를 재설치하려 함.
 
 ruby 삭제 하는 명령어라고 함.
-```sudo rm -rf /usr/local/lib/ruby
+```
+sudo rm -rf /usr/local/lib/ruby
 sudo rm -rf /usr/lib/ruby
 sudo rm -f /usr/local/bin/ruby
 sudo rm -f /usr/bin/ruby
 sudo rm -f /usr/local/bin/irb
 sudo rm -f /usr/bin/irb
 sudo rm -f /usr/local/bin/gem
-sudo rm -f /usr/bin/gem```
+sudo rm -f /usr/bin/gem
+```
 
 ruby 다시 설치 중
 https://www.ruby-lang.org/ko/documentation/installation/#apt
