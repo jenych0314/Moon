@@ -85,14 +85,15 @@ https://www.ruby-lang.org/ko/documentation/installation/#apt
 cannot load such file -- rubygems.rb (LoadError)
 이런 오류가 발생
 
-참고
-https://letsget23.tistory.com/entry/Ruby-on-Rails-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0
+### 참고
+  https://letsget23.tistory.com/entry/Ruby-on-Rails-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0
 
 rvm 설치 중
-https://github.com/rvm/ubuntu_rvm
+### 참고
+  https://github.com/rvm/ubuntu_rvm
 
-```gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
-\curl -sSL https://get.rvm.io | bash -s stable```
+`gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3`
+`\curl -sSL https://get.rvm.io | bash -s stable`
 
 - 오류 발생 -
 
@@ -100,7 +101,7 @@ Can't check signature: No public key
 GPG signature verification failed for '/home/tester/.rvm/archives/rvm-1.29.12.tgz' - 'https://github.com/rvm/rvm/releases/download/1.29.12/1.29.12.tar.gz.asc'! Try to install GPG v2 and then fetch the public key:
 
 1트
-```gpg --keyserver hkp://pool.sks-keyservers.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB```
+`gpg --keyserver hkp://pool.sks-keyservers.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB`
 -> gpg: keyserver receive failed: No name
 
 2트
@@ -124,15 +125,18 @@ gpg:               imported: 1
 깃허브 블로그 관련 문서를 클라우드에 올리고 윈도우에서 시작함.
 
 - 윈도우에서 시작 -
-참고 사이트: https://junstar92.tistory.com/5
-루비 다운로드: https://rubyinstaller.org/downloads/
+참고 사이트
+  https://junstar92.tistory.com/5
+  <a href="https://rubyinstaller.org/downloads/" title="루비 다운로드">루비 다운로드</a>
 
 루비를 다운받고 파워쉘에서 gem install jekyll
 오류발생
 gcc.exe: fatal error: cannot execute 'cc1': CreateProcess: No such file or directory
-https://stackoverflow.com/questions/3848357/createprocess-no-such-file-or-directory
+### 참고
+  https://stackoverflow.com/questions/3848357/createprocess-no-such-file-or-directory
 
-참고: https://iingang.github.io/posts/windows-github-set/
+### 참고
+  https://iingang.github.io/posts/windows-github-set/
 파워쉘이 아닌  start command prompt with ruby에서 실행하는 것이었음.
 
 윈도우에서는 gem이 호환이 안 되는 것이 많다고 함.
@@ -144,7 +148,8 @@ https://stackoverflow.com/questions/3848357/createprocess-no-such-file-or-direct
 -> 같은 오류 발생
 bigdecimal 뭐시기 오류가 또 발생함.
 구글링을 열심히 하는 도중 빛과 같은 존재가 나타남.
-참고 사이트: https://likelionsungguk.github.io/20-12-17/jekyll-Blog-%EB%A7%8C%EB%93%9C%EB%8A%94%EA%B2%8C-%EA%B8%80%EC%93%B0%EB%8A%94-%EA%B2%83%EB%B3%B4%EB%8B%A4-%ED%9E%98%EB%93%A0-%EC%82%AC%EB%9E%8C%EB%93%A4%EC%97%90%EA%B2%8C
+### 참고 사이트
+  https://likelionsungguk.github.io/20-12-17/jekyll-Blog-%EB%A7%8C%EB%93%9C%EB%8A%94%EA%B2%8C-%EA%B8%80%EC%93%B0%EB%8A%94-%EA%B2%83%EB%B3%B4%EB%8B%A4-%ED%9E%98%EB%93%A0-%EC%82%AC%EB%9E%8C%EB%93%A4%EC%97%90%EA%B2%8C
 ~~ 이분 정말 빛과 소금임. 백만 따봉 드림. ~~
 
 gemfile에 `gem 'bigdecimal', '1.3.5.'`를 기입하자 마법처럼 다른 오류가 발생함.
