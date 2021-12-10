@@ -100,11 +100,11 @@ rvm 설치 중
 Can't check signature: No public key
 GPG signature verification failed for '/home/tester/.rvm/archives/rvm-1.29.12.tgz' - 'https://github.com/rvm/rvm/releases/download/1.29.12/1.29.12.tar.gz.asc'! Try to install GPG v2 and then fetch the public key:
 
-1트
+##### 1트
 `gpg --keyserver hkp://pool.sks-keyservers.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB`  
 -> gpg: keyserver receive failed: No name
 
-2트
+##### 2트
 `\curl -sSL https://rvm.io/mpapis.asc | gpg --import -`  
 -> `sudo \curl -sSL https://rvm.io/mpapis.asc | gpg --import -`  
 gpg: key 3804BB82D39DC0E3: 47 signatures not checked due to missing keys
@@ -113,7 +113,7 @@ gpg: Total number processed: 1
 gpg:               imported: 1
 gpg: no ultimately trusted keys found
 
-3트
+##### 3트
 `\curl -sSL https://rvm.io/pkuczynski.asc | gpg --import -`  
 gpg: key 105BD0E739499BDB: public key "Piotr Kuczynski <piotr.kuczynski@gmail.com>" imported
 gpg: Total number processed: 1
@@ -124,7 +124,7 @@ gpg:               imported: 1
 리눅스에서 ruby 재설치를 하기보다는 윈도우에서 ruby를 새롭게 설치하고 깃허브 블로그를 다시 설정하기로 함. 멀티 OS를 나누는 과정에서 파티션을 나누었으니 윈도우에서는 ruby를 새롭게 설치할 것이라 예상.
 깃허브 블로그 관련 문서를 클라우드에 올리고 윈도우에서 시작함.
 
-- 윈도우에서 시작 -
+#### 4트 - 윈도우에서 시작
 참고 사이트
   https://junstar92.tistory.com/5
   <a href="https://rubyinstaller.org/downloads/" title="루비 다운로드">루비 다운로드</a>
@@ -141,7 +141,7 @@ gcc.exe: fatal error: cannot execute 'cc1': CreateProcess: No such file or direc
 
 윈도우에서는 gem이 호환이 안 되는 것이 많다고 함.
 
-- 2021.12.10 이어서 - 
+#### 5트 - 2021.12.10 이어서
 망함을 느낀 나는 포맷을 하기로 함.
 그래서 윈도우와 리눅스 멀티 부팅한 노트북을 싹 밀고 리눅스를 설치함.
 이후 다시 시도
@@ -150,9 +150,9 @@ bigdecimal 뭐시기 오류가 또 발생함.
 구글링을 열심히 하는 도중 빛과 같은 존재가 나타남.
 ### 참고 사이트
   https://likelionsungguk.github.io/20-12-17/jekyll-Blog-%EB%A7%8C%EB%93%9C%EB%8A%94%EA%B2%8C-%EA%B8%80%EC%93%B0%EB%8A%94-%EA%B2%83%EB%B3%B4%EB%8B%A4-%ED%9E%98%EB%93%A0-%EC%82%AC%EB%9E%8C%EB%93%A4%EC%97%90%EA%B2%8C
-~~ 이분 정말 빛과 소금임. 백만 따봉 드림. ~~
+~~이분 정말 빛과 소금임. 백만 따봉 드림.~~
 
 gemfile에 `gem 'bigdecimal', '1.3.5.'`를 기입하자 마법처럼 다른 오류가 발생함.
 대충 구글 애널리틱스를 기록한 포스트에서 if문이 끝나지 않는다.라는 오류여서 그냥 if문 부분을 삭제함.
 
-너무나 오류와 절친을 맺는 과정이었음.
+~~너무나 오류와 절친을 맺는 과정이었음.~~
