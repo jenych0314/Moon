@@ -149,7 +149,7 @@ gcc.exe: fatal error: cannot execute 'cc1': CreateProcess: No such file or direc
 bigdecimal 뭐시기 오류가 또 발생함.
 구글링을 열심히 하는 도중 빛과 같은 존재가 나타남.
 ### 참고 사이트
-  https://likelionsungguk.github.io/20-12-17/jekyll-Blog-%EB%A7%8C%EB%93%9C%EB%8A%94%EA%B2%8C-%EA%B8%80%EC%93%B0%EB%8A%94-%EA%B2%83%EB%B3%B4%EB%8B%A4-%ED%9E%98%EB%93%A0-%EC%82%AC%EB%9E%8C%EB%93%A4%EC%97%90%EA%B2%8C
+  https://likelionsungguk.github.io/20-12-17/jekyll-Blog-%EB%A7%8C%EB%93%9C%EB%8A%94%EA%B2%8C-%EA%B8%80%EC%93%B0%EB%8A%94-%EA%B2%83%EB%B3%B4%EB%8B%A4-%ED%9E%98%EB%93%A0-%EC%82%AC%EB%9E%8C%EB%93%A4%EC%97%90%EA%B2%8C  
 ~~이분 정말 빛과 소금임. 백만 따봉 드림.~~
 
 gemfile에 `gem 'bigdecimal', '1.3.5.'`를 기입하자 마법처럼 다른 오류가 발생함.
