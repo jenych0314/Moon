@@ -92,8 +92,8 @@ rvm 설치 중
 ### 참고
   https://github.com/rvm/ubuntu_rvm
 
-`gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3`
-`\curl -sSL https://get.rvm.io | bash -s stable`
+`gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3`  
+`\curl -sSL https://get.rvm.io | bash -s stable`  
 
 - 오류 발생 -
 
@@ -101,12 +101,12 @@ Can't check signature: No public key
 GPG signature verification failed for '/home/tester/.rvm/archives/rvm-1.29.12.tgz' - 'https://github.com/rvm/rvm/releases/download/1.29.12/1.29.12.tar.gz.asc'! Try to install GPG v2 and then fetch the public key:
 
 1트
-`gpg --keyserver hkp://pool.sks-keyservers.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB`
+`gpg --keyserver hkp://pool.sks-keyservers.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB`  
 -> gpg: keyserver receive failed: No name
 
 2트
-`\curl -sSL https://rvm.io/mpapis.asc | gpg --import -`
--> `sudo \curl -sSL https://rvm.io/mpapis.asc | gpg --import -`
+`\curl -sSL https://rvm.io/mpapis.asc | gpg --import -`  
+-> `sudo \curl -sSL https://rvm.io/mpapis.asc | gpg --import -`  
 gpg: key 3804BB82D39DC0E3: 47 signatures not checked due to missing keys
 gpg: key 3804BB82D39DC0E3: public key "Michal Papis (RVM signing) <mpapis@gmail.com>" imported
 gpg: Total number processed: 1
@@ -114,7 +114,7 @@ gpg:               imported: 1
 gpg: no ultimately trusted keys found
 
 3트
-`\curl -sSL https://rvm.io/pkuczynski.asc | gpg --import -`
+`\curl -sSL https://rvm.io/pkuczynski.asc | gpg --import -`  
 gpg: key 105BD0E739499BDB: public key "Piotr Kuczynski <piotr.kuczynski@gmail.com>" imported
 gpg: Total number processed: 1
 gpg:               imported: 1
