@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "image-test"
+title: "Image test"
 date: 2021-11-30
-excerpt: "image-test"
+excerpt: "Image test"
 tags: [Sample, Post, Test, Image]
 comments: true
 ---
