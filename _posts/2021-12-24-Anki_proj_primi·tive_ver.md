@@ -4,7 +4,7 @@ title: "making Anki_proj part2"
 date: 2021-12-24
 excerpt: "Anki project is automatic search program (if you enter a word)
 Word, pronounce, meaning, and example sentences are ouput using Kor/Eng Dictionary(from naver)."
-tags: [post]
+tags: [Post, Project]
 comments: true
 ---
 
