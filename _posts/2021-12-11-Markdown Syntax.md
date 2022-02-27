@@ -7,11 +7,6 @@ tags: [Sample, Post, Test]
 comments: true
 ---
 
-### 참고
-    1. <https://raw.githubusercontent.com/TaylanTatli/Moon/master/_posts/2016-03-20-markdown-syntax.md>
-	2. <http://taewan.kim/post/markdown/#comment>
-    3. <https://cizz3007.github.io/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4/%EB%AC%B8%EB%B2%95/markdown/2018/04/08/markdown/>
-
 **마크다운 문법을 전부 한번씩 써보면 될 듯**
 
 # h1
@@ -96,16 +91,22 @@ __text__
 <!-- 주석 -->
 
 최근 스칼라는 매우 인기가 높은 언어이다.[^scala]
-
-\[^scala]: 스칼라는 마틴 오더시크가 개발한 함수형 언어이다.
+[^scala]: 스칼라는 마틴 오더시크가 개발한 함수형 언어이다.
 
 ### 정렬
-<center>중앙</center>
-<div style="text-align: left"> 왼쪽 </div>
-<div style="text-align: right"> 오른쪽 </div>
+<center>중앙</center>  
+<div style="text-align: left"> 왼쪽 </div>  
+<div style="text-align: right"> 오른쪽 </div>  
 
 ### 첨자
-<sup>윗첨자</sup>
-<sub>밑첨자</sub>
-<acronym title="텍스트 가리키면 나오는 텍스트">텍스트</acronym>
-<abbr title="텍스트 가리키면 나오는 텍스트">줄 쳐진 텍스트</abbr>
+<sup>윗첨자</sup>  
+<sub>밑첨자</sub>  
+<acronym title="텍스트 가리키면 나오는 텍스트">텍스트</acronym>  
+<abbr title="텍스트 가리키면 나오는 텍스트">줄 쳐진 텍스트</abbr>  
+
+### 참고
+1. <https://raw.githubusercontent.com/TaylanTatli/Moon/master/_posts/2016-03-20-markdown-syntax.md>
+2. <http://taewan.kim/post/markdown/#comment>
+3. <https://cizz3007.github.io/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4/%EB%AC%B8%EB%B2%95/markdown/2018/04/08/markdown/>
+4. https://gist.github.com/ihoneymon/652be052a0727ad59601
+5. https://theorydb.github.io/envops/2019/05/22/envops-blog-how-to-use-md/
