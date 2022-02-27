@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Test post"
+title: "Markdown Syntax"
 date: 2021-12-11
 excerpt: "This test post is for checking MarkDown Syntax"
 tags: [Sample, Post, Test]
