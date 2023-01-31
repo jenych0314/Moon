@@ -214,7 +214,7 @@ public static void main(String[] args) {
 
 | 1st | 2nd | 3rd |
 | --- | --- | --- |
-| 한자 | 심리학 | 수치해석학 |
+| 좌로 정렬 | 가운데 정렬 | 우로 정렬 |
 | 선형대수학 | 통계학 | 이산수학 |
 | 컴퓨터 구조 | 토익 | 파이썬 |
 
@@ -233,14 +233,15 @@ public static void main(String[] args) {
 | 컴퓨터 구조 | 토익 | 파이썬 |
 
 # 9. 이미지(Image)
-![첫 번째 이미지](http://octodex.github.com/images/minion.png)
+![첫 번째 이미지](_image\2021-12-01-CheshireCat2.png)
 
-![두 번째 이미지](http://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat")
+![두 번째 이미지](_image\2021-12-01-CheshireCat1.jpg "2nd image")
 
-<img src="http://octodex.github.com/images/stormtroopocat.jpg" alt="Alt text" title="The Stormtroopocat" />
+![세 번째 이미지][이미지 링크]
 
-![세 번째 이미지][10]
-[10]: http://octodex.github.com/images/dojocat.jpg  "The Dojocat"
+<img src="_image\2021-12-01-CheshireCat2.png" alt="Alt text" title="The Stormtroopocat" />
+
+[이미지 링크]: _image\2021-12-01-CheshireCat1.jpg  "The Dojocat"
 
 <!-- 주석 -->
 
