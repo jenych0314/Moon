@@ -7,16 +7,18 @@ tags: [Sample, Post, Test]
 comments: true
 ---
 
-### 목차
+# 목차
 * [1. 제목](#1-제목header)
-* [2. ](#2-강조)
-* [3. 목록](#3-목록)
-* [4. 블록 문구](#4-인용문block-quote)
-* [5. 수평선](#5-수평선)
-* [6. 링크](#6-링크)
-* [7. ]()
-* [8. ]()
-* [9. ]()
+* [2. 내용](#2-내용context)
+* [3. 수평선](#3-수평선horizon)
+* [4. 인용문](#4-인용문block-quote)
+* [5. 목록](#5-목록list)
+* [6. 링크](#6-링크link)
+* [7. 코드](#7-코드code)
+* [8. 표](#8-표table)
+* [9. 이미지](#9-이미지image)
+* [10. HTML, CSS](#10-html-css)
+* [11. 참고](#11-참고)
 
 # 1. 제목(Header)
 ```
@@ -310,9 +312,9 @@ public static void main(String[] args) {
 
 [이미지 링크]: https://cdn.pixabay.com/photo/2023/01/14/18/17/hot-air-balloon-7718789_960_720.jpg  "세 번째 이미지"
 
-# html, css
+# 10. html, css
 
-# 참고
+# 11. 참고
 1. <https://raw.githubusercontent.com/TaylanTatli/Moon/master/_posts/2016-03-20-markdown-syntax.md>
 2. <http://taewan.kim/post/markdown/#comment>
 3. <https://cizz3007.github.io/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4/%EB%AC%B8%EB%B2%95/markdown/2018/04/08/markdown/>
