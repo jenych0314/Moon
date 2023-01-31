@@ -112,21 +112,39 @@ ___
 10. 순서 있는 목록
 
 # 7. 링크
-[youtube](https://www.youtube.com)
+```
+[GOOGLE](https://google.com)
+[Youtube](https://www.youtube.com "유튜브")
+[상대적 참조](./2021-11-30-github%EB%B8%94%EB%A1%9C%EA%B7%B8_%EB%8A%90%EB%82%80%EC%A0%90.md)
+이렇게도 [링크]를 타고 갈 수 있다고 하네요.
+Naver: <http://www.naver.com>
+Google: https://google.com
+<a href="http://www.youtube.com">Youtube</a>
+<a href="http://www.youtube.com" title="Youtube">Youtube</a>
 
-<a href="http://www.youtube.com">youtube</a>
+[Naver Link]: https://www.naver.com/
+[1]: https://github.com/
+[Naver][Naver Link]
+[Github][1]
+[링크]: https://google.com "구글"
+[GOOGLE](https://google.com)
+```
 
-[youtube](https://www.youtube.com "유튜브")
+[Youtube](https://www.youtube.com "유튜브")
+[상대적 참조](./2021-11-30-github%EB%B8%94%EB%A1%9C%EA%B7%B8_%EB%8A%90%EB%82%80%EC%A0%90.md)
+이렇게도 [링크]를 타고 갈 수 있다고 하네요.
+Naver: <http://www.naver.com>
+Google: https://google.com
+<a href="http://www.youtube.com">Youtube</a>
+<a href="http://www.youtube.com" title="Youtube">Youtube</a>
 
-<a href="http://www.youtube.com" title="유튜브">youtube</a>
+[Naver Link]: https://www.naver.com/
+[1]: https://github.com/
+[Naver][Naver Link]
+[Github][1]
+[링크]: https://google.com "구글"
 
-[구글][1]
-[1]: https://www.google.com
-
-<http://www.naver.com>
-
-<a href="https://www.naver.com">http://www.naver.com</a>
-
+# 5. 내부 코드
 ` print("Hello, World!")`
 
 # 6. 표
