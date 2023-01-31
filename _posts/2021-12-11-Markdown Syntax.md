@@ -97,9 +97,9 @@ h2
 ## 다음 줄로 넘어가기(New Line)
 ```
 C/C++  <!-- 스페이스 두 번 -->
-JAVA  
-PYTHON  
-R  
+JAVA  <!-- 스페이스 두 번 -->
+PYTHON
+R
 JAVA SCRIPT<br>
 HTML<br>
 CSS<br>
@@ -107,9 +107,9 @@ GO<br>
 ```
 
 C/C++  <!-- 스페이스 두 번 -->
-JAVA  
-PYTHON  
-R  
+JAVA  <!-- 스페이스 두 번 -->
+PYTHON
+R
 JAVA SCRIPT<br>
 HTML<br>
 CSS<br>
