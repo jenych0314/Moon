@@ -50,7 +50,8 @@ h1
 h2
 ---
 
-# 2. 내용 강조(Emphasize)
+# 2. 내용(Context)
+## 강조(Emphasize)
 ```
 이탤릭체: *이탤릭체*, _italic letters_, <i>이탤릭체</i>, <em>italic letters</em>  
 두껍게: **두껍게**, __bold letters__ , <b>두껍게</b>, <strong>bold letters</strong>  
@@ -87,6 +88,22 @@ h2
 
 텍스트<sup>윗첨자</sup>  
 텍스트<sub>밑첨자</sub>  
+
+## 주석
+`<!-- 주석 -->`
+
+## 다음 줄로 넘어가기(New Line)
+```
+123456789  <!-- 스페이스 두 번 -->
+123456789<br>
+123456789
+123456789
+```
+
+123456789  <!-- 스페이스 두 번 -->
+123456789<br>
+123456789
+123456789
 
 # 3. 수평선(Horizon)
 ```
@@ -203,11 +220,11 @@ Google: https://google.com
 * []()
 * []()
 
-# 7. 코드(Code) 강조
-## 7.1. 인라인(inline) 코드 강조
+# 7. 코드(Code)
+## 7.1. 인라인(inline)
 `print("Hello, World!")`
 print("Hello, World!")
-## 7.2. 블록(block) 코드 강조
+## 7.2. 블록(block)
 ``` python
 while (True):
     print("마크다운 나 짜증나게 하지마")
@@ -238,36 +255,36 @@ public static void main(String[] args) {
 
 | 1st | 2nd | 3rd |
 | --- | --- | --- |
+| 한자 | 심리학 | 수치해석학 |
+| 선형대수학 | 통계학 | 이산수학 |
+| 컴퓨터 구조 | 토익 | 파이썬 |
+
+```
+| 1st | 2nd | 3rd |
+| :--- | ---: | :---: |
+| 좌로 정렬 | 가운데 정렬 | 우로 정렬 |
+| 선형대수학 | 통계학 | 이산수학 |
+| 컴퓨터 구조 | 토익 | 파이썬 |
+```
+
+| 1st | 2nd | 3rd |
+| :--- | ---: | :---: |
 | 좌로 정렬 | 가운데 정렬 | 우로 정렬 |
 | 선형대수학 | 통계학 | 이산수학 |
 | 컴퓨터 구조 | 토익 | 파이썬 |
 
-```
-| 1st | 2nd | 3rd |
-| :--- | ---: | :---: |
-| 한자 | 심리학 | 수치해석학 |
-| 선형대수학 | 통계학 | 이산수학 |
-| 컴퓨터 구조 | 토익 | 파이썬 |
-```
-
-| 1st | 2nd | 3rd |
-| :--- | ---: | :---: |
-| 한자 | 심리학 | 수치해석학 |
-| 선형대수학 | 통계학 | 이산수학 |
-| 컴퓨터 구조 | 토익 | 파이썬 |
-
 # 9. 이미지(Image)
-![첫 번째 이미지](_image\2021-12-01-CheshireCat2.png)
+![첫 번째 이미지](/_image/2021-12-01-CheshireCat1.jpg)
 
-![두 번째 이미지](_image\2021-12-01-CheshireCat1.jpg "2nd image")
+![두 번째 이미지](/_image/2021-12-01-CheshireCat2.png "2nd image")
 
 ![세 번째 이미지][이미지 링크]
 
-<img src="_image\2021-12-01-CheshireCat2.png" alt="Alt text" title="The Stormtroopocat" />
+<img src="/_image/2021-12-01-CheshireCat2.png" alt="Alt text" title="The Stormtroopocat" />
 
-[이미지 링크]: _image\2021-12-01-CheshireCat1.jpg  "The Dojocat"
+[이미지 링크]: /_image/2021-12-01-CheshireCat1.jpg  "The Dojocat"
 
-<!-- 주석 -->
+
 
 최근 스칼라는 매우 인기가 높은 언어이다.[^scala]
 [^scala]: 스칼라는 마틴 오더시크가 개발한 함수형 언어이다.
