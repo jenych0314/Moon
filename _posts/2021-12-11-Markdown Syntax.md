@@ -95,15 +95,15 @@ h2
 ## 다음 줄로 넘어가기(New Line)
 ```
 123456789  <!-- 스페이스 두 번 -->
-123456789<br>
+987654321<br>
 123456789
-123456789
+987654321
 ```
 
 123456789  <!-- 스페이스 두 번 -->
-123456789<br>
+987654321<br>
 123456789
-123456789
+987654321
 
 # 3. 수평선(Horizon)
 ```
@@ -274,25 +274,19 @@ public static void main(String[] args) {
 | 컴퓨터 구조 | 토익 | 파이썬 |
 
 # 9. 이미지(Image)
-![첫 번째 이미지](/_image/2021-12-01-CheshireCat1.jpg)
+![첫 번째 이미지](../_image/2021-12-01-CheshireCat1.jpg?raw=true)
 
-![두 번째 이미지](/_image/2021-12-01-CheshireCat2.png "2nd image")
+![두 번째 이미지](../_image/2021-12-01-CheshireCat2.png "2nd image")
 
 ![세 번째 이미지][이미지 링크]
 
-<img src="/_image/2021-12-01-CheshireCat2.png" alt="Alt text" title="The Stormtroopocat" />
+<img src="../_image/2021-12-01-CheshireCat2.png" alt="Alt text" title="The Stormtroopocat" />
 
-[이미지 링크]: /_image/2021-12-01-CheshireCat1.jpg  "The Dojocat"
-
-
-
-최근 스칼라는 매우 인기가 높은 언어이다.[^scala]
-[^scala]: 스칼라는 마틴 오더시크가 개발한 함수형 언어이다.
+[이미지 링크]: ../_image/2021-12-01-CheshireCat1.jpg  "The Dojocat"
 
 # html, css
 
-
-### 참고
+# 참고
 1. <https://raw.githubusercontent.com/TaylanTatli/Moon/master/_posts/2016-03-20-markdown-syntax.md>
 2. <http://taewan.kim/post/markdown/#comment>
 3. <https://cizz3007.github.io/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4/%EB%AC%B8%EB%B2%95/markdown/2018/04/08/markdown/>
