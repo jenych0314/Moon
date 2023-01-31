@@ -3,7 +3,7 @@ layout: post
 title: "마크다운 문법(Markdown Syntax)"
 date: 2021-12-11
 excerpt: "내가 써먹자고 정리해둔 마크다운(Markdown)의 기본적인 문법들과 html, css, js 적용 방법들"
-tags: [Post, Markdown]
+tags: [Post, TIL, Markdown]
 comments: true
 ---
 
