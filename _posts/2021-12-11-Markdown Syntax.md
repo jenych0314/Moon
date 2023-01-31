@@ -7,6 +7,17 @@ tags: [Sample, Post, Test]
 comments: true
 ---
 
+### 목차
+* [1. 제목](#1-제목header)
+* [2. 링크](#2-링크)
+* [3. 목록](#3-목록)
+* [4. 블록 문구](#4-인용문block-quote)
+* [5. 수평선](#5-수평선)
+* [6. 링크](#6-링크)
+* [7. ]()
+* [8. ]()
+* [9. ]()
+
 # 1. 제목(Header)
 ```
 # h1
@@ -63,7 +74,7 @@ ___
 ---
 ___
 
-# 4. 블록 문구
+# 4. 인용문(Block Quote)
 ```
 > text
 >> text
@@ -116,7 +127,7 @@ ___
     3. 순서 있는 서브 목록
 10. 순서 있는 목록
 
-# 7. 링크
+# 6. 링크
 ```
 [GOOGLE](https://google.com)  
 [Youtube](https://www.youtube.com "유튜브")  
@@ -159,35 +170,53 @@ Google: https://google.com
 
 ### 목차
 * [1. 제목](#1-제목header)
-* [2. 강조](#2-강조)
-* [3. 수평선](#3-수평선)
+* [](#2-링크)
+* [](#3-목록)
+* [](#4-블록-문구)
+* [](#5-수평선)
+* [](#6-링크)
+* []()
+* []()
+* []()
 
-# 5. 내부 코드
+# 7. 코드 강조
+## 7.1. 인라인(inline) 코드 강조
 `print("Hello, World!")`
 print("Hello, World!")
-
-# 6. 표
+## 7.2. 블록(block) 코드 강조
+``` python
+while (True):
+    print("마크다운 나 짜증나게 하지마")
 ```
+``` java
+public static void main(String[] args) {
+    while (true) {
+        System.out.println("마크다운 나 짜증나게 하지마");
+    }
+}
+```
+```
+public static void main(String[] args) {
+    while (true) {
+        System.out.println("마크다운 나 짜증나게 하지마");
+    }
+}
+```
+
+# 8. 표(Table)
 | 1st | 2nd | 3rd |
 | --- | --- | --- |
 | 1 | 2 | 3 |
-```
+| 4 | 5 | 6 |
+| 7 | 8 | 9 |
 
-| 1st | 2nd | 3rd |
-| --- | --- | --- |
-| 1 | 2 | 3 |
-
-```
 | 1st | 2nd | 3rd |
 | :--- | ---: | :---: |
 | 1 | 2 | 3 |
+| 4 | 5 | 6 |
+| 7 | 8 | 9 |
 
-```
-| 1st | 2nd | 3rd |
-| :--- | ---: | :---: |
-| 1 | 2 | 3 |
-
-# 1. 이미지
+# . 이미지
 ![Minion](http://octodex.github.com/images/minion.png)
 
 ![Alt text](http://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat")
@@ -202,18 +231,18 @@ print("Hello, World!")
 최근 스칼라는 매우 인기가 높은 언어이다.[^scala]
 [^scala]: 스칼라는 마틴 오더시크가 개발한 함수형 언어이다.
 
-### 정렬
+# 정렬
 <center>중앙</center>  
 <div style="text-align: left"> 왼쪽 </div>  
 <div style="text-align: right"> 오른쪽 </div>  
 
-### 첨자
+# 첨자
 텍스트<sup>윗첨자</sup>  
 텍스트<sub>밑첨자</sub>  
 <acronym title="텍스트 가리키면 나오는 텍스트">텍스트</acronym>  
 <abbr title="텍스트 가리키면 나오는 텍스트">줄 쳐진 텍스트</abbr>  
 
-### html, css
+# html, css
 
 
 ### 참고
