@@ -1,46 +1,68 @@
 ---
 layout: post
-title: "Markdown Syntax"
+title: "마크다운(Markdown) 사용기"
 date: 2021-12-11
-excerpt: "This test post is for checking MarkDown Syntax"
+excerpt: "마크다운(Markdown)의 기본적인 문법들과 html, css, js 적용 방법들"
 tags: [Sample, Post, Test]
 comments: true
 ---
 
 **마크다운 문법을 전부 한번씩 써보면 될 듯**
 
+# 제목
 # h1
+`# h1`
 ## h2
+`## h2`
 ### h3
+`### h3`
 #### h4
+`#### h4`
 ##### h5
+`##### h5`
 ###### h6
+`###### h6`
 
+# 수평선
 ***
+`***`
 ---
+`---`
 ___
+`___`
 
 text
-
+# 강조
 *text*
+`*text*`
 _text_
+`_text_`
 **text**
+`**text**`
 __text__
+`__text__`
 ***text***
+`***text***`
 ~~text~~
+`~~text~~`
 
+# 블록 문구
 > text
-> text
-> text
-
-> text
+`> text`
 >> text
-> (text)
+`>> text`
+>>> text
+`>>> text`
 > # text
-
+`> # text`
     > text
     > text
     > text
+```
+    > text
+    > text
+    > text
+```
 
 * list
 + list
