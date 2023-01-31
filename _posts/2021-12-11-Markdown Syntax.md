@@ -327,6 +327,7 @@ public static void main(String[] args) {
 1. <https://raw.githubusercontent.com/TaylanTatli/Moon/master/_posts/2016-03-20-markdown-syntax.md>
 2. <http://taewan.kim/post/markdown/#comment>
 3. <https://cizz3007.github.io/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4/%EB%AC%B8%EB%B2%95/markdown/2018/04/08/markdown/>
-4. https://gist.github.com/ihoneymon/652be052a0727ad59601
-5. https://theorydb.github.io/envops/2019/05/22/envops-blog-how-to-use-md/
-6. https://lynmp.com/ko/article/nu86c16d8f09c9fbd8
+4. <https://gist.github.com/ihoneymon/652be052a0727ad59601>
+5. <https://theorydb.github.io/envops/2019/05/22/envops-blog-how-to-use-md/>
+6. <https://lynmp.com/ko/article/nu86c16d8f09c9fbd8>
+7. <https://heropy.blog/2017/09/30/markdown/>
