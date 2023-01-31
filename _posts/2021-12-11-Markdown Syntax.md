@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "마크다운(Markdown) 사용기"
+title: "마크다운(Markdown) 문법"
 date: 2021-12-11
 excerpt: "내가 써먹자고 정리해둔 마크다운(Markdown)의 기본적인 문법들과 html, css, js 적용 방법들"
 tags: [Sample, Post, Test]
