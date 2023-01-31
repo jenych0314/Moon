@@ -94,16 +94,24 @@ h2
 
 ## 다음 줄로 넘어가기(New Line)
 ```
-123456789  <!-- 스페이스 두 번 -->
-987654321<br>
-123456789
-987654321
+C/C++  <!-- 스페이스 두 번 -->
+JAVA  
+PYTHON  
+R  
+JAVA SCRIPT<br>
+HTML<br>
+CSS<br>
+GO<br>
 ```
 
-123456789  <!-- 스페이스 두 번 -->
-987654321<br>
-123456789
-987654321
+C/C++  <!-- 스페이스 두 번 -->
+JAVA  
+PYTHON  
+R  
+JAVA SCRIPT<br>
+HTML<br>
+CSS<br>
+GO<br>
 
 # 3. 수평선(Horizon)
 ```
@@ -281,6 +289,9 @@ public static void main(String[] args) {
 
 ![세 번째 이미지][이미지 링크]
 
+<!-- 이 넘은 사진 클릭하면 링크 탐 -->
+[![네 번째 이미지](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/368px-Google_2015_logo.svg.png)](https://www.google.no/)
+
 <img src="https://cdn.pixabay.com/photo/2023/01/27/01/40/brothers-7747561_960_720.jpg" alt="이건 뭐시기냐" title="네 번째 이미지" />
 
 [이미지 링크]: https://cdn.pixabay.com/photo/2023/01/14/18/17/hot-air-balloon-7718789_960_720.jpg  "세 번째 이미지"
@@ -292,7 +303,10 @@ public static void main(String[] args) {
 
 ![세 번째 이미지][이미지 링크]
 
-<img src="https://cdn.pixabay.com/photo/2023/01/27/01/40/brothers-7747561_960_720.jpg" alt="이건 뭐시기냐" title="네 번째 이미지" />
+<!-- 이 넘은 사진 클릭하면 링크 탐 -->
+[![네 번째 이미지](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/368px-Google_2015_logo.svg.png)](https://www.google.no/)
+
+<img src="https://cdn.pixabay.com/photo/2023/01/27/01/40/brothers-7747561_960_720.jpg" alt="이건 뭐시기냐" title="다섯 번째 이미지" />
 
 [이미지 링크]: https://cdn.pixabay.com/photo/2023/01/14/18/17/hot-air-balloon-7718789_960_720.jpg  "세 번째 이미지"
 
