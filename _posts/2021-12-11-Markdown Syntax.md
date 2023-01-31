@@ -7,23 +7,46 @@ tags: [Sample, Post, Test]
 comments: true
 ---
 
-**마크다운 문법을 전부 한번씩 써보면 될 듯**
+# 제목(Header)
+```
+# h1
+## h2
+### h3
+#### h4
+##### h5
+###### h6
+```
+# h1
+## h2
+### h3
+#### h4
+##### h5
+###### h6
+```
+h1
+===
 
-# 제목
+h2
+---
 ```
-# h1
-## h2
-### h3
-#### h4
-##### h5
-###### h6
+h1
+===
+h2
+---
+
+# 강조
 ```
-# h1
-## h2
-### h3
-#### h4
-##### h5
-###### h6
+이탤릭체: *이탤릭체*, _italic letters_, <i>이탤릭체</i>, <em>italic letters</em>  
+두껍게: **두껍게**, __bold letters__ , <b>두껍게</b>, <strong>bold letters</strong>  
+이탤릭체와 두껍게 같이: ***같이 사용하기***
+취소선: ~~취소선~~ , <del>strikethrough</del>  
+밑줄: <u>밑줄</u>, <ins>underline</ins>  
+```
+이탤릭체: *이탤릭체*, _italic letters_, <i>이탤릭체</i>, <em>italic letters</em>  
+두껍게: **두껍게**, __bold letters__ , <b>두껍게</b>, <strong>bold letters</strong>  
+이탤릭체와 두껍게 같이: ***같이 사용하기***  
+취소선: ~~취소선~~ , <del>strikethrough</del>  
+밑줄: <u>밑줄</u>, <ins>underline</ins>  
 
 # 수평선
 ```
@@ -34,22 +57,6 @@ ___
 ***
 ---
 ___
-
-# 강조
-```
-*text*
-_text_
-**text**
-__text__
-***text***
-~~text~~
-```
-*text*
-_text_
-**text**
-__text__
-***text***
-~~text~~
 
 # 블록 문구
 ```
