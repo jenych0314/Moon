@@ -149,10 +149,18 @@ Google: https://google.com
 [1]: https://github.com/
 [링크]: https://google.com "구글"
 
-### 테이블 구성
-  * [1장](#chapter-1)
-  * [2장](#chapter-2)
-  * [3장](#chapter-3)
+## 응용
+```
+### 목차
+* [1. 제목](#1-제목header)
+* [2. 강조](#2-강조)
+* [3. 수평선](#3-수평선)
+```
+
+### 목차
+* [1. 제목](#1-제목header)
+* [2. 강조](#2-강조)
+* [3. 수평선](#3-수평선)
 
 # 5. 내부 코드
 `print("Hello, World!")`
