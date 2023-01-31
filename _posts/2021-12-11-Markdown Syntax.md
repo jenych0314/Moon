@@ -10,59 +10,66 @@ comments: true
 **마크다운 문법을 전부 한번씩 써보면 될 듯**
 
 # 제목
+```
 # h1
-`# h1`
 ## h2
-`## h2`
 ### h3
-`### h3`
 #### h4
-`#### h4`
 ##### h5
-`##### h5`
 ###### h6
-`###### h6`
+```
+# h1
+## h2
+### h3
+#### h4
+##### h5
+###### h6
 
 # 수평선
+```
 ***
-`***`
 ---
-`---`
 ___
-`___`
+```
+***
+---
+___
 
-text
 # 강조
+```
 *text*
-`*text*`
 _text_
-`_text_`
 **text**
-`**text**`
 __text__
-`__text__`
 ***text***
-`***text***`
 ~~text~~
-`~~text~~`
+```
+*text*
+_text_
+**text**
+__text__
+***text***
+~~text~~
 
 # 블록 문구
+```
 > text
-`> text`
 >> text
-`>> text`
 >>> text
-`>>> text`
 > # text
-`> # text`
-    > text
-    > text
-    > text
+```
+> text
+>> text
+>>> text
+> # text
 ```
     > text
     > text
     > text
 ```
+    > text
+    > text
+    > text
 
 * list
 + list
@@ -73,14 +80,25 @@ __text__
 
 ` print("Hello, World!")`
 
+# 표
+```
 | 1st | 2nd | 3rd |
 | --- | --- | --- |
 | 1 | 2 | 3 |
-
+```
+| 1st | 2nd | 3rd |
+| --- | --- | --- |
+| 1 | 2 | 3 |
+```
+| 1st | 2nd | 3rd |
+| :--- | ---: | :---: |
+| 1 | 2 | 3 |
+```
 | 1st | 2nd | 3rd |
 | :--- | ---: | :---: |
 | 1 | 2 | 3 |
 
+# 링크
 [youtube](https://www.youtube.com)
 
 <a href="http://www.youtube.com">youtube</a>
