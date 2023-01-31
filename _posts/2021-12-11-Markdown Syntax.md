@@ -17,7 +17,7 @@ comments: true
 * [7. 코드](#7-코드code)
 * [8. 표](#8-표table)
 * [9. 이미지](#9-이미지image)
-* [10. HTML, CSS](#10-html-css)
+* [10. HTML, CSS, JS](#10-html-css-js)
 * [11. 참고](#11-참고)
 
 # 1. 제목(Header)
@@ -222,7 +222,7 @@ Google: https://google.com
 * [7. 코드](#7-코드code)
 * [8. 표](#8-표table)
 * [9. 이미지](#9-이미지image)
-* [10. HTML, CSS](#10-html-css)
+* [10. HTML, CSS, JS](#10-html-css-js)
 * [11. 참고](#11-참고)
 ```
 
@@ -235,7 +235,7 @@ Google: https://google.com
 * [7. 코드](#7-코드code)
 * [8. 표](#8-표table)
 * [9. 이미지](#9-이미지image)
-* [10. HTML, CSS](#10-html-css)
+* [10. HTML, CSS, JS](#10-html-css-js)
 * [11. 참고](#11-참고)
 
 # 7. 코드(Code)
