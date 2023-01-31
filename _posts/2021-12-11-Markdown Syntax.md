@@ -50,7 +50,7 @@ h1
 h2
 ---
 
-# 2. 강조
+# 2. 강조(Emphasize)
 ```
 이탤릭체: *이탤릭체*, _italic letters_, <i>이탤릭체</i>, <em>italic letters</em>  
 두껍게: **두껍게**, __bold letters__ , <b>두껍게</b>, <strong>bold letters</strong>  
@@ -64,7 +64,7 @@ h2
 취소선: ~~취소선~~ , <del>strikethrough</del>  
 밑줄: <u>밑줄</u>, <ins>underline</ins>  
 
-# 3. 수평선
+# 3. 수평선(Horizon)
 ```
 ***
 ---
@@ -84,7 +84,7 @@ ___
 > text
 >> text
 >>> text
-> # text
+> * text
 
 ```
     > text
@@ -96,7 +96,7 @@ ___
     > text
     > text
 
-# 5. 목록
+# 5. 목록(List)
 ```
 * non-ordered list
     * 순서 없는 서브 목록
@@ -127,7 +127,7 @@ ___
     3. 순서 있는 서브 목록
 10. 순서 있는 목록
 
-# 6. 링크
+# 6. 링크(Link)
 ```
 [GOOGLE](https://google.com)  
 [Youtube](https://www.youtube.com "유튜브")  
@@ -179,7 +179,7 @@ Google: https://google.com
 * []()
 * []()
 
-# 7. 코드 강조
+# 7. 코드(Code) 강조
 ## 7.1. 인라인(inline) 코드 강조
 `print("Hello, World!")`
 print("Hello, World!")
@@ -232,14 +232,14 @@ public static void main(String[] args) {
 | 선형대수학 | 통계학 | 이산수학 |
 | 컴퓨터 구조 | 토익 | 파이썬 |
 
-# . 이미지
-![Minion](http://octodex.github.com/images/minion.png)
+# 9. 이미지(Image)
+![첫 번째 이미지](http://octodex.github.com/images/minion.png)
 
-![Alt text](http://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat")
+![두 번째 이미지](http://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat")
 
 <img src="http://octodex.github.com/images/stormtroopocat.jpg" alt="Alt text" title="The Stormtroopocat" />
 
-![Alt text][10]
+![세 번째 이미지][10]
 [10]: http://octodex.github.com/images/dojocat.jpg  "The Dojocat"
 
 <!-- 주석 -->
