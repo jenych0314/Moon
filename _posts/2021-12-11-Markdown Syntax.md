@@ -85,13 +85,47 @@ ___
     > text
     > text
 
-# 5. 들여쓰기
-* list
-+ list
-    * sub list
-- list
-    1. list
-    2. list
+# 5. 목록
+```
+* non-ordered list
+    * 순서 없는 서브 목록
+    + 순서 없는 서브 목록
+    - 순서 없는 서브 목록
++ 순서 없는 목록
+- 순서 없는 목록
+1. ordered sub list
+    1. 순서 있는 서브 목록
+    2. 순서 있는 서브 목록
+    3. 순서 있는 서브 목록
+10. 순서 있는 목록
+```
+* non-ordered list
+    * 순서 없는 서브 목록
+    + 순서 없는 서브 목록
+    - 순서 없는 서브 목록
++ 순서 없는 목록
+- 순서 없는 목록
+1. ordered sub list
+    1. 순서 있는 서브 목록
+    2. 순서 있는 서브 목록
+    3. 순서 있는 서브 목록
+10. 순서 있는 목록
+
+# 7. 링크
+[youtube](https://www.youtube.com)
+
+<a href="http://www.youtube.com">youtube</a>
+
+[youtube](https://www.youtube.com "유튜브")
+
+<a href="http://www.youtube.com" title="유튜브">youtube</a>
+
+[구글][1]
+[1]: https://www.google.com
+
+<http://www.naver.com>
+
+<a href="https://www.naver.com">http://www.naver.com</a>
 
 ` print("Hello, World!")`
 
@@ -116,21 +150,6 @@ ___
 | :--- | ---: | :---: |
 | 1 | 2 | 3 |
 
-# 7. 링크
-[youtube](https://www.youtube.com)
-
-<a href="http://www.youtube.com">youtube</a>
-
-[youtube](https://www.youtube.com "유튜브")
-
-<a href="http://www.youtube.com" title="유튜브">youtube</a>
-
-[구글][1]
-[1]: https://www.google.com
-
-<http://www.naver.com>
-
-<a href="https://www.naver.com">http://www.naver.com</a>
 
 ### 테이블 구성
   * [1장](#chapter-1)
