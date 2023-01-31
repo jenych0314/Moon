@@ -98,8 +98,8 @@ h2
 ```
 C/C++  <!-- 스페이스 두 번 -->
 JAVA  <!-- 스페이스 두 번 -->
-PYTHON
-R
+PYTHON  <!-- 스페이스 두 번 -->
+R  <!-- 스페이스 두 번 -->
 JAVA SCRIPT<br>
 HTML<br>
 CSS<br>
@@ -108,8 +108,8 @@ GO<br>
 
 C/C++  <!-- 스페이스 두 번 -->
 JAVA  <!-- 스페이스 두 번 -->
-PYTHON
-R
+PYTHON  <!-- 스페이스 두 번 -->
+R  <!-- 스페이스 두 번 -->
 JAVA SCRIPT<br>
 HTML<br>
 CSS<br>
