@@ -50,19 +50,43 @@ h1
 h2
 ---
 
-# 2. 강조(Emphasize)
+# 2. 내용 강조(Emphasize)
 ```
 이탤릭체: *이탤릭체*, _italic letters_, <i>이탤릭체</i>, <em>italic letters</em>  
 두껍게: **두껍게**, __bold letters__ , <b>두껍게</b>, <strong>bold letters</strong>  
 이탤릭체와 두껍게 같이: ***같이 사용하기***
 취소선: ~~취소선~~ , <del>strikethrough</del>  
 밑줄: <u>밑줄</u>, <ins>underline</ins>  
+<acronym title="텍스트 가리키면 나오는 텍스트">텍스트</acronym>  
+<abbr title="텍스트 가리키면 나오는 텍스트">줄 쳐진 텍스트</abbr>  
 ```
 이탤릭체: *이탤릭체*, _italic letters_, <i>이탤릭체</i>, <em>italic letters</em>  
 두껍게: **두껍게**, __bold letters__ , <b>두껍게</b>, <strong>bold letters</strong>  
 굵은 이탤릭체: ***같이 사용하기***  
 취소선: ~~취소선~~ , <del>strikethrough</del>  
 밑줄: <u>밑줄</u>, <ins>underline</ins>  
+<acronym title="텍스트 가리키면 나오는 텍스트">텍스트</acronym>  
+<abbr title="텍스트 가리키면 나오는 텍스트">줄 쳐진 텍스트</abbr>  
+
+## 정렬
+```
+<center>중앙</center>  
+<div style="text-align: left"> 왼쪽 </div>  
+<div style="text-align: right"> 오른쪽 </div> 
+```
+
+<center>중앙</center>  
+<div style="text-align: left"> 왼쪽 </div>  
+<div style="text-align: right"> 오른쪽 </div>  
+
+## 첨자
+```
+텍스트<sup>윗첨자</sup>  
+텍스트<sub>밑첨자</sub>  
+```
+
+텍스트<sup>윗첨자</sup>  
+텍스트<sub>밑첨자</sub>  
 
 # 3. 수평선(Horizon)
 ```
@@ -247,17 +271,6 @@ public static void main(String[] args) {
 
 최근 스칼라는 매우 인기가 높은 언어이다.[^scala]
 [^scala]: 스칼라는 마틴 오더시크가 개발한 함수형 언어이다.
-
-# 정렬
-<center>중앙</center>  
-<div style="text-align: left"> 왼쪽 </div>  
-<div style="text-align: right"> 오른쪽 </div>  
-
-# 첨자
-텍스트<sup>윗첨자</sup>  
-텍스트<sub>밑첨자</sub>  
-<acronym title="텍스트 가리키면 나오는 텍스트">텍스트</acronym>  
-<abbr title="텍스트 가리키면 나오는 텍스트">줄 쳐진 텍스트</abbr>  
 
 # html, css
 
