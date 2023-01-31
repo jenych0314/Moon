@@ -7,7 +7,7 @@ tags: [Sample, Post, Test]
 comments: true
 ---
 
-# 제목(Header)
+# 1. 제목(Header)
 ```
 # h1
 ## h2
@@ -22,20 +22,24 @@ comments: true
 #### h4
 ##### h5
 ###### h6
+
 ```
+
 h1
 ===
 
 h2
 ---
+
 ```
+
 h1
 ===
 
 h2
 ---
 
-# 강조
+# 2. 강조
 ```
 이탤릭체: *이탤릭체*, _italic letters_, <i>이탤릭체</i>, <em>italic letters</em>  
 두껍게: **두껍게**, __bold letters__ , <b>두껍게</b>, <strong>bold letters</strong>  
@@ -49,7 +53,7 @@ h2
 취소선: ~~취소선~~ , <del>strikethrough</del>  
 밑줄: <u>밑줄</u>, <ins>underline</ins>  
 
-# 수평선
+# 3. 수평선
 ```
 ***
 ---
@@ -59,7 +63,7 @@ ___
 ---
 ___
 
-# 블록 문구
+# 4. 블록 문구
 ```
 > text
 >> text
@@ -81,7 +85,7 @@ ___
     > text
     > text
 
-# 들여쓰기
+# 5. 들여쓰기
 * list
 + list
     * sub list
@@ -91,7 +95,7 @@ ___
 
 ` print("Hello, World!")`
 
-# 표
+# 6. 표
 ```
 | 1st | 2nd | 3rd |
 | --- | --- | --- |
@@ -112,7 +116,7 @@ ___
 | :--- | ---: | :---: |
 | 1 | 2 | 3 |
 
-# 링크
+# 7. 링크
 [youtube](https://www.youtube.com)
 
 <a href="http://www.youtube.com">youtube</a>
