@@ -320,7 +320,8 @@ public static void main(String[] args) {
 
 [이미지 링크]: https://cdn.pixabay.com/photo/2023/01/14/18/17/hot-air-balloon-7718789_960_720.jpg  "세 번째 이미지"
 
-# 10. html, css
+# 10. HTML, CSS, JS
+마크다운에 HTML, CSS, JS 문법을 적용시킬 수 있다고 한다.
 
 # 11. 참고
 1. <https://raw.githubusercontent.com/TaylanTatli/Moon/master/_posts/2016-03-20-markdown-syntax.md>
