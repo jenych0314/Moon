@@ -138,6 +138,8 @@ Google: https://google.com
 [Youtube](https://www.youtube.com "유튜브")  
 [상대적 참조](./2021-11-30-github%EB%B8%94%EB%A1%9C%EA%B7%B8_%EB%8A%90%EB%82%80%EC%A0%90.md)  
 이렇게도 [링크]를 타고 갈 수 있다고 하네요.  
+[Naver][Naver Link]  
+[Github][1]  
 Naver: <http://www.naver.com>  
 Google: https://google.com  
 <a href="http://www.youtube.com">Youtube</a>  
@@ -145,8 +147,6 @@ Google: https://google.com
 
 [Naver Link]: https://www.naver.com/
 [1]: https://github.com/
-[Naver][Naver Link]
-[Github][1]
 [링크]: https://google.com "구글"
 
 ### 테이블 구성
