@@ -45,7 +45,7 @@ h2
 ```
 이탤릭체: *이탤릭체*, _italic letters_, <i>이탤릭체</i>, <em>italic letters</em>  
 두껍게: **두껍게**, __bold letters__ , <b>두껍게</b>, <strong>bold letters</strong>  
-이탤릭체와 두껍게 같이: ***같이 사용하기***  
+굵은 이탤릭체: ***같이 사용하기***  
 취소선: ~~취소선~~ , <del>strikethrough</del>  
 밑줄: <u>밑줄</u>, <ins>underline</ins>  
 
@@ -70,15 +70,18 @@ ___
 >> text
 >>> text
 > # text
+
 ```
     > text
     > text
     > text
 ```
+
     > text
     > text
     > text
 
+# 들여쓰기
 * list
 + list
     * sub list
@@ -94,13 +97,16 @@ ___
 | --- | --- | --- |
 | 1 | 2 | 3 |
 ```
+
 | 1st | 2nd | 3rd |
 | --- | --- | --- |
 | 1 | 2 | 3 |
+
 ```
 | 1st | 2nd | 3rd |
 | :--- | ---: | :---: |
 | 1 | 2 | 3 |
+
 ```
 | 1st | 2nd | 3rd |
 | :--- | ---: | :---: |
