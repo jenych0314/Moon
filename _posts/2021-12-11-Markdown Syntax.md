@@ -53,7 +53,7 @@ h2
 ---
 
 # 2. 내용(Context)
-## 강조(Emphasize)
+## 2.1. 강조(Emphasize)
 ```
 이탤릭체: *이탤릭체*, _italic letters_, <i>이탤릭체</i>, <em>italic letters</em>  
 두껍게: **두껍게**, __bold letters__ , <b>두껍게</b>, <strong>bold letters</strong>  
@@ -71,7 +71,7 @@ h2
 <acronym title="텍스트 가리키면 나오는 텍스트">텍스트</acronym>  
 <abbr title="텍스트 가리키면 나오는 텍스트">줄 쳐진 텍스트</abbr>  
 
-## 정렬
+## 2.2. 정렬
 ```
 <center>중앙</center>  
 <div style="text-align: left"> 왼쪽 </div>  
@@ -82,7 +82,7 @@ h2
 <div style="text-align: left"> 왼쪽 </div>  
 <div style="text-align: right"> 오른쪽 </div>  
 
-## 첨자
+## 2.3. 첨자
 ```
 텍스트<sup>윗첨자</sup>  
 텍스트<sub>밑첨자</sub>  
@@ -91,10 +91,10 @@ h2
 텍스트<sup>윗첨자</sup>  
 텍스트<sub>밑첨자</sub>  
 
-## 주석
+## 2.4. 주석
 `<!-- 주석 -->`
 
-## 다음 줄로 넘어가기(New Line)
+## 2.5. 다음 줄로 넘어가기(New Line)
 ```
 C/C++  <!-- 스페이스 두 번 -->
 JAVA  <!-- 스페이스 두 번 -->
@@ -211,9 +211,8 @@ Google: https://google.com
 [1]: https://github.com/
 [링크]: https://google.com "구글"
 
-## 응용
+## 6.1. 응용
 ```
-### 목차
 * [1. 제목](#1-제목header)
 * [2. 내용](#2-내용context)
 * [3. 수평선](#3-수평선horizon)
@@ -227,7 +226,6 @@ Google: https://google.com
 * [11. 참고](#11-참고)
 ```
 
-### 목차
 * [1. 제목](#1-제목header)
 * [2. 내용](#2-내용context)
 * [3. 수평선](#3-수평선horizon)
