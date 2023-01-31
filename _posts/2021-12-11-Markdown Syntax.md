@@ -274,15 +274,27 @@ public static void main(String[] args) {
 | 컴퓨터 구조 | 토익 | 파이썬 |
 
 # 9. 이미지(Image)
-![첫 번째 이미지](../_image/2021-12-01-CheshireCat1.jpg?raw=true)
+```
+![첫 번째 이미지](https://cdn.pixabay.com/photo/2023/01/25/08/59/bird-7742845_960_720.jpg "링크 설명(title)")
 
-![두 번째 이미지](../_image/2021-12-01-CheshireCat2.png "2nd image")
+![두 번째 이미지](https://cdn.pixabay.com/photo/2023/01/11/09/30/trees-7711283_960_720.jpg "두 번째 이미지")
 
 ![세 번째 이미지][이미지 링크]
 
-<img src="../_image/2021-12-01-CheshireCat2.png" alt="Alt text" title="The Stormtroopocat" />
+<img src="https://cdn.pixabay.com/photo/2023/01/27/01/40/brothers-7747561_960_720.jpg" alt="이건 뭐시기냐" title="네 번째 이미지" />
 
-[이미지 링크]: ../_image/2021-12-01-CheshireCat1.jpg  "The Dojocat"
+[이미지 링크]: https://cdn.pixabay.com/photo/2023/01/14/18/17/hot-air-balloon-7718789_960_720.jpg  "세 번째 이미지"
+```
+
+![첫 번째 이미지](https://cdn.pixabay.com/photo/2023/01/25/08/59/bird-7742845_960_720.jpg "링크 설명(title)")
+
+![두 번째 이미지](https://cdn.pixabay.com/photo/2023/01/11/09/30/trees-7711283_960_720.jpg "두 번째 이미지")
+
+![세 번째 이미지][이미지 링크]
+
+<img src="https://cdn.pixabay.com/photo/2023/01/27/01/40/brothers-7747561_960_720.jpg" alt="이건 뭐시기냐" title="네 번째 이미지" />
+
+[이미지 링크]: https://cdn.pixabay.com/photo/2023/01/14/18/17/hot-air-balloon-7718789_960_720.jpg  "세 번째 이미지"
 
 # html, css
 
