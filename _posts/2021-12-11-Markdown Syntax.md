@@ -322,6 +322,8 @@ public static void main(String[] args) {
 
 # 10. HTML, CSS, JS
 마크다운에 HTML, CSS, JS 문법을 적용시킬 수 있다고 한다.
+assets/css/main.css의 css들 좌표가 찍혀있다.
+-> _sass/*.scss 중에서 하나를 수정을 하던가, _sass 밑으로 css 파일 하나 더 만들어서 main.css의 좌표를 더 찍어넣기.
 
 # 11. 참고
 1. <https://raw.githubusercontent.com/TaylanTatli/Moon/master/_posts/2016-03-20-markdown-syntax.md>
