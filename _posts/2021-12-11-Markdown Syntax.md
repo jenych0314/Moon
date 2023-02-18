@@ -324,6 +324,7 @@ public static void main(String[] args) {
 마크다운에 HTML, CSS, JS 문법을 적용시킬 수 있다고 한다.
 assets/css/main.css의 css들 좌표가 찍혀있다.
 -> _sass/*.scss 중에서 하나를 수정을 하던가, _sass 밑으로 css 파일 하나 더 만들어서 main.css의 좌표를 더 찍어넣기.
+-> _sass/normalize.scss에서 h1 발견함. 여기서 코드 수정하면 될 듯.
 - h5 이상, h5, h6일 때는 글자 크기가 너무 작아짐. 최소치를 정해둬야겠음.
 
 # 11. 참고
