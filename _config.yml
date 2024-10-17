@@ -8,7 +8,7 @@ logo:               'assets/img/logo.png'
 background:         'assets/img/chess_negative.png'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             ko_KR
-url:                https://jenych0314.github.io
+url:                https://aliquis-facio.github.io
 
 # Jekyll
 permalink:          /:title/
@@ -26,7 +26,7 @@ sass:
   style:            compressed
 
 # Comments
-disqus_shortname:   jenych0314-github-io
+disqus_shortname:   aliquis-facio-github-io
 
 # Social
 # if you don't have any of social below, comment the line.
@@ -40,11 +40,11 @@ google:
 #email:
 # twitter:            username
 # facebook:           username
-github-url:         jenych0314
+github-url:         aliquis-facio
 #stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
 #linkedin:          username
 #xing:              username
-instagram:          why_pi_
+#instagram:         username
 #lastfm:            username
 #tumblr:            username
 #medium:            '@username'
