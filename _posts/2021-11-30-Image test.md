@@ -17,28 +17,29 @@ comments: true
 	5. <https://blog.jaeyoon.io/2017/12/jekyll-image.html>
 
 <figure>
-	<a href="https://raw.githubusercontent.com/jenych0314/jenych0314.github.io/fd7e75b26c66d2b852a51b59ee80bf0a0793e412/_image/2021-12-01-screenshot-error.png"><img src="https://raw.githubusercontent.com/jenych0314/jenych0314.github.io/fd7e75b26c66d2b852a51b59ee80bf0a0793e412/_image/2021-12-01-screenshot-error.png"></a>
-	<figcaption><a href="https://raw.githubusercontent.com/jenych0314/jenych0314.github.io/fd7e75b26c66d2b852a51b59ee80bf0a0793e412/_image/2021-12-01-screenshot-error.png" title="Error">_posts에 업로드했을 경우에는 이미지 주소 복사를 눌러서 직접 가져와야하는 듯.</a>.</figcaption>
+	<a href="https://github.com/aliquis-facio/aliquis-facio.github.io/blob/master/_image/2021-12-01-screenshot-error.png?raw=true"><img src="https://github.com/aliquis-facio/aliquis-facio.github.io/blob/master/_image/2021-12-01-screenshot-error.png?raw=true"></a>
+	<figcaption><a href="https://github.com/aliquis-facio/aliquis-facio.github.io/blob/master/_image/2021-12-01-screenshot-google-analytics.png?raw=true" title="Error">_posts에 업로드했을 경우에는 이미지 주소 복사를 눌러서 직접 가져와야하는 듯.</a>.</figcaption>
 </figure>
   
-![google-analytics](https://github.com/jenych0314/jenych0314.github.io/blob/8d13566778b653b69399688551d56486dc6bf15e/_image/2021-12-01-screenshot-google-analytics.png?raw=true "2 People - One is me, and the other is my freind I think")
+![google-analytics](https://github.com/aliquis-facio/aliquis-facio.github.io/blob/8d13566778b653b69399688551d56486dc6bf15e/_image/2021-12-01-screenshot-google-analytics.png?raw=true "2 People - One is me, and the other is my freind I think")
 
 ## favicon icons history
 1. 첫번째 favicon
-![1st-favicon](https://github.com/jenych0314/jenych0314.github.io/blob/master/_image/2021-12-01-CheshireCat1.jpg?raw=true)
+![1st-favicon](https://github.com/aliquis-facio/aliquis-facio.github.io/blob/master/_image/2021-12-01-CheshireCat1.jpg?raw=true)
 2. 두번째 favicon
-![2nd-favicon](https://github.com/jenych0314/jenych0314.github.io/blob/master/_image/2021-12-01-CheshireCat2.png?raw=true)
+![2nd-favicon](https://github.com/aliquis-facio/aliquis-facio.github.io/blob/master/_image/2021-12-01-CheshireCat2.png?raw=true)
 3. 세번째 favicon
-![3rd-favicon](https://github.com/jenych0314/jenych0314.github.io/blob/master/_image/2021-12-01-CheshireCat3.png?raw=true)
+![3rd-favicon](https://github.com/aliquis-facio/aliquis-facio.github.io/blob/master/_image/2021-12-01-CheshireCat3.png?raw=true)
 4. 네번째 favicon
-![4th-favicon](https://github.com/jenych0314/jenych0314.github.io/blob/master/_image/2021-12-01-CheshireCat4.png?raw=true)
+![4th-favicon](https://github.com/aliquis-facio/aliquis-facio.github.io/blob/master/_image/2021-12-01-CheshireCat4.png?raw=true)
 
 ## wallpaper history
 1. 첫번째 wallpaper
-![1st-wallpaper](https://github.com/jenych0314/jenych0314.github.io/blob/master/_image/2021-12-01-wonderland.jpg?raw=true)
+![1st-wallpaper](https://github.com/aliquis-facio/aliquis-facio.github.io/blob/master/_image/2021-12-01-wonderland.jpg?raw=true)
 1. 두번째 wallpaper
-![2nd-wallpaper](https://github.com/jenych0314/jenych0314.github.io/blob/master/_image/2021-12-01-chess.png?raw=true)
+![2nd-wallpaper](https://github.com/aliquis-facio/aliquis-facio.github.io/blob/master/_image/2021-12-01-chess.png?raw=true)
 1. 세번째 wallpaper
-![1st-wallpaper](https://github.com/jenych0314/jenych0314.github.io/blob/master/_image/2021-12-01-chess_negative.png?raw=true)
+![1st-wallpaper](https://github.com/aliquis-facio/aliquis-facio.github.io/blob/master/_image/2021-12-01-chess_negative.png?raw=true)
 
-test
+cdn 이용하기
+https://cdn.jsdelivr.net/gh/github_user_name/repo_url@branch_name/file_path
