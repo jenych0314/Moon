@@ -16,9 +16,10 @@ comments: true
 * [6. 링크](#6-링크link)
 * [7. 코드](#7-코드code)
 * [8. 표](#8-표table)
-* [9. 이미지](#9-이미지image)
-* [10. HTML, CSS, JS](#10-html-css-js)
-* [11. 참고](#11-참고)
+* [9. 수식](#9-수식)
+* [10. 이미지](#10-이미지image)
+* [11. HTML, CSS, JS](#11-html-css-js)
+* [12. 참고](#12-참고)
 
 # 1. 제목(Header)
 ```
@@ -137,16 +138,6 @@ ___
 >>> text
 > * text
 
-```
-    > text
-    > text
-    > text
-```
-
-    > text
-    > text
-    > text
-
 # 5. 목록(List)
 ```
 * non-ordered list
@@ -169,7 +160,7 @@ ___
     1. 순서 있는 서브 목록
     2. 순서 있는 서브 목록
     3. 순서 있는 서브 목록
-10. 순서 있는 목록
+10. 순서 있는 목록 <!-순서가 차례대로 자동으로 매겨짐>
 ```
 
 1. ordered sub list
@@ -221,9 +212,10 @@ Google: https://google.com
 * [6. 링크](#6-링크link)
 * [7. 코드](#7-코드code)
 * [8. 표](#8-표table)
-* [9. 이미지](#9-이미지image)
-* [10. HTML, CSS, JS](#10-html-css-js)
-* [11. 참고](#11-참고)
+* [9. 수식](#9-수식)
+* [10. 이미지](#10-이미지image)
+* [11. HTML, CSS, JS](#11-html-css-js)
+* [12. 참고](#12-참고)
 ```
 
 * [1. 제목](#1-제목header)
@@ -234,19 +226,31 @@ Google: https://google.com
 * [6. 링크](#6-링크link)
 * [7. 코드](#7-코드code)
 * [8. 표](#8-표table)
-* [9. 이미지](#9-이미지image)
-* [10. HTML, CSS, JS](#10-html-css-js)
-* [11. 참고](#11-참고)
+* [9. 수식](#9-수식)
+* [10. 이미지](#10-이미지image)
+* [11. HTML, CSS, JS](#11-html-css-js)
+* [12. 참고](#12-참고)
 
 # 7. 코드(Code)
 ## 7.1. 인라인(inline)
+```
 `print("Hello, World!")`
-print("Hello, World!")
+```
+`print("Hello, World!")`
 ## 7.2. 블록(block)
+````
 ``` python
 while (True):
     print("마크다운 나 짜증나게 하지마")
 ```
+````
+  
+``` python
+while (True):
+    print("마크다운 나 짜증나게 하지마")
+```
+---
+````
 ``` java
 public static void main(String[] args) {
     while (true) {
@@ -254,14 +258,35 @@ public static void main(String[] args) {
     }
 }
 ```
-```
+````
+``` java
 public static void main(String[] args) {
     while (true) {
         System.out.println("마크다운 나 짜증나게 하지마");
     }
 }
 ```
+---
+````
+``` c
+#include <stdio.h>
 
+for (int i = 0; i++; i>10) {
+    printf("Hello World!");
+}
+
+return 0;
+```
+````
+``` c
+#include <stdio.h>
+
+for (int i = 0; i++; i>10) {
+    printf("Hello World!");
+}
+
+return 0;
+```
 # 8. 표(Table)
 ```
 | 1st | 2nd | 3rd |
@@ -291,7 +316,21 @@ public static void main(String[] args) {
 | 선형대수학 | 통계학 | 이산수학 |
 | 컴퓨터 구조 | 토익 | 파이썬 |
 
-# 9. 이미지(Image)
+# 9. 수식
+```
+$$f(x)= if x < x_{min} : (x/x_{min})^a$$  
+$$otherwise : 0$$  
+$$P(w)=U(x/2)(7/5)/Z$$  
+$$p_{\theta}(x) = \int p_{\theta}(2z)p_{\theta}(y\mid k)dz$$  
+$$x = argmax_k((x_t-x_u+x_v)^T*x_m)/(||x_b-x_k+x_l||)$$  
+```
+$$f(x)= if x < x_{min} : (x/x_{min})^a$$  
+$$otherwise : 0$$  
+$$P(w)=U(x/2)(7/5)/Z$$  
+$$p_{\theta}(x) = \int p_{\theta}(2z)p_{\theta}(y\mid k)dz$$  
+$$x = argmax_k((x_t-x_u+x_v)^T*x_m)/(||x_b-x_k+x_l||)$$  
+
+# 10. 이미지(Image)
 ```
 ![첫 번째 이미지](https://cdn.pixabay.com/photo/2023/01/25/08/59/bird-7742845_960_720.jpg "링크 설명(title)")
 
@@ -313,21 +352,21 @@ public static void main(String[] args) {
 
 ![세 번째 이미지][이미지 링크]
 
-<!-- 이 넘은 사진 클릭하면 링크 탐 -->
+이 넘은 사진 클릭하면 링크 탐
 [![네 번째 이미지](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/368px-Google_2015_logo.svg.png)](https://www.google.no/)
 
 <img src="https://cdn.pixabay.com/photo/2023/01/27/01/40/brothers-7747561_960_720.jpg" alt="이건 뭐시기냐" title="다섯 번째 이미지" />
 
 [이미지 링크]: https://cdn.pixabay.com/photo/2023/01/14/18/17/hot-air-balloon-7718789_960_720.jpg  "세 번째 이미지"
 
-# 10. HTML, CSS, JS
+# 11. HTML, CSS, JS
 마크다운에 HTML, CSS, JS 문법을 적용시킬 수 있다고 한다.
 assets/css/main.css의 css들 좌표가 찍혀있다.
 -> _sass/*.scss 중에서 하나를 수정을 하던가, _sass 밑으로 css 파일 하나 더 만들어서 main.css의 좌표를 더 찍어넣기.
 -> _sass/normalize.scss에서 h1 발견함. 여기서 코드 수정하면 될 듯.
 - h5 이상, h5, h6일 때는 글자 크기가 너무 작아짐. 최소치를 정해둬야겠음.
 
-# 11. 참고
+# 12. 참고
 1. <https://raw.githubusercontent.com/TaylanTatli/Moon/master/_posts/2016-03-20-markdown-syntax.md>
 2. <http://taewan.kim/post/markdown/#comment>
 3. <https://cizz3007.github.io/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4/%EB%AC%B8%EB%B2%95/markdown/2018/04/08/markdown/>
@@ -335,3 +374,5 @@ assets/css/main.css의 css들 좌표가 찍혀있다.
 5. <https://theorydb.github.io/envops/2019/05/22/envops-blog-how-to-use-md/>
 6. <https://lynmp.com/ko/article/nu86c16d8f09c9fbd8>
 7. <https://heropy.blog/2017/09/30/markdown/>
+8. <https://theorydb.github.io/envops/2019/05/22/envops-blog-how-to-use-md/>
+9. <https://www.heropy.dev/p/B74sNE>
