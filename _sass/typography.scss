@@ -87,6 +87,12 @@ figcaption {
     color: $color_stack;
 }
 
+//
+acronym {
+	color: #6666FF;
+	text-decoration-line: none;
+}
+
 // links
 a {
   transition: color .4s;
@@ -155,3 +161,5 @@ td {
 dt {
     font-weight: bolder;
 }
+
+
