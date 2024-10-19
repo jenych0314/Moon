@@ -129,8 +129,15 @@ li .highlight pre {
 }
 
 // table
-table {
+table,
+th,
+td {
 	width: 100%;
+	border: 1px solid black;
+	text-align: left;
+	/*left, center, right*/
+	vertical-align: middle;
+	/* top, middle, bottom */
 }
 
 // notice
