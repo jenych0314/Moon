@@ -239,11 +239,14 @@ kbd {
   text-align: left;
 }
 
-// .date {}
+.date {
+  margin: auto;
+}
 
 // reading time
 .reading-time {
   text-align: center;
   font-weight: 300;
+  margin-top: 10px;
   margin-bottom: 10px;
 }
