@@ -72,9 +72,6 @@ gems:
 jekyll-mentions:
     base_url: https://github.com
 
-plugins:
-  - jekyll-last-modified-at
-
 # Optional. The default date format, used if none is specified in the tag.
 
 # Exclude list
