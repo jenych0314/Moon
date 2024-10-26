@@ -72,5 +72,7 @@ gems:
 jekyll-mentions:
     base_url: https://github.com
 
+# Optional. The default date format, used if none is specified in the tag.
+
 # Exclude list
 exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE, Rakefile]
