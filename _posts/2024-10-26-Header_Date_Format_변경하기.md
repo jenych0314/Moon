@@ -167,3 +167,4 @@ https://roadtos7.github.io/android/2021/06/10/Jekyll-FixBuildError.html
 
 그래서 글을 조금씩 잘라서 push 해보기로 함
 #5, #6까지 올렸을 때 죽음
+html 코드를 올리면 죽네
