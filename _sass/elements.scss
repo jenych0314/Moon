@@ -231,11 +231,17 @@ kbd {
 }
 
 .date-box {
+  // display: grid;
+  // grid-template-columns: 1fr 1fr;
+  // grid-gap: 10px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.date-box:has(.updated-date) {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 10px;
-  margin: 0px;
-  padding: 0px;
 }
 
 .created-date, .updated-date {
