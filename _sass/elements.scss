@@ -231,12 +231,17 @@ kbd {
 }
 
 .date-box {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 10px;
+  @if($('#updated').length > 0) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  };
+
   margin: 0px;
   padding: 0px;
 }
+
+
 
 .date {
   margin: auto;
