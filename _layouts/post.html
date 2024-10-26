@@ -17,8 +17,13 @@ layout: compress
             <div class="content">
                 <div class="post-title {% if page.feature %} feature {% endif %}">
                     <h1>{{ page.title }}</h1>
-                    <h4>Date: {{ page.date | date: "%Y.%m.%d %a" }}</h4>
-                    {% if site.reading_time %}
+                    <div class="date-box">
+                        <h4 class="created-date">📆 Created: {{ page.date | date: "%Y.%m.%d %a" }}</h4>
+                        {% if page.last_modified_at %}
+                        <h4 class="updated-date">🗓️ Updated: {{ page.last_modified_at | date: "%Y.%m.%d %a" }}</h4>
+                        {% endif %}
+                        {% if site.reading_time %}
+                    </div>
                     <p class="reading-time">
                       <i class="fa fa-clock-o"></i>
                       {% include read-time.html %}
