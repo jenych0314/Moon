@@ -116,12 +116,12 @@ h4 태그로 감싸져있기 때문에
 2번째 방법부터
 post.html
 수정
-![alt text](image.png)
+<img src = "https://github.com/aliquis-facio/aliquis-facio.github.io/blob/master/_image/2024-10-27-1.png?raw=true">
 ->
-![alt text](image-1.png)
+<img src = "https://github.com/aliquis-facio/aliquis-facio.github.io/blob/master/_image/2024-10-27-2.png?raw=true">
 elements.scss
 추가
-![alt text](image-2.png)
+<img src = "https://github.com/aliquis-facio/aliquis-facio.github.io/blob/master/_image/2024-10-27-3.png?raw=true">
 결과: Created: 2024.10.17 Thu           Updated: 2024.10.24 Thu
 가로로 배치 성공했는데 위치가 살짝 맘에 안 들어서
 정렬을 바꿔봅시다
@@ -133,8 +133,9 @@ last_modified_at 부분을 작성하고 날짜만 기입하지 않는다면? upd
 https://hackernoon.com/lang/ko/2023%EB%85%84%EC%9D%B4%EC%A7%80%EB%A7%8C-%EC%97%AC%EC%A0%84%ED%9E%88-CSS%EC%9D%98-%EC%A4%91%EC%B2%A9-%EC%8A%A4%ED%83%80%EC%9D%BC%EC%97%90-%EB%8C%80%ED%95%B4-%EC%9D%B4%EC%95%BC%EA%B8%B0%ED%95%B4%EC%95%BC-%ED%95%A9%EB%8B%88%EB%8B%A4.
 
 # 7. updated date 생성 안 했을 때 grid 없애기
-![alt text](image-3.png)
-![alt text](image-4.png)
+<img src = "https://github.com/aliquis-facio/aliquis-facio.github.io/blob/master/_image/2024-10-27-4.png?raw=true">
+<img src = "https://github.com/aliquis-facio/aliquis-facio.github.io/blob/master/_image/2024-10-27-5.png?raw=true">
+
 * 참고
 https://zinna.tistory.com/4
 https://velog.io/@mjieun/SCSS-%EC%A1%B0%EA%B1%B4%EB%AC%B8
