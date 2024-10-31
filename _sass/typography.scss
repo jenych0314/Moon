@@ -181,3 +181,7 @@ td {
 dt {
 	font-weight: bolder;
 }
+
+p>a {
+	word-break: break-all;
+}
