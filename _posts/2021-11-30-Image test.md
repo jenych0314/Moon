@@ -3,7 +3,7 @@ layout: post
 title: "Image test"
 date: 2021-11-30
 excerpt: "Image test"
-tags: [Sample, Post, Test, Image]
+tags: [BLOG]
 comments: true
 ---
 
