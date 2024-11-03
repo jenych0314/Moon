@@ -237,6 +237,7 @@ Google: https://google.com
 `print("Hello, World!")`
 ```
 `print("Hello, World!")`
+
 ## 7.2. 블록(block)
 ````
 ``` python
@@ -287,6 +288,7 @@ for (int i = 0; i++; i>10) {
 
 return 0;
 ```
+
 # 8. 표(Table)
 ```
 | 1st | 2nd | 3rd |
