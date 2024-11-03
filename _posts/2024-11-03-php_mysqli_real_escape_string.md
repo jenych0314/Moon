@@ -8,12 +8,16 @@ tags: [Post, TIL, Web, PHP]
 comments: true
 ---
 
-Object-oriented style
+# mysqli real escape string
+mysql과 connection할 때 string -> escape string으로 만들어준다
+
+## Object-oriented style
 `public mysqli::real_escape_string(string $string): string`
 
-Procedural style
+## Procedural style
 `mysqli_real_escape_string(mysqli $mysql, string $string): string`
-mysql과 connection할 때 string -> escape string으로 만들어준다
+
+## 예제
 ```php
 $mysqli = mysqli_connect("localhost", "user", "pw", "table");
 
