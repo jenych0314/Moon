@@ -4,7 +4,7 @@ title: "php mysqli real escape string"
 date: 2024-11-03
 last_modified_at:
 excerpt: "모의해킹 취업반 스터디 7기 3주차"
-tags: [WEb, PHP]
+tags: [WEB, PHP]
 comments: true
 ---
 
