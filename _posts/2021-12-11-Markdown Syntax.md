@@ -2,10 +2,13 @@
 layout: post
 title: "마크다운 문법(Markdown Syntax)"
 date: 2021-12-11
+last_modified_at: 2024-11-06
 excerpt: "내가 써먹자고 정리해둔 마크다운(Markdown)의 기본적인 문법들과 html, css, js 적용 방법들"
 tags: [BLOG, MARKDOWN]
 comments: true
 ---
+
+<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
 
 # 0. 목차
 * [1. 제목](#1-제목header)
@@ -19,7 +22,8 @@ comments: true
 * [9. 수식](#9-수식)
 * [10. 이미지](#10-이미지image)
 * [11. HTML, CSS, JS](#11-html-css-js)
-* [12. 참고](#12-참고)
+* [12. 다이어그램](#12-다이어그램---mermaid)
+* [참고](#참고)
 
 # 1. 제목(Header)
 ```
@@ -369,7 +373,48 @@ assets/css/main.css의 css들 좌표가 찍혀있다.
 - h5 이상, h5, h6일 때는 글자 크기가 너무 작아짐. 최소치를 정해둬야겠음.
 <https://tcpschool.com/html-tag-attrs/li-value>
 
-# 12. 참고
+# 12. 다이어그램 -> mermaid
+````
+```mermaid
+graph LR
+A[Encoding/Decoding<br>인코딩/디코딩]
+B(Encryption/Decryption<br>암호화/복호화) --> C(Hash<br>단방향 암호화)
+B --> D(Encryption<br>양방향 암호화)
+D --> E(대칭키)
+D --> F(비대칭키)
+```
+````
+
+```
+~~~ mermaid
+graph LR
+A[Encoding/Decoding<br>인코딩/디코딩]
+B(Encryption/Decryption<br>암호화/복호화) --> C(Hash<br>단방향 암호화)
+B --> D(Encryption<br>양방향 암호화)
+D --> E(대칭키)
+D --> F(비대칭키)
+~~~
+```
+
+```mermaid
+graph LR
+A[Encoding/Decoding<br>인코딩/디코딩]
+B(Encryption/Decryption<br>암호화/복호화) --> C(Hash<br>단방향 암호화)
+B --> D(Encryption<br>양방향 암호화)
+D --> E(대칭키)
+D --> F(비대칭키)
+```
+
+~~~ mermaid
+graph LR
+A[Encoding/Decoding<br>인코딩/디코딩]
+B(Encryption/Decryption<br>암호화/복호화) --> C(Hash<br>단방향 암호화)
+B --> D(Encryption<br>양방향 암호화)
+D --> E(대칭키)
+D --> F(비대칭키)
+~~~
+
+# 참고
 1. <https://raw.githubusercontent.com/TaylanTatli/Moon/master/_posts/2016-03-20-markdown-syntax.md>
 2. <http://taewan.kim/post/markdown/#comment>
 3. <https://cizz3007.github.io/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4/%EB%AC%B8%EB%B2%95/markdown/2018/04/08/markdown/>
@@ -379,3 +424,9 @@ assets/css/main.css의 css들 좌표가 찍혀있다.
 7. <https://heropy.blog/2017/09/30/markdown/>
 8. <https://theorydb.github.io/envops/2019/05/22/envops-blog-how-to-use-md/>
 9. <https://www.heropy.dev/p/B74sNE>
+10. <https://mystria.github.io/archivers/apply-mermaid-diagram-to-github-pages>
+
+<script>
+mermaid.initialize({startOnLoad:true});
+window.mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
+</script>
