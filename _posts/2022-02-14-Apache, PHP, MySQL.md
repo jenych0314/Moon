@@ -3,7 +3,7 @@ layout: post
 title: "Install Apache, PHP, MySQL"
 date: 2022-02-14
 excerpt: "Install Apache, PHP, MySQL in Windows 10"
-tags: [TIL]
+tags: [WEB]
 comments: true
 ---
 

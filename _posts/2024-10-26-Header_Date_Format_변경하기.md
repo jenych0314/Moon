@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "github.io Header Date Format 변경하기"
+title: "[github.io] Date Format 변경하기"
 date: 2024-10-26
 last_modified_at:
 excerpt: ""

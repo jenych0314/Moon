@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Image test"
+title: "[github.io] Image test"
 date: 2021-11-30
 excerpt: "Image test"
 tags: [BLOG]
