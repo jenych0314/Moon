@@ -11,6 +11,10 @@
 	@media #{$small} {
 		padding: 0 .5em;
 	}
+
+	>li>a {
+		text-decoration-line: none;
+	}
 }
 
 // titles
