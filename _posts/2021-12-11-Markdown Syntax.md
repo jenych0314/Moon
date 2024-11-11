@@ -2,7 +2,7 @@
 layout: post
 title: "마크다운 문법(Markdown Syntax)"
 date: 2021-12-11
-last_modified_at: 2024-11-06
+last_modified_at: 2024-11-11
 excerpt: "내가 써먹자고 정리해둔 마크다운(Markdown)의 기본적인 문법들과 html, css, js 적용 방법들"
 tags: [BLOG, MARKDOWN]
 comments: true
@@ -322,6 +322,62 @@ return 0;
 | 선형대수학 | 통계학 | 이산수학 |
 | 컴퓨터 구조 | 토익 | 파이썬 |
 
+``` html
+<table>
+    <th>
+        <tr>
+            <td>1st</td>
+            <td>2nd</td>
+            <td>3rd</td>
+        </tr>
+    </th>
+    <tbody>
+        <tr>
+            <td colspan = "2">2열 병합</td>
+            <!-- <td>가운데 정렬</td> -->
+            <td style = "text-align: right">우로 정렬</td>
+        </tr>
+        <tr>
+            <td rowspan = "2">2행 병합</td>
+            <td style = "text-align: center">가운데 정렬</td>
+            <td style = "text-align: left">좌로 정렬</td>
+        </tr>
+        <tr>
+            <!-- <td>컴퓨터 구조</td> -->
+            <td>토익</td>
+            <td>파이썬</td>
+        </tr>
+    </tbody>
+</table>
+```
+
+<table>
+    <th>
+        <tr>
+            <td>1st</td>
+            <td>2nd</td>
+            <td>3rd</td>
+        </tr>
+    </th>
+    <tbody>
+        <tr>
+            <td colspan = "2">2열 병합</td>
+            <!-- <td>가운데 정렬</td> -->
+            <td style = "text-align: right">우로 정렬</td>
+        </tr>
+        <tr>
+            <td rowspan = "2">2행 병합</td>
+            <td style = "text-align: center">가운데 정렬</td>
+            <td style = "text-align: left">좌로 정렬</td>
+        </tr>
+        <tr>
+            <!-- <td>컴퓨터 구조</td> -->
+            <td>토익</td>
+            <td>파이썬</td>
+        </tr>
+    </tbody>
+</table>
+
 # 9. 수식
 ```
 $$f(x)= if x < x_{min} : (x/x_{min})^a$$  
@@ -550,6 +606,8 @@ graph TB
 9. <https://www.heropy.dev/p/B74sNE>
 10. <https://mystria.github.io/archivers/apply-mermaid-diagram-to-github-pages>
 11. <https://mermaid.js.org/syntax/examples.html>
+12. <https://hianna.tistory.com/442>
+13. <https://jinnnkcoding.tistory.com/106>
 
 <script>
 mermaid.initialize({startOnLoad:true});
