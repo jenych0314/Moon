@@ -1,0 +1,1 @@
+* [](https://stackoverflow.com/questions/10569053/convert-datetime-to-string-php)
