@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "[WEB] 웹 서버 실습"
-date: 2024-10-17
-excerpt: "모의해킹 취업반 스터디 7기 1주차"
-tags: [WEB]
 comments: true
+title: "[WEB] 웹 서버 실습"
+excerpt: "모의해킹 취업반 스터디 7기 1주차"
+date: 2024-10-17
 last_modified_at:
+tags: [WEB]
 ---
 
 # 목차
