@@ -595,21 +595,21 @@ assets/css/main.css의 css들 좌표가 찍혀있다.
 - h5 이상, h5, h6일 때는 글자 크기가 너무 작아짐. 최소치를 정해둬야겠음.
 
 # 참고
-2. [Markdown Syntax 1](http://taewan.kim/post/markdown/#comment)
-3. [Markdown Syntax 2](https://cizz3007.github.io/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4/%EB%AC%B8%EB%B2%95/markdown/2018/04/08/markdown/)
-4. [Markdown Syntax 3](https://gist.github.com/ihoneymon/652be052a0727ad59601)
-5. [Markdown Syntax 4](https://theorydb.github.io/envops/2019/05/22/envops-blog-how-to-use-md/)
-7. [Markdown Syntax 5](https://heropy.blog/2017/09/30/markdown/)
-8. [Markdown Syntax 6](https://theorydb.github.io/envops/2019/05/22/envops-blog-how-to-use-md/)
-9. [Markdown Syntax 7](https://www.heropy.dev/p/B74sNE)
-11. [Mermaid Syntax 8](https://mermaid.js.org/syntax/examples.html)
-1. [Markdown Syntax(RAW HTML) 9](https://raw.githubusercontent.com/TaylanTatli/Moon/master/_posts/2016-03-20-markdown-syntax.md)
-6. [Markdown 각주, 미주](https://lynmp.com/ko/article/nu86c16d8f09c9fbd8)
-10. [Markdown Diagram](https://mystria.github.io/archivers/apply-mermaid-diagram-to-github-pages)
-12. [HTML table 병합](https://hianna.tistory.com/442)
-13. [HTML <table>, <tr>, <th>, <td>](https://jinnnkcoding.tistory.com/106)
-14. [HTML <th>](https://www.tcpschool.com/html-tags/th)
-1. [HTML <li>](https://tcpschool.com/html-tag-attrs/li-value)
+* [Markdown Syntax 1](http://taewan.kim/post/markdown/#comment)
+* [Markdown Syntax 2](https://cizz3007.github.io/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4/%EB%AC%B8%EB%B2%95/markdown/2018/04/08/markdown/)
+* [Markdown Syntax 3](https://gist.github.com/ihoneymon/652be052a0727ad59601)
+* [Markdown Syntax 4](https://theorydb.github.io/envops/2019/05/22/envops-blog-how-to-use-md/)
+* [Markdown Syntax 5](https://heropy.blog/2017/09/30/markdown/)
+* [Markdown Syntax 6](https://theorydb.github.io/envops/2019/05/22/envops-blog-how-to-use-md/)
+* [Markdown Syntax 7](https://www.heropy.dev/p/B74sNE)
+* [Mermaid Syntax 8](https://mermaid.js.org/syntax/examples.html)
+* [Markdown Syntax(RAW HTML) 9](https://raw.githubusercontent.com/TaylanTatli/Moon/master/_posts/2016-03-20-markdown-syntax.md)
+* [Markdown 각주, 미주](https://lynmp.com/ko/article/nu86c16d8f09c9fbd8)
+* [Markdown Diagram](https://mystria.github.io/archivers/apply-mermaid-diagram-to-github-pages)
+* [HTML table 병합](https://hianna.tistory.com/442)
+* [HTML <table>, <tr>, <th>, <td>](https://jinnnkcoding.tistory.com/106)
+* [HTML <th>](https://www.tcpschool.com/html-tags/th)
+* [HTML <li>](https://tcpschool.com/html-tag-attrs/li-value)
 
 <script>
 mermaid.initialize({startOnLoad:true});
