@@ -34,6 +34,7 @@ comments: true
 ##### h5
 ###### h6
 ```
+
 # h1
 ## h2
 ### h3
@@ -68,6 +69,7 @@ h2
 <acronym title="텍스트 가리키면 나오는 텍스트">텍스트</acronym>  
 <abbr title="텍스트 가리키면 나오는 텍스트">줄 쳐진 텍스트</abbr>  
 ```
+
 이탤릭체: *이탤릭체*, _italic letters_, <i>이탤릭체</i>, <em>italic letters</em>  
 두껍게: **두껍게**, __bold letters__ , <b>두껍게</b>, <strong>bold letters</strong>  
 굵은 이탤릭체: ***같이 사용하기***  
@@ -79,11 +81,13 @@ h2
 ## 2.2. 정렬
 ```
 <center>중앙</center>  
+<div style="text-align: center"> 중앙 </div>  
 <div style="text-align: left"> 왼쪽 </div>  
 <div style="text-align: right"> 오른쪽 </div> 
 ```
 
 <center>중앙</center>  
+<div style="text-align: center"> 중앙 </div>  
 <div style="text-align: left"> 왼쪽 </div>  
 <div style="text-align: right"> 오른쪽 </div>  
 
@@ -126,6 +130,7 @@ GO<br>
 ---
 ___
 ```
+
 ***
 ---
 ___
@@ -137,6 +142,7 @@ ___
 >>> text
 > # text
 ```
+
 > text
 >> text
 >>> text
@@ -240,6 +246,7 @@ Google: https://google.com
 ```
 `print("Hello, World!")`
 ```
+
 `print("Hello, World!")`
 
 ## 7.2. 블록(block)
@@ -254,7 +261,9 @@ while (True):
 while (True):
     print("마크다운 나 짜증나게 하지마")
 ```
+
 ---
+
 ````
 ``` java
 public static void main(String[] args) {
@@ -264,6 +273,7 @@ public static void main(String[] args) {
 }
 ```
 ````
+
 ``` java
 public static void main(String[] args) {
     while (true) {
@@ -271,7 +281,9 @@ public static void main(String[] args) {
     }
 }
 ```
+
 ---
+
 ````
 ``` c
 #include <stdio.h>
@@ -283,6 +295,7 @@ for (int i = 0; i++; i>10) {
 return 0;
 ```
 ````
+
 ``` c
 #include <stdio.h>
 
@@ -386,6 +399,7 @@ $$P(w)=U(x/2)(7/5)/Z$$
 $$p_{\theta}(x) = \int p_{\theta}(2z)p_{\theta}(y\mid k)dz$$  
 $$x = argmax_k((x_t-x_u+x_v)^T*x_m)/(||x_b-x_k+x_l||)$$  
 ```
+
 $$f(x)= if x < x_{min} : (x/x_{min})^a$$  
 $$otherwise : 0$$  
 $$P(w)=U(x/2)(7/5)/Z$$  
@@ -395,29 +409,39 @@ $$x = argmax_k((x_t-x_u+x_v)^T*x_m)/(||x_b-x_k+x_l||)$$
 # 10. 이미지(Image)
 ```
 ![첫 번째 이미지](https://cdn.pixabay.com/photo/2023/01/25/08/59/bird-7742845_960_720.jpg "링크 설명(title)")
-
-![두 번째 이미지](https://cdn.pixabay.com/photo/2023/01/11/09/30/trees-7711283_960_720.jpg "두 번째 이미지")
-
-![세 번째 이미지][이미지 링크]
-
-<!-- 이 넘은 사진 클릭하면 링크 탐 -->
-[![네 번째 이미지](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/368px-Google_2015_logo.svg.png)](https://www.google.no/)
-
-<img src="https://cdn.pixabay.com/photo/2023/01/27/01/40/brothers-7747561_960_720.jpg" alt="이건 뭐시기냐" title="네 번째 이미지" />
-
-[이미지 링크]: https://cdn.pixabay.com/photo/2023/01/14/18/17/hot-air-balloon-7718789_960_720.jpg  "세 번째 이미지"
 ```
 
 ![첫 번째 이미지](https://cdn.pixabay.com/photo/2023/01/25/08/59/bird-7742845_960_720.jpg "링크 설명(title)")
 
+```
+![두 번째 이미지](https://cdn.pixabay.com/photo/2023/01/11/09/30/trees-7711283_960_720.jpg "두 번째 이미지")
+```
+
 ![두 번째 이미지](https://cdn.pixabay.com/photo/2023/01/11/09/30/trees-7711283_960_720.jpg "두 번째 이미지")
 
+```
 ![세 번째 이미지][이미지 링크]
+```
+
+![세 번째 이미지][이미지 링크]
+
+```
+<!-- 이 넘은 사진 클릭하면 링크 탐 -->
+[![네 번째 이미지](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/368px-Google_2015_logo.svg.png)](https://www.google.no/)
+```
 
 이 넘은 사진 클릭하면 링크 탐
 [![네 번째 이미지](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/368px-Google_2015_logo.svg.png)](https://www.google.no/)
 
+```
+<img src="https://cdn.pixabay.com/photo/2023/01/27/01/40/brothers-7747561_960_720.jpg" alt="이건 뭐시기냐" title="네 번째 이미지" />
+```
+
 <img src="https://cdn.pixabay.com/photo/2023/01/27/01/40/brothers-7747561_960_720.jpg" alt="이건 뭐시기냐" title="다섯 번째 이미지" />
+
+```
+[이미지 링크]: https://cdn.pixabay.com/photo/2023/01/14/18/17/hot-air-balloon-7718789_960_720.jpg  "세 번째 이미지"
+```
 
 [이미지 링크]: https://cdn.pixabay.com/photo/2023/01/14/18/17/hot-air-balloon-7718789_960_720.jpg  "세 번째 이미지"
 
@@ -447,6 +471,15 @@ D --> F(비대칭키)
 ```
 ````
 
+```mermaid
+graph LR
+A[Encoding/Decoding<br>인코딩/디코딩]
+B(Encryption/Decryption<br>암호화/복호화) --> C(Hash<br>단방향 암호화)
+B --> D(Encryption<br>양방향 암호화)
+D --> E(대칭키)
+D --> F(비대칭키)
+```
+
 ```
 ~~~ mermaid
 graph LR
@@ -458,6 +491,15 @@ D --> F(비대칭키)
 ~~~
 ```
 
+~~~ mermaid
+graph LR
+A[Encoding/Decoding<br>인코딩/디코딩]
+B(Encryption/Decryption<br>암호화/복호화) --> C(Hash<br>단방향 암호화)
+B --> D(Encryption<br>양방향 암호화)
+D --> E(대칭키)
+D --> F(비대칭키)
+~~~
+
 ````
 ``` mermaid
 pie title What Voldemort doesn't have?
@@ -466,6 +508,13 @@ pie title What Voldemort doesn't have?
          "NOSE" : 45
 ```
 ````
+
+``` mermaid
+pie title What Voldemort doesn't have?
+         "FRIENDS" : 2
+         "FAMILY" : 3
+         "NOSE" : 45
+```
 
 ````
 ``` mermaid
@@ -481,6 +530,18 @@ sequenceDiagram
 ```
 ````
 
+``` mermaid
+sequenceDiagram
+    Alice ->> Bob: Hello Bob, how are you?
+    Bob-->>John: How about you John?
+    Bob--x Alice: I am good thanks!
+    Bob-x John: I am good thanks!
+    Note right of John: Bob thinks a long<br/>long time, so long<br/>that the text does<br/>not fit on a row.
+
+    Bob-->Alice: Checking with John...
+    Alice->John: Yes... John, how are you?
+```
+
 ````
 ``` mermaid
 graph LR
@@ -490,6 +551,14 @@ graph LR
     C --> D
 ```
 ````
+
+``` mermaid
+graph LR
+    A[Square Rect] -- Link text --> B((Circle))
+    A --> C(Round Rect)
+    B --> D{Rhombus}
+    C --> D
+```
 
 ````
 ``` mermaid
@@ -516,51 +585,6 @@ graph TB
      class di orange
 ```
 ````
-
-```mermaid
-graph LR
-A[Encoding/Decoding<br>인코딩/디코딩]
-B(Encryption/Decryption<br>암호화/복호화) --> C(Hash<br>단방향 암호화)
-B --> D(Encryption<br>양방향 암호화)
-D --> E(대칭키)
-D --> F(비대칭키)
-```
-
-~~~ mermaid
-graph LR
-A[Encoding/Decoding<br>인코딩/디코딩]
-B(Encryption/Decryption<br>암호화/복호화) --> C(Hash<br>단방향 암호화)
-B --> D(Encryption<br>양방향 암호화)
-D --> E(대칭키)
-D --> F(비대칭키)
-~~~
-
-``` mermaid
-pie title What Voldemort doesn't have?
-         "FRIENDS" : 2
-         "FAMILY" : 3
-         "NOSE" : 45
-```
-
-``` mermaid
-sequenceDiagram
-    Alice ->> Bob: Hello Bob, how are you?
-    Bob-->>John: How about you John?
-    Bob--x Alice: I am good thanks!
-    Bob-x John: I am good thanks!
-    Note right of John: Bob thinks a long<br/>long time, so long<br/>that the text does<br/>not fit on a row.
-
-    Bob-->Alice: Checking with John...
-    Alice->John: Yes... John, how are you?
-```
-
-``` mermaid
-graph LR
-    A[Square Rect] -- Link text --> B((Circle))
-    A --> C(Round Rect)
-    B --> D{Rhombus}
-    C --> D
-```
 
 ``` mermaid
 graph TB
