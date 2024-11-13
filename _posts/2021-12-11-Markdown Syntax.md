@@ -324,13 +324,13 @@ return 0;
 
 ``` html
 <table>
-    <th>
+    <thead>
         <tr>
-            <td>1st</td>
-            <td>2nd</td>
-            <td>3rd</td>
+            <th>1st</th>
+            <th>2nd</th>
+            <th>3rd</th>
         </tr>
-    </th>
+    </thead>
     <tbody>
         <tr>
             <td colspan = "2">2열 병합</td>
@@ -352,13 +352,13 @@ return 0;
 ```
 
 <table>
-    <th>
+    <thead>
         <tr>
             <td>1st</td>
             <td>2nd</td>
             <td>3rd</td>
         </tr>
-    </th>
+    </thead>
     <tbody>
         <tr>
             <td colspan = "2">2열 병합</td>
