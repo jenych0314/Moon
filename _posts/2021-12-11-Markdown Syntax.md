@@ -2,7 +2,7 @@
 layout: post
 title: "마크다운 문법(Markdown Syntax)"
 date: 2021-12-11
-last_modified_at: 2024-11-11
+last_modified_at: 2024-11-13
 excerpt: "내가 써먹자고 정리해둔 마크다운(Markdown)의 기본적인 문법들과 html, css, js 적용 방법들"
 tags: [BLOG, MARKDOWN]
 comments: true
@@ -354,9 +354,9 @@ return 0;
 <table>
     <thead>
         <tr>
-            <td>1st</td>
-            <td>2nd</td>
-            <td>3rd</td>
+            <th>1st</th>
+            <th>2nd</th>
+            <th>3rd</th>
         </tr>
     </thead>
     <tbody>
