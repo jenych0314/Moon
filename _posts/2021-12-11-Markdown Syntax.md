@@ -423,7 +423,7 @@ $$x = argmax_k((x_t-x_u+x_v)^T*x_m)/(||x_b-x_k+x_l||)$$
 
 # 11. 다이어그램 -> mermaid
 Pages는 Mermaid가 적용되지 않아서 HTML 요소를 사용해서 처리해야 한다
-그렇기 때문에 포스트 맨 위에
+그렇기 때문에 포스트 맨 위와
 ```HTML
 <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
 ```
