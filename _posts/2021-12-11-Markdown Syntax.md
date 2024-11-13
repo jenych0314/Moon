@@ -21,8 +21,8 @@ comments: true
 * [8. 표](#8-표table)
 * [9. 수식](#9-수식)
 * [10. 이미지](#10-이미지image)
-* [11. HTML, CSS, JS](#11-html-css-js)
-* [12. 다이어그램](#12-다이어그램---mermaid)
+* [11. 다이어그램](#11-다이어그램---mermaid)
+* [12. HTML, CSS, JS](#12-html-css-js)
 * [참고](#참고)
 
 # 1. 제목(Header)
@@ -421,15 +421,7 @@ $$x = argmax_k((x_t-x_u+x_v)^T*x_m)/(||x_b-x_k+x_l||)$$
 
 [이미지 링크]: https://cdn.pixabay.com/photo/2023/01/14/18/17/hot-air-balloon-7718789_960_720.jpg  "세 번째 이미지"
 
-# 11. HTML, CSS, JS
-마크다운에 HTML, CSS, JS 문법을 적용시킬 수 있다고 한다.
-assets/css/main.css의 css들 좌표가 찍혀있다.
--> _sass/*.scss 중에서 하나를 수정을 하던가, _sass 밑으로 css 파일 하나 더 만들어서 main.css의 좌표를 더 찍어넣기.
--> _sass/normalize.scss에서 h1 발견함. 여기서 코드 수정하면 될 듯.
-- h5 이상, h5, h6일 때는 글자 크기가 너무 작아짐. 최소치를 정해둬야겠음.
-<https://tcpschool.com/html-tag-attrs/li-value>
-
-# 12. 다이어그램 -> mermaid
+# 11. 다이어그램 -> mermaid
 Pages는 Mermaid가 적용되지 않아서 HTML 요소를 사용해서 처리해야 한다
 그렇기 때문에 포스트 맨 위에
 ```HTML
@@ -594,6 +586,13 @@ graph TB
      class di orange
 ```
 
+# 12. HTML, CSS, JS
+마크다운에 HTML, CSS, JS 문법을 적용시킬 수 있다고 한다.
+assets/css/main.css의 css들 좌표가 찍혀있다.
+-> _sass/*.scss 중에서 하나를 수정을 하던가, _sass 밑으로 css 파일 하나 더 만들어서 main.css의 좌표를 더 찍어넣기.
+-> _sass/normalize.scss에서 h1 발견함. 여기서 코드 수정하면 될 듯.
+- h5 이상, h5, h6일 때는 글자 크기가 너무 작아짐. 최소치를 정해둬야겠음.
+
 # 참고
 2. [Markdown Syntax 1](http://taewan.kim/post/markdown/#comment)
 3. [Markdown Syntax 2](https://cizz3007.github.io/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4/%EB%AC%B8%EB%B2%95/markdown/2018/04/08/markdown/)
@@ -605,10 +604,11 @@ graph TB
 11. [Mermaid Syntax 8](https://mermaid.js.org/syntax/examples.html)
 1. [Markdown Syntax(RAW HTML) 9](https://raw.githubusercontent.com/TaylanTatli/Moon/master/_posts/2016-03-20-markdown-syntax.md)
 6. [Markdown 각주, 미주](https://lynmp.com/ko/article/nu86c16d8f09c9fbd8)
+10. [Markdown Diagram](https://mystria.github.io/archivers/apply-mermaid-diagram-to-github-pages)
 12. [HTML table 병합](https://hianna.tistory.com/442)
 13. [HTML <table>, <tr>, <th>, <td>](https://jinnnkcoding.tistory.com/106)
 14. [HTML <th>](https://www.tcpschool.com/html-tags/th)
-10. [Markdown Diagram](https://mystria.github.io/archivers/apply-mermaid-diagram-to-github-pages)
+1. [HTML <li>](https://tcpschool.com/html-tag-attrs/li-value)
 
 <script>
 mermaid.initialize({startOnLoad:true});
