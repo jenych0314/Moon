@@ -22,3 +22,4 @@ width < x:
     created, updated -> 세로로 나열
     or
     created, updated -> 폰트 사이즈 줄이기
+9. last_modified_at을 xml과 동일하게 last_mod로 바꾸기
