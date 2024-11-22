@@ -23,3 +23,4 @@ width < x:
     or
     created, updated -> 폰트 사이즈 줄이기
 9. last_modified_at을 xml과 동일하게 last_mod로 바꾸기
+10. google search console에 적용이 끝나면 모든 포스트에다가 sitemap 적용시켜줘야 함
