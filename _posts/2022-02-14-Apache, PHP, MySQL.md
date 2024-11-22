@@ -1,10 +1,17 @@
 ---
 layout: post
-title: "Install Apache, PHP, MySQL"
-date: 2022-02-14
-excerpt: "Install Apache, PHP, MySQL in Windows 10"
-tags: [WEB]
 comments: true
+sitemap:
+    changefreq: daily
+    priority: 0.5
+
+title: "Install Apache, PHP, MySQL"
+excerpt: "Install Apache, PHP, MySQL in Windows 10"
+
+date: 2022-02-14
+last_modified_at: 
+
+tags: [WEB]
 ---
 
 _해킹 맛보기_ 를 읽기 시작했다. 책의 설명을 그대로 따라갈 수는 없기에 이런저런 블로그와 사이트를 참고해서 Apache, PHP, MySQL을 다운받았다.

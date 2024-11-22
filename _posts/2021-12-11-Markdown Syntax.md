@@ -1,11 +1,17 @@
 ---
 layout: post
+comments: true
+sitemap:
+    changefreq: daily
+    priority: 0.5
+
 title: "마크다운 문법(Markdown Syntax)"
+excerpt: "내가 써먹자고 정리해둔 마크다운(Markdown)의 기본적인 문법들과 html, css, js 적용 방법들"
+
 date: 2021-12-11
 last_modified_at: 2024-11-13
-excerpt: "내가 써먹자고 정리해둔 마크다운(Markdown)의 기본적인 문법들과 html, css, js 적용 방법들"
+
 tags: [BLOG, MARKDOWN]
-comments: true
 ---
 
 <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>

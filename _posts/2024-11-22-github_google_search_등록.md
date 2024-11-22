@@ -1,14 +1,17 @@
 ---
 layout: post
 comments: true
-title: "[github.io] Google Search 등록하기"
-excerpt: ""
-date: 2024-11-22
-last_modified_at: 
-tags: [BLOG]
 sitemap:
     changefreq: daily
     priority: 0.8
+
+title: "[github.io] Google Search 등록하기"
+excerpt: ""
+
+date: 2024-11-22
+last_modified_at: 
+
+tags: [BLOG]
 ---
 
 # 1. sitemap.xml 생성하기

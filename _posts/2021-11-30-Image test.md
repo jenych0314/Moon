@@ -1,10 +1,17 @@
 ---
 layout: post
-title: "[github.io] Image test"
-date: 2021-11-30
-excerpt: "Image test"
-tags: [BLOG]
 comments: true
+sitemap:
+    changefreq: daily
+    priority: 0.5
+
+title: "[github.io] Image test"
+excerpt: "Image test"
+
+date: 2021-11-30
+last_modified_at: 
+
+tags: [BLOG]
 ---
 
 **favicon 이미지 변경 과정과 뒷배경 이미지 변경 과정에 대한 기록을 남기면 될 듯함.**  
