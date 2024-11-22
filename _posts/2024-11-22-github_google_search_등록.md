@@ -88,6 +88,7 @@ Sitemap: https://aliquis-facio.github.io/sitemap.xml
 URL 접두어 -> 등록하려는 사이트 URL 입력 -> 계속
 <img src = "https://cdn.jsdelivr.net/gh/aliquis-facio/aliquis-facio.github.io@master/_image/2024-11-22-2.png?raw=true">
 내 github.io 처음 페이지는 _layouts/home.html에서 렌더링 되기 때문에 여기에 header 부분에 meta code를 추가해줬다.
+
 2. sitemap 등록하기
 색인 -> Sitemaps -> 새 사이트맵 추가 -> sitemap.xml 입력 -> 제출
 
