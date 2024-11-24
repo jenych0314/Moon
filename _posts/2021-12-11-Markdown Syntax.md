@@ -552,7 +552,7 @@ $$x = argmax_k((x_t-x_u+x_v)^T*x_m)/(||x_b-x_k+x_l||)$$
 
 # 11. 이미지(Image)
 이미지의 빠른 로딩을 위해 CDN을 적용해주는 것이 좋다.  
-
+CDN 적용 사이트: [JSDELIVR](https://www.jsdelivr.com/github)
 ```
 ![첫 번째 이미지](https://cdn.pixabay.com/photo/2023/01/25/08/59/bird-7742845_960_720.jpg "링크 설명(title)")
 ```
