@@ -1,11 +1,17 @@
 ---
 layout: post
+comments: true
+sitemap:
+    changefreq: daily
+    priority: 0.5
+
 title: "[PHP] MySQL 연결하기"
+excerpt: "모의해킹 취업반 스터디 7기 2주차"
+
 date: 2024-10-23
 last_modified_at: 2024-11-22
-excerpt: "모의해킹 취업반 스터디 7기 2주차"
+
 tags: [WEB, PHP, DATABASE]
-comments: true
 ---
 
 # 회고
