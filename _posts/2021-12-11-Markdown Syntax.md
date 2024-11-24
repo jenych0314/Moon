@@ -28,8 +28,9 @@ tags: [BLOG, MARKDOWN]
 * [9. 표](#9-표table)
 * [10. 수식](#10-수식)
 * [11. 이미지](#11-이미지image)
-* [12. 다이어그램](#12-다이어그램---mermaid)
-* [13. HTML, CSS, JS](#13-html-css-js)
+* [12. Emoji](#12-emoji)
+* [13. 다이어그램](#13-다이어그램---mermaid)
+* [14. HTML, CSS, JS](#14-html-css-js)
 * [참고](#참고)
 
 # 1. 제목(Header)
@@ -176,6 +177,7 @@ ___
 > * text
 
 # 5. 목록(List)
+## 5.1. Unordered List
 ```
 * non-ordered list
     * 순서 없는 서브 목록
@@ -216,6 +218,7 @@ ___
     <li>Milk</li>
 </ul>
 
+## 5.2. Ordered List
 ```
 1. ordered sub list
     1. 순서 있는 서브 목록
@@ -254,6 +257,7 @@ ___
     <li>Milk</li>
 </ol>
 
+## 5.3. Definition List
 ```
 First Term
 : This is the definition of the first term.
@@ -287,6 +291,8 @@ Second Term
     <dd>This is one definition of the second term. </dd>
     <dd>This is another definition of the second term.</dd>
 </dl>
+
+## 5.4. Task List
 
 ```
 - [x] Write the press release
@@ -585,7 +591,24 @@ $$x = argmax_k((x_t-x_u+x_v)^T*x_m)/(||x_b-x_k+x_l||)$$
 
 [이미지 링크]: https://cdn.pixabay.com/photo/2023/01/14/18/17/hot-air-balloon-7718789_960_720.jpg  "세 번째 이미지"
 
-# 12. 다이어그램 -> mermaid
+# 12. Emoji
+정적 사이트 생성기를 사용하고 있다면, HTML page 인코딩을 UTF-8로 해야 한다.
+
+## 12.1. Emoji 붙여넣기
+[Emojipedia](https://emojipedia.org/)에서 복사하면 된다. img 형태로 복사된다.
+<img src = "https://cdn.jsdelivr.net/gh/aliquis-facio/aliquis-facio.github.io@master/_image/2024-11-24-1.png?raw=true">
+
+## 12.2. Shortcode 사용하기
+```
+Gone camping! :tent: Be back soon.
+That is so funny! :joy:
+```
+
+Gone camping! :tent: Be back soon.
+That is so funny! :joy:
+[Emoji Shortcodes 목록](https://gist.github.com/rxaviers/7360908)
+
+# 13. 다이어그램 -> mermaid
 Pages는 Mermaid가 적용되지 않아서 HTML 요소를 사용해서 처리해야 한다
 그렇기 때문에 포스트 맨 위와
 ```HTML
@@ -751,7 +774,7 @@ graph TB
 ```
 참고 사이트에 종류가 더 있으니 직접 확인하는 걸 추천한다
 
-# 13. HTML, CSS, JS
+# 14. HTML, CSS, JS
 마크다운에 HTML, CSS, JS 문법을 적용시킬 수 있다.  
 HTML의 각종 태그, <style>, <script>로 감싸고 그 안에 각각의 문법에 맞는 코드를 작성하면 된다.  
 태그로 감싸져 있는 부분은 마크다운 문법 적용이 안 된다.  
