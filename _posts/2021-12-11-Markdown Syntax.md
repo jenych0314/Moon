@@ -9,7 +9,7 @@ title: "마크다운 문법(Markdown Syntax)"
 excerpt: "내가 써먹자고 정리해둔 마크다운(Markdown)의 기본적인 문법들과 html, css, js 적용 방법들"
 
 date: 2021-12-11
-last_modified_at: 2024-11-13
+last_modified_at: 2024-11-24
 
 tags: [BLOG, MARKDOWN]
 ---
@@ -618,11 +618,9 @@ graph TB
 참고 사이트에 종류가 더 있으니 직접 확인하는 걸 추천한다
 
 # 12. HTML, CSS, JS
-마크다운에 HTML, CSS, JS 문법을 적용시킬 수 있다고 한다.
-assets/css/main.css의 css들 좌표가 찍혀있다.
--> _sass/*.scss 중에서 하나를 수정을 하던가, _sass 밑으로 css 파일 하나 더 만들어서 main.css의 좌표를 더 찍어넣기.
--> _sass/normalize.scss에서 h1 발견함. 여기서 코드 수정하면 될 듯.
-- h5 이상, h5, h6일 때는 글자 크기가 너무 작아짐. 최소치를 정해둬야겠음.
+마크다운에 HTML, CSS, JS 문법을 적용시킬 수 있다.  
+HTML의 각종 태그, <style>, <script>로 감싸고 그 안에 각각의 문법에 맞는 코드를 작성하면 된다.  
+태그로 감싸져 있는 부분은 마크다운 문법 적용이 안 된다.  
 
 # 참고
 * [Markdown Syntax 1](http://taewan.kim/post/markdown/#comment)
