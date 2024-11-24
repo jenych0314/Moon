@@ -317,36 +317,36 @@ Second Term
 
 # 6. 링크(Link)
 ```
-[GOOGLE](https://google.com)  
-[Youtube](https://www.youtube.com "유튜브")  
-[상대적 참조](./2021-11-30-github%EB%B8%94%EB%A1%9C%EA%B7%B8_%EB%8A%90%EB%82%80%EC%A0%90.md)  
-이렇게도 [링크]를 타고 갈 수 있다고 하네요.  
-Naver: <http://www.naver.com>  
-Google: https://google.com  
-<a href="http://www.youtube.com">Youtube</a>  
-<a href="http://www.youtube.com" title="Youtube">Youtube</a>  
+* 주소를 보여주고만 싶을 때: https://google.com  
+* 링크만 있는 inline 링크: <http://www.naver.com>  
+* [설명 있는 inline 링크 1](https://google.com)  
+* <a href="http://www.youtube.com">설명 있는 inline 링크 2</a>  
+* [갖다 대면 텍스트 뜨는 inline 링크 1](https://www.youtube.com "유튜브")  
+* <a href="http://www.youtube.com" title="Youtube">갖다 대면 텍스트 뜨는 inline 링크 2</a>  
+* [내가 작성한 다른 post로 넘어가고 싶을 때](./2021-11-30-github%EB%B8%94%EB%A1%9C%EA%B7%B8_%EB%8A%90%EB%82%80%EC%A0%90.md)  
+* 이렇게도 [갖다 대면 텍스트 뜨는 설명 있는 inline 링크인데 링크를 다른 곳에 빼 놓음]를 타고 갈 수 있다고 하네요.  
+* [링크 다른 곳에 써놓기 1][Naver Link]  
+* [링크 다른 곳에 써놓기 2][1]  
 
 [Naver Link]: https://www.naver.com/
 [1]: https://github.com/
-[Naver][Naver Link]
-[Github][1]
-[링크]: https://google.com "구글"
+[갖다 대면 텍스트 뜨는 설명 있는 inline 링크인데 링크를 다른 곳에 빼 놓음]: https://google.com "구글"
 ```
 
-[GOOGLE](https://google.com)  
-[Youtube](https://www.youtube.com "유튜브")  
-[상대적 참조](./2021-11-30-github%EB%B8%94%EB%A1%9C%EA%B7%B8_%EB%8A%90%EB%82%80%EC%A0%90.md)  
-이렇게도 [링크]를 타고 갈 수 있다고 하네요.  
-[Naver][Naver Link]  
-[Github][1]  
-Naver: <http://www.naver.com>  
-Google: https://google.com  
-<a href="http://www.youtube.com">Youtube</a>  
-<a href="http://www.youtube.com" title="Youtube">Youtube</a>  
+* 주소를 보여주고만 싶을 때: https://google.com  
+* 링크만 있는 inline 링크: <http://www.naver.com>  
+* [설명 있는 inline 링크 1](https://google.com)  
+* <a href="http://www.youtube.com">설명 있는 inline 링크 2</a>  
+* [갖다 대면 텍스트 뜨는 inline 링크 1](https://www.youtube.com "유튜브")  
+* <a href="http://www.youtube.com" title="Youtube">갖다 대면 텍스트 뜨는 inline 링크 2</a>  
+* [내가 작성한 다른 post로 넘어가고 싶을 때](./2021-11-30-github%EB%B8%94%EB%A1%9C%EA%B7%B8_%EB%8A%90%EB%82%80%EC%A0%90.md)  
+* 이렇게도 [갖다 대면 텍스트 뜨는 설명 있는 inline 링크인데 링크를 다른 곳에 빼 놓음]를 타고 갈 수 있다고 하네요.  
+* [링크 다른 곳에 써놓기 1][Naver Link]  
+* [링크 다른 곳에 써놓기 2][1]  
 
 [Naver Link]: https://www.naver.com/
 [1]: https://github.com/
-[링크]: https://google.com "구글"
+[갖다 대면 텍스트 뜨는 설명 있는 inline 링크인데 링크를 다른 곳에 빼 놓음]: https://google.com "구글"
 
 # 7. Heading IDs
 ```md
