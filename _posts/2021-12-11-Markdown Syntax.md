@@ -5,7 +5,7 @@ sitemap:
     changefreq: daily
     priority: 0.5
 
-title: "마크다운 문법(Markdown Syntax)"
+title: "[Markdown] 마크다운 문법 - 마크다운으로 할 수 있는 다양한 것들"
 excerpt: "내가 써먹자고 정리해둔 마크다운(Markdown)의 기본적인 문법들과 html, css, js 적용 방법들"
 
 date: 2021-12-11
@@ -181,7 +181,7 @@ ___
 >>> text
 > * text
 
-# 5. 목록(List)
+# 5. 목록(List)ㅍ
 ## 5.1. Unordered List
 ```
 * non-ordered list
