@@ -809,7 +809,8 @@ graph TB
      class sq,e green
      class di orange
 ```
-참고 사이트에 종류가 더 있으니 직접 확인하는 걸 추천한다
+
+[참고 사이트](https://mermaid.js.org/syntax/examples.html)에 종류가 더 있으니 직접 확인하는 걸 추천한다
 
 # 14. HTML, CSS, JS
 마크다운에 HTML, CSS, JS 문법을 적용시킬 수 있다.  
