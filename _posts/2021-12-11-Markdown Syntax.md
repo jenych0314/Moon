@@ -586,9 +586,11 @@ CDN 적용 사이트: [JSDELIVR](https://www.jsdelivr.com/github)
 
 ```
 ![세 번째 이미지][이미지 링크]
+[이미지 링크]: https://cdn.pixabay.com/photo/2023/01/14/18/17/hot-air-balloon-7718789_960_720.jpg  "세 번째 이미지"
 ```
 
 ![세 번째 이미지][이미지 링크]
+[이미지 링크]: https://cdn.pixabay.com/photo/2023/01/14/18/17/hot-air-balloon-7718789_960_720.jpg  "세 번째 이미지"
 
 ---
 
@@ -603,18 +605,12 @@ CDN 적용 사이트: [JSDELIVR](https://www.jsdelivr.com/github)
 ---
 
 ```
-<img src="https://cdn.pixabay.com/photo/2023/01/27/01/40/brothers-7747561_960_720.jpg" alt="이건 뭐시기냐" title="네 번째 이미지" />
+<img src="https://cdn.pixabay.com/photo/2023/01/27/01/40/brothers-7747561_960_720.jpg" alt="대체 문구입니다" title="다섯 번째 이미지" />
 ```
 
-<img src="https://cdn.pixabay.com/photo/2023/01/27/01/40/brothers-7747561_960_720.jpg" alt="이건 뭐시기냐" title="다섯 번째 이미지" />
+<img src="https://cdn.pixabay.com/photo/2023/01/27/01/40/brothers-7747561_960_720.jpg" alt="대체 문구입니다" title="다섯 번째 이미지" />
 
 ---
-
-```
-[이미지 링크]: https://cdn.pixabay.com/photo/2023/01/14/18/17/hot-air-balloon-7718789_960_720.jpg  "세 번째 이미지"
-```
-
-[이미지 링크]: https://cdn.pixabay.com/photo/2023/01/14/18/17/hot-air-balloon-7718789_960_720.jpg  "세 번째 이미지"
 
 # 12. Emoji
 정적 사이트 생성기를 사용하고 있다면, HTML page 인코딩을 UTF-8로 해야 한다.
