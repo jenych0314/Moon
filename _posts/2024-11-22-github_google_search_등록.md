@@ -3,7 +3,7 @@ layout: post
 comments: true
 sitemap:
     changefreq: daily
-    priority: 0.8
+    priority: 0.5
 
 title: "[github.io] Google Search 등록하기"
 excerpt: ""
