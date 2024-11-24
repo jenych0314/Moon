@@ -799,6 +799,9 @@ HTML의 각종 태그, <style>, <script>로 감싸고 그 안에 각각의 문�
 * [HTML <ul>](https://www.w3schools.com/tags/tag_ul.asp)
 * [HTML <ol>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol)
 * [HTML <dl>](https://developer.mozilla.org/ko/docs/Web/HTML/Element/dl)
+* [Image Loading 시간](https://derek-mun.com/contents/Contents-Github-page-image-loading-speed.html)
+* [Github Blog 느린 웹 해결하기](https://chinsun9.github.io/2021/05/31/%EA%B9%83%ED%97%88%EB%B8%8C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%8A%90%EB%A6%B0-%EC%9B%B9-%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0/#%EC%83%81%ED%99%A9)
+
 <script>
 mermaid.initialize({startOnLoad:true});
 window.mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
