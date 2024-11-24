@@ -83,8 +83,8 @@ h2
 굵은 이탤릭체: ***같이 사용하기***  
 취소선: ~~취소선~~ , <del>strikethrough</del>  
 밑줄: <u>밑줄</u>, <ins>underline</ins>  
-<acronym title="텍스트 가리키면 나오는 텍스트">텍스트</acronym>  
-<abbr title="텍스트 가리키면 나오는 텍스트">줄 쳐진 텍스트</abbr>  
+<acronym title="텍스트 가리키면 나오는 텍스트">텍스트 가리키면 나오는 텍스트 1</acronym>  
+<abbr title="텍스트 가리키면 나오는 텍스트">텍스트 가리키면 나오는 텍스트 2</abbr>  
 
 ## 2.2. 정렬
 ```
@@ -100,12 +100,17 @@ h2
 <div style="text-align: right"> 오른쪽 </div>  
 
 ## 2.3. 첨자
+~~Jekyll에서 적용 안 되는 듯~~  
+
 ```
 H~2~O
 X^2^
 ```
+
 H~2~O  
-X^2^
+X^2^  
+
+---
 
 ```html
 텍스트<sup>윗첨자</sup>  
@@ -194,6 +199,8 @@ ___
 + 순서 없는 목록
 - 순서 없는 목록
 
+---
+
 ```html
 <ul>
     <li>Coffee</li>
@@ -232,6 +239,8 @@ ___
     2. 순서 있는 서브 목록
     3. 순서 있는 서브 목록
 10. 순서 있는 목록
+
+---
 
 ```html
 <ol>
@@ -273,6 +282,8 @@ First Term
 Second Term
 : This is one definition of the second term.
 : This is another definition of the second term.
+
+---
 
 ```html
 <dl>
@@ -463,6 +474,8 @@ return 0;
 | 선형대수학 | 통계학 | 이산수학 |
 | 컴퓨터 구조 | 토익 | 파이썬 |
 
+---
+
 ```
 | 1st | 2nd | 3rd |
 | :--- | :---: | ---: |
@@ -476,6 +489,8 @@ return 0;
 | 좌로 정렬 | 가운데 정렬 | 우로 정렬 |
 | 선형대수학 | 통계학 | 이산수학 |
 | 컴퓨터 구조 | 토익 | 파이썬 |
+
+---
 
 ``` html
 <table>
@@ -559,17 +574,23 @@ CDN 적용 사이트: [JSDELIVR](https://www.jsdelivr.com/github)
 
 ![첫 번째 이미지](https://cdn.pixabay.com/photo/2023/01/25/08/59/bird-7742845_960_720.jpg "링크 설명(title)")
 
+---
+
 ```
 ![두 번째 이미지](https://cdn.pixabay.com/photo/2023/01/11/09/30/trees-7711283_960_720.jpg "두 번째 이미지")
 ```
 
 ![두 번째 이미지](https://cdn.pixabay.com/photo/2023/01/11/09/30/trees-7711283_960_720.jpg "두 번째 이미지")
 
+---
+
 ```
 ![세 번째 이미지][이미지 링크]
 ```
 
 ![세 번째 이미지][이미지 링크]
+
+---
 
 ```
 <!-- 이 넘은 사진 클릭하면 링크 탐 -->
@@ -579,11 +600,15 @@ CDN 적용 사이트: [JSDELIVR](https://www.jsdelivr.com/github)
 이 넘은 사진 클릭하면 링크 탐
 [![네 번째 이미지](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/368px-Google_2015_logo.svg.png)](https://www.google.no/)
 
+---
+
 ```
 <img src="https://cdn.pixabay.com/photo/2023/01/27/01/40/brothers-7747561_960_720.jpg" alt="이건 뭐시기냐" title="네 번째 이미지" />
 ```
 
 <img src="https://cdn.pixabay.com/photo/2023/01/27/01/40/brothers-7747561_960_720.jpg" alt="이건 뭐시기냐" title="다섯 번째 이미지" />
+
+---
 
 ```
 [이미지 링크]: https://cdn.pixabay.com/photo/2023/01/14/18/17/hot-air-balloon-7718789_960_720.jpg  "세 번째 이미지"
@@ -602,13 +627,14 @@ CDN 적용 사이트: [JSDELIVR](https://www.jsdelivr.com/github)
 🙃
 
 ## 12.2. Shortcode 사용하기
+~~Jekyll에서 적용 안 되는 듯~~
 ```
 Gone camping! :tent: Be back soon.
 That is so funny! :joy:
 ```
 
-Gone camping! :tent: Be back soon.
-That is so funny! :joy:
+Gone camping! :tent: Be back soon.  
+That is so funny! :joy:  
 [Emoji Shortcodes 목록](https://gist.github.com/rxaviers/7360908)
 
 # 13. 다이어그램 -> mermaid
@@ -626,6 +652,8 @@ window.mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
 ```
 를 적용해줘야 한다
 
+---
+
 ````
 ```mermaid
 graph LR
@@ -645,6 +673,8 @@ B --> D(Encryption<br>양방향 암호화)
 D --> E(대칭키)
 D --> F(비대칭키)
 ```
+
+---
 
 ```
 ~~~ mermaid
@@ -666,6 +696,8 @@ D --> E(대칭키)
 D --> F(비대칭키)
 ~~~
 
+---
+
 ````
 ``` mermaid
 pie title What Voldemort doesn't have?
@@ -681,6 +713,8 @@ pie title What Voldemort doesn't have?
          "FAMILY" : 3
          "NOSE" : 45
 ```
+
+---
 
 ````
 ``` mermaid
@@ -708,6 +742,8 @@ sequenceDiagram
     Alice->John: Yes... John, how are you?
 ```
 
+---
+
 ````
 ``` mermaid
 graph LR
@@ -725,6 +761,8 @@ graph LR
     B --> D{Rhombus}
     C --> D
 ```
+
+---
 
 ````
 ``` mermaid
