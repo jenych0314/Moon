@@ -23,12 +23,13 @@ tags: [BLOG, MARKDOWN]
 * [4. 인용문](#4-인용문block-quote)
 * [5. 목록](#5-목록list)
 * [6. 링크](#6-링크link)
-* [7. 코드](#7-코드code)
-* [8. 표](#8-표table)
-* [9. 수식](#9-수식)
-* [10. 이미지](#10-이미지image)
-* [11. 다이어그램](#11-다이어그램---mermaid)
-* [12. HTML, CSS, JS](#12-html-css-js)
+* [7. ID](#7-heading-ids)
+* [8. 코드](#8-코드code)
+* [9. 표](#9-표table)
+* [10. 수식](#10-수식)
+* [11. 이미지](#11-이미지image)
+* [12. 다이어그램](#12-다이어그램---mermaid)
+* [13. HTML, CSS, JS](#13-html-css-js)
 * [참고](#참고)
 
 # 1. 제목(Header)
@@ -171,6 +172,30 @@ ___
 + 순서 없는 목록
 - 순서 없는 목록
 
+```html
+<ul>
+    <li>Coffee</li>
+    <li>Tea
+        <ul>
+        <li>Black tea</li>
+        <li>Green tea</li>
+        </ul>
+    </li>
+    <li>Milk</li>
+</ul>
+```
+
+<ul>
+    <li>Coffee</li>
+    <li>Tea
+        <ul>
+        <li>Black tea</li>
+        <li>Green tea</li>
+        </ul>
+    </li>
+    <li>Milk</li>
+</ul>
+
 ```
 1. ordered sub list
     1. 순서 있는 서브 목록
@@ -184,6 +209,74 @@ ___
     2. 순서 있는 서브 목록
     3. 순서 있는 서브 목록
 10. 순서 있는 목록
+
+```html
+<ol>
+    <li>Coffee</li>
+    <li>Tea
+        <ol>
+        <li>Black tea</li>
+        <li>Green tea</li>
+        </ol>
+    </li>
+    <li>Milk</li>
+</ol>
+```
+
+<ol>
+    <li>Coffee</li>
+    <li>Tea
+        <ol>
+        <li>Black tea</li>
+        <li>Green tea</li>
+        </ol>
+    </li>
+    <li>Milk</li>
+</ol>
+
+```
+First Term
+: This is the definition of the first term.
+
+Second Term
+: This is one definition of the second term.
+: This is another definition of the second term.
+```
+
+First Term
+: This is the definition of the first term.
+
+Second Term
+: This is one definition of the second term.
+: This is another definition of the second term.
+
+```html
+<dl>
+    <dt>First Term</dt>
+    <dd>This is the definition of the first term.</dd>
+    <dt>Second Term</dt>
+    <dd>This is one definition of the second term. </dd>
+    <dd>This is another definition of the second term.</dd>
+</dl>
+```
+
+<dl>
+    <dt>First Term</dt>
+    <dd>This is the definition of the first term.</dd>
+    <dt>Second Term</dt>
+    <dd>This is one definition of the second term. </dd>
+    <dd>This is another definition of the second term.</dd>
+</dl>
+
+```
+- [x] Write the press release
+- [ ] Update the website
+- [ ] Contact the media
+```
+
+- [x] Write the press release
+- [ ] Update the website
+- [ ] Contact the media
 
 # 6. 링크(Link)
 ```
@@ -218,7 +311,18 @@ Google: https://google.com
 [1]: https://github.com/
 [링크]: https://google.com "구글"
 
-## 6.1. 응용
+# 7. Heading IDs
+```md
+### My Great Heading {#custom-id}
+```
+
+위처럼 쓰면 html에서 이렇게 적용된다.
+
+```html
+<h3 id="custom-id">My Great Heading</h3>
+```
+
+## 7.1. 응용(ID로 링크 걸기)
 ```
 * [1. 제목](#1-제목header)
 * [2. 내용](#2-내용context)
@@ -226,12 +330,14 @@ Google: https://google.com
 * [4. 인용문](#4-인용문block-quote)
 * [5. 목록](#5-목록list)
 * [6. 링크](#6-링크link)
-* [7. 코드](#7-코드code)
-* [8. 표](#8-표table)
-* [9. 수식](#9-수식)
-* [10. 이미지](#10-이미지image)
-* [11. HTML, CSS, JS](#11-html-css-js)
-* [12. 참고](#12-참고)
+* [7. ID](#7-heading-ids)
+* [8. 코드](#8-코드code)
+* [9. 표](#9-표table)
+* [10. 수식](#10-수식)
+* [11. 이미지](#11-이미지image)
+* [12. 다이어그램](#12-다이어그램---mermaid)
+* [13. HTML, CSS, JS](#13-html-css-js)
+* [참고](#참고)
 ```
 
 * [1. 제목](#1-제목header)
@@ -240,22 +346,26 @@ Google: https://google.com
 * [4. 인용문](#4-인용문block-quote)
 * [5. 목록](#5-목록list)
 * [6. 링크](#6-링크link)
-* [7. 코드](#7-코드code)
-* [8. 표](#8-표table)
-* [9. 수식](#9-수식)
-* [10. 이미지](#10-이미지image)
-* [11. HTML, CSS, JS](#11-html-css-js)
-* [12. 참고](#12-참고)
+* [7. ID](#7-heading-ids)
+* [8. 코드](#8-코드code)
+* [9. 표](#9-표table)
+* [10. 수식](#10-수식)
+* [11. 이미지](#11-이미지image)
+* [12. 다이어그램](#12-다이어그램---mermaid)
+* [13. HTML, CSS, JS](#13-html-css-js)
+* [참고](#참고)
 
-# 7. 코드(Code)
-## 7.1. 인라인(inline)
+# 8. 코드(Code)
+## 8.1. 인라인(inline)
 ```
 `print("Hello, World!")`
 ```
 
 `print("Hello, World!")`
 
-## 7.2. 블록(block)
+## 8.2. 블록(block)
+Highlighting을 적용시키기 위해서는 ``` 옆에 알맞는 language를 적어주면 된다.  
+
 ````
 ``` python
 while (True):
@@ -312,7 +422,7 @@ for (int i = 0; i++; i>10) {
 return 0;
 ```
 
-# 8. 표(Table)
+# 9. 표(Table)
 ```
 | 1st | 2nd | 3rd |
 | --- | --- | --- |
@@ -329,14 +439,14 @@ return 0;
 
 ```
 | 1st | 2nd | 3rd |
-| :--- | ---: | :---: |
+| :--- | :---: | ---: |
 | 좌로 정렬 | 가운데 정렬 | 우로 정렬 |
 | 선형대수학 | 통계학 | 이산수학 |
 | 컴퓨터 구조 | 토익 | 파이썬 |
 ```
 
 | 1st | 2nd | 3rd |
-| :--- | ---: | :---: |
+| :--- | :---: | ---: |
 | 좌로 정렬 | 가운데 정렬 | 우로 정렬 |
 | 선형대수학 | 통계학 | 이산수학 |
 | 컴퓨터 구조 | 토익 | 파이썬 |
@@ -397,7 +507,9 @@ return 0;
     </tbody>
 </table>
 
-# 9. 수식
+# 10. 수식
+~~수식 같은 경우에는 다른 프로그램에서 수식을 작성하고 캡처해서 사진으로 붙여넣는 게 빠르다~~
+
 ```
 $$f(x)= if x < x_{min} : (x/x_{min})^a$$  
 $$otherwise : 0$$  
@@ -412,7 +524,9 @@ $$P(w)=U(x/2)(7/5)/Z$$
 $$p_{\theta}(x) = \int p_{\theta}(2z)p_{\theta}(y\mid k)dz$$  
 $$x = argmax_k((x_t-x_u+x_v)^T*x_m)/(||x_b-x_k+x_l||)$$  
 
-# 10. 이미지(Image)
+# 11. 이미지(Image)
+이미지의 빠른 로딩을 위해 CDN을 적용해주는 것이 좋다.  
+
 ```
 ![첫 번째 이미지](https://cdn.pixabay.com/photo/2023/01/25/08/59/bird-7742845_960_720.jpg "링크 설명(title)")
 ```
@@ -451,7 +565,7 @@ $$x = argmax_k((x_t-x_u+x_v)^T*x_m)/(||x_b-x_k+x_l||)$$
 
 [이미지 링크]: https://cdn.pixabay.com/photo/2023/01/14/18/17/hot-air-balloon-7718789_960_720.jpg  "세 번째 이미지"
 
-# 11. 다이어그램 -> mermaid
+# 12. 다이어그램 -> mermaid
 Pages는 Mermaid가 적용되지 않아서 HTML 요소를 사용해서 처리해야 한다
 그렇기 때문에 포스트 맨 위와
 ```HTML
@@ -617,7 +731,7 @@ graph TB
 ```
 참고 사이트에 종류가 더 있으니 직접 확인하는 걸 추천한다
 
-# 12. HTML, CSS, JS
+# 13. HTML, CSS, JS
 마크다운에 HTML, CSS, JS 문법을 적용시킬 수 있다.  
 HTML의 각종 태그, <style>, <script>로 감싸고 그 안에 각각의 문법에 맞는 코드를 작성하면 된다.  
 태그로 감싸져 있는 부분은 마크다운 문법 적용이 안 된다.  
@@ -631,6 +745,7 @@ HTML의 각종 태그, <style>, <script>로 감싸고 그 안에 각각의 문�
 * [Markdown Syntax 6](https://theorydb.github.io/envops/2019/05/22/envops-blog-how-to-use-md/)
 * [Markdown Syntax 7](https://www.heropy.dev/p/B74sNE)
 * [Markdown Syntax(RAW HTML) 8](https://raw.githubusercontent.com/TaylanTatli/Moon/master/_posts/2016-03-20-markdown-syntax.md)
+* [Markdown Syntax 9](https://www.markdownguide.org/extended-syntax/#footnotes)
 * [Markdown 각주, 미주](https://lynmp.com/ko/article/nu86c16d8f09c9fbd8)
 * [Markdown Mermaid(Diagram)](https://mystria.github.io/archivers/apply-mermaid-diagram-to-github-pages)
 * [Mermaid(Diagram) Syntax](https://mermaid.js.org/syntax/examples.html)
@@ -638,7 +753,9 @@ HTML의 각종 태그, <style>, <script>로 감싸고 그 안에 각각의 문�
 * [HTML <table>, <tr>, <th>, <td>](https://jinnnkcoding.tistory.com/106)
 * [HTML <th>](https://www.tcpschool.com/html-tags/th)
 * [HTML <li>](https://tcpschool.com/html-tag-attrs/li-value)
-
+* [HTML <ul>](https://www.w3schools.com/tags/tag_ul.asp)
+* [HTML <ol>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol)
+* [HTML <dl>](https://developer.mozilla.org/ko/docs/Web/HTML/Element/dl)
 <script>
 mermaid.initialize({startOnLoad:true});
 window.mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
