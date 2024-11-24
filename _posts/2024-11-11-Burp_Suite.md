@@ -1,15 +1,22 @@
 ---
 layout: post
-title: "Burp Suite"
-date: 2024-11-11
-last_modified_at: 
-excerpt: "모의해킹 취업반 스터디 7기 4주차"
-tags: [WEB, SECURITY, TOOL]
 comments: true
+sitemap:
+    changefreq: daily
+    priority: 0.5
+
+title: "Burp Suite"
+excerpt: "모의해킹 취업반 스터디 7기 4주차"
+
+date: 2024-11-11
+last_modified_at: 2024-11-24
+
+tags: [WEB, SECURITY, TOOL]
 ---
 
-burp suite
-web proxy tool
+# Burp Suite란?
+Web Proxy Tool입니다.
+Browser랑 Server 사이에 개입해서 오가는 데이터를 확인하고 변조할 수 있습니다.
 browser <-> web proxy tool <-> server
 
 웹서버는 dmz망으로 연결되어 있다고?
