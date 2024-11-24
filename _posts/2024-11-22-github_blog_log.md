@@ -1,14 +1,17 @@
 ---
 layout: post
 comments: true
-title: "[github.io] Github Blog 수정한 것들/할 것들"
-excerpt: ""
-date: 2024-11-22
-last_modified_at: 
-tags: [BLOG]
 sitemap:
     changefreq: daily
     priority: 0.8
+
+title: "[github.io] Github Blog 수정한 것들/할 것들"
+excerpt: ""
+
+date: 2024-11-22
+last_modified_at: 2024-11-24
+
+tags: [BLOG]
 ---
 
 # Fixed
@@ -28,3 +31,6 @@ width < x:
     created, updated -> 폰트 사이즈 줄이기
 1. last_modified_at을 xml과 동일하게 last_mod로 바꾸기
 1. google search console에 적용이 끝나면 모든 포스트에다가 sitemap 적용시켜줘야 함
+1. h1 ... h6 태그 글자 최소 크기 설정하기
+1. pagination 적용하기
+1. page animation 제거할까?
