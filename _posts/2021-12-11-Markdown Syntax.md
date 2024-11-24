@@ -141,10 +141,10 @@ GO<br>
 
 ## 2.6. 하이하이트
 ```
-안녕하세요. 이 부분에 ==하이라이트==를 할 겁니다.
+안녕하세요. ==jekyll==에서는 적용 안 되는 듯하다.
 ```
 
-안녕하세요. 이 부분에 ==하이라이트==를 할 겁니다.
+안녕하세요. ==jekyll==에서는 적용 안 되는 듯하다.
 
 ```html
 안녕하세요. 이 부분에 <mark>하이라이트</mark>를 할 겁니다.
@@ -595,8 +595,11 @@ CDN 적용 사이트: [JSDELIVR](https://www.jsdelivr.com/github)
 정적 사이트 생성기를 사용하고 있다면, HTML page 인코딩을 UTF-8로 해야 한다.
 
 ## 12.1. Emoji 붙여넣기
-[Emojipedia](https://emojipedia.org/)에서 복사하면 된다. img 형태로 복사된다.
+1. [Emojipedia](https://emojipedia.org/): img 형태로 복사된다.
 <img src = "https://cdn.jsdelivr.net/gh/aliquis-facio/aliquis-facio.github.io@master/_image/2024-11-24-1.png?raw=true">
+
+2. [twitter-symbols](https://kr.piliapp.com/twitter-symbols/): emoji 형태로 복사된다
+🙃
 
 ## 12.2. Shortcode 사용하기
 ```
@@ -789,6 +792,7 @@ HTML의 각종 태그, <style>, <script>로 감싸고 그 안에 각각의 문�
 * [Markdown Syntax 7](https://www.heropy.dev/p/B74sNE)
 * [Markdown Syntax(RAW HTML) 8](https://raw.githubusercontent.com/TaylanTatli/Moon/master/_posts/2016-03-20-markdown-syntax.md)
 * [Markdown Syntax 9](https://www.markdownguide.org/extended-syntax/#footnotes)
+* [Markdown Syntax 10](https://velog.io/@yuuuye/velog-%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4MarkDown-%EC%9E%91%EC%84%B1%EB%B2%95)
 * [Markdown 각주, 미주](https://lynmp.com/ko/article/nu86c16d8f09c9fbd8)
 * [Markdown Mermaid(Diagram)](https://mystria.github.io/archivers/apply-mermaid-diagram-to-github-pages)
 * [Mermaid(Diagram) Syntax](https://mermaid.js.org/syntax/examples.html)
