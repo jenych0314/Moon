@@ -306,14 +306,14 @@ Second Term
 ## 5.4. Task List
 
 ```
-- [x] Write the press release
-- [ ] Update the website
-- [ ] Contact the media
+- [x] 순서없는 리스트에서
+- [ ] 대괄호를 추가하고
+- [ ] 체크는 X로 하면 된다.
 ```
 
-- [x] Write the press release
-- [ ] Update the website
-- [ ] Contact the media
+- [x] 순서없는 리스트에서
+- [ ] 대괄호를 추가하고
+- [ ] 체크는 X로 하면 된다.
 
 # 6. 링크(Link)
 ```
