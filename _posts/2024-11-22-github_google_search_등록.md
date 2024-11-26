@@ -20,10 +20,8 @@ tags: [BLOG]
 2. sitemap.xml에 코드 작성하기
 -> 이미 존재해서 패스
 ![코드가 인식되니 사진으로 바꿀 수 밖에](https://cdn.jsdelivr.net/gh/aliquis-facio/aliquis-facio.github.io@master/_image/2024-11-26-2.png?raw=true)
-
-\* 블록 코드 형식으로 xml 코드를 붙여놨더니 렌더링되는 과정에서 xml 코드로 인식돼버려서 마크다운이 꼬였다.
-![alt text](https://cdn.jsdelivr.net/gh/aliquis-facio/aliquis-facio.github.io@master/_image/2024-11-26-1.png?raw=true)
-
+-> 블록 코드 형식으로 xml 코드를 붙여놨더니 렌더링되는 과정에서 xml 코드로 인식돼버려서 마크다운이 꼬였다.
+![요렇게 말이다](https://cdn.jsdelivr.net/gh/aliquis-facio/aliquis-facio.github.io@master/_image/2024-11-26-1.png?raw=true)
 3. https://[blog url]/sitemap.xml로 접속해보기
 <img src = "https://cdn.jsdelivr.net/gh/aliquis-facio/aliquis-facio.github.io@master/_image/2024-11-22-1.png?raw=true">
 
@@ -42,20 +40,20 @@ robots.txt은 크롤러가 엑세스할 수 있는 url을 검색엔지 크롤러
 1. github.io 루트 디렉토리에 robots.txt 생성
 -> 이미 존재해서 패스
 2. robots.txt 파일에 코드 넣기
-* 변경 전
-```
-# Allow crawling of all content
-User-agent: *
-Disallow: 
-```
+    * 변경 전
+    ```
+    # Allow crawling of all content
+    User-agent: *
+    Disallow: 
+    ```
 
-* 변경 후
-```
-# Allow crawling of all content
-User-agent: *
-Allow: /
-Sitemap: https://aliquis-facio.github.io/sitemap.xml
-```
+    * 변경 후
+    ```
+    # Allow crawling of all content
+    User-agent: *
+    Allow: /
+    Sitemap: https://aliquis-facio.github.io/sitemap.xml
+    ```
 
 # 4. Google 검색엔진에 등록하기
 1. [Google Search Console](https://search.google.com/search-console) 접속
@@ -77,5 +75,5 @@ https://aliquis-facio.github.io/sitemap.xml -> 결과가 나왔다.
 5. 며칠 후에 sitemap 등록 상태가 성공으로 변경된다고 함.
 
 # 참고
-*[github 블로그 SEO 설정하기](https://ch3coo2ca.github.io/2022-05-02/github-blog-seo-settings)
+*[github 블로그 SEO 설정하기](https://ch3coo2ca.github.io/2022-05-02/github-blog-seo-settings)  
 *[Google Search Console 사이트맵 등록 안 될 때](https://gh96.tistory.com/59)
