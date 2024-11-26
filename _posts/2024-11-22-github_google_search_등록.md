@@ -36,7 +36,7 @@ tags: [BLOG]
 ~~어떻게 사용해야 할 지 감이 안 잡힌다~~
 
 # 3. robots.txt 생성하기
-robots.txt은 크롤러가 엑세스할 수 있는 url을 검색엔지 크롤러에게 알려준다
+`robots.txt`은 크롤러가 엑세스할 수 있는 url을 검색엔지 크롤러에게 알려준다
 1. github.io 루트 디렉토리에 robots.txt 생성
 -> 이미 존재해서 패스
 2. robots.txt 파일에 코드 넣기
