@@ -22,7 +22,7 @@ tags: [BLOG]
 ![코드가 인식되니 사진으로 바꿀 수 밖에](https://cdn.jsdelivr.net/gh/aliquis-facio/aliquis-facio.github.io@master/_image/2024-11-26-2.png?raw=true)
 -> 블록 코드 형식으로 xml 코드를 붙여놨더니 렌더링되는 과정에서 xml 코드로 인식돼버려서 마크다운이 꼬였다.
 ![요렇게 말이다](https://cdn.jsdelivr.net/gh/aliquis-facio/aliquis-facio.github.io@master/_image/2024-11-26-1.png?raw=true "이렇게 보였다")
-3. https://[blog url]/sitemap.xml로 접속해보기
+3. `https://[blog url]/sitemap.xml`로 접속해보기
 <img src = "https://cdn.jsdelivr.net/gh/aliquis-facio/aliquis-facio.github.io@master/_image/2024-11-22-1.png?raw=true">
 
 # 2. 포스트 내에서 sitemap 설정하기
