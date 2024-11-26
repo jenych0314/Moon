@@ -5,8 +5,8 @@ sitemap:
     changefreq: daily
     priority: 0.8
 
-title: "[github.io] Github Blog 수정한 것들/할 것들"
-excerpt: ""
+title: "[github.io] Github Blog 운영 기록"
+excerpt: "블로그 깔끔하게 꾸미고 싶다~"
 
 date: 2024-11-22
 last_modified_at: 2024-11-24
