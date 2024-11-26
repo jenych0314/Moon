@@ -9,7 +9,7 @@ title: "[github.io] Google Search 등록하기"
 excerpt: ""
 
 date: 2024-11-22
-last_modified_at: 
+last_modified_at: 2024-11-26
 
 tags: [BLOG]
 ---
@@ -19,40 +19,11 @@ tags: [BLOG]
 -> 이미 존재해서 패스
 2. sitemap.xml에 코드 작성하기
 -> 이미 존재해서 패스
-```xml
----
-layout: null
----
+![코드가 인식되니 사진으로 바꿀 수 밖에](https://cdn.jsdelivr.net/gh/aliquis-facio/aliquis-facio.github.io@master/_image/2024-11-26-2.png?raw=true)
 
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
-        xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    {% for post in site.posts %}
-    <url>
-        <loc>{{ site.url }}{{ post.url }}</loc>
-        {% if post.lastmod == null %}
-        <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
-        {% else %}
-        <lastmod>{{ post.lastmod | date_to_xmlschema }}</lastmod>
-        {% endif %}
+\* 블록 코드 형식으로 xml 코드를 붙여놨더니 렌더링되는 과정에서 xml 코드로 인식돼버려서 마크다운이 꼬였다.
+![alt text](https://cdn.jsdelivr.net/gh/aliquis-facio/aliquis-facio.github.io@master/_image/2024-11-26-1.png?raw=true)
 
-        {% if post.sitemap.changefreq == null %}
-        <changefreq>always</changefreq>
-        {% else %}
-        <changefreq>{{ post.sitemap.changefreq }}</changefreq>
-        {% endif %}
-
-        {% if post.sitemap.priority == null %}
-        <priority>0.5</priority>
-        {% else %}
-        <priority>{{ post.sitemap.priority }}</priority>
-        {% endif %}
-
-    </url>
-    {% endfor %}
-</urlset>
-```
 3. https://[blog url]/sitemap.xml로 접속해보기
 <img src = "https://cdn.jsdelivr.net/gh/aliquis-facio/aliquis-facio.github.io@master/_image/2024-11-22-1.png?raw=true">
 
