@@ -82,3 +82,4 @@ robots.txt은 크롤러가 엑세스할 수 있는 url을 검색엔지 크롤러
 # 참고
 * [github 블로그 SEO 설정하기](https://ch3coo2ca.github.io/2022-05-02/github-blog-seo-settings)
 * [Google Search Console 사이트맵 등록 안 될 때](https://gh96.tistory.com/59)
+* [구글에 깃허브 블로그(github.io) 노출시키기](https://yongjunism.github.io/tips/how-to-expose-github-blog-to-google.html)
