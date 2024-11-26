@@ -75,5 +75,5 @@ https://aliquis-facio.github.io/sitemap.xml -> 결과가 나왔다.
 5. 며칠 후에 sitemap 등록 상태가 성공으로 변경된다고 함.
 
 # 참고
-*[github 블로그 SEO 설정하기](https://ch3coo2ca.github.io/2022-05-02/github-blog-seo-settings)  
-*[Google Search Console 사이트맵 등록 안 될 때](https://gh96.tistory.com/59)
+* [github 블로그 SEO 설정하기](https://ch3coo2ca.github.io/2022-05-02/github-blog-seo-settings)
+* [Google Search Console 사이트맵 등록 안 될 때](https://gh96.tistory.com/59)
