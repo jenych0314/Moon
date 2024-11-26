@@ -56,19 +56,24 @@ robots.txt은 크롤러가 엑세스할 수 있는 url을 검색엔지 크롤러
     ```
 
 # 4. Google 검색엔진에 등록하기
-1. [Google Search Console](https://search.google.com/search-console) 접속
-URL 접두어 -> 등록하려는 사이트 URL 입력 -> 계속
+1. [Google Search Console](https://search.google.com/search-console) 접속하기
+2. URL 접두어
+3. 등록하려는 사이트 URL 입력
+4. 계속
 <img src = "https://cdn.jsdelivr.net/gh/aliquis-facio/aliquis-facio.github.io@master/_image/2024-11-22-2.png?raw=true">
 내 github.io 처음 페이지는 _layouts/home.html에서 렌더링 되기 때문에 여기에 header 부분에 meta code를 추가해줬다.
 
 2. sitemap 등록하기
-색인 -> Sitemaps -> 새 사이트맵 추가 -> sitemap.xml 입력 -> 제출
+    1. 색인
+    2. Sitemaps
+    3. 새 사이트맵 추가
+    4. sitemap.xml 입력
+    5. 제출
 
 # 5. sitemap 등록 상태에서 가져올 수 없음이 나왔다.
-1. 색인 생성 요청을 위한 사이트 확인하기
-상단 돋보기 부분을 누르면 검색할 수 있는데
-http://aliquis-facio.github.io/sitemap.xml -> 안 나오고
-https://aliquis-facio.github.io/sitemap.xml -> 결과가 나왔다.
+1. 색인 생성 요청을 위한 사이트 확인하기(상단 돋보기 부분을 누르면 검색할 수 있다)
+    1. http://aliquis-facio.github.io/sitemap.xml -> 안 나오고
+    2. https://aliquis-facio.github.io/sitemap.xml -> 결과가 나왔다.
 2. 실제 URL 테스트 클릭하기
 3. 색인 생성 요청 클릭하기
 4. (실제 URL의 색인을 생성할 수 있는 지 표시됨)
