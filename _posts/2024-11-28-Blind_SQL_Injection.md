@@ -50,3 +50,5 @@ normaltic' and (ascii(substr((select database()), 2, 1)) > 0) and '1' = '1
 select table_name from information_schema.tables where table_schema = '' limit 0, 1
 
 * 글자 개수가 몇 개인지 세는 함수
+
+https://sabarada.tistory.com/49
