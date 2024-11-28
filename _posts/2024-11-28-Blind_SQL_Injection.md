@@ -5,7 +5,7 @@ sitemap:
     changefreq: daily
     priority: 0.5
 
-title: "[] Blind SQL Injection"
+title: "[WEB HACKING] Blind SQL Injection"
 excerpt: "모의해킹 취업반 스터디 7기 7주차"
 
 date: 2024-11-28
