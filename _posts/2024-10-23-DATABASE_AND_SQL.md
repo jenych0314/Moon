@@ -5,7 +5,7 @@ sitemap:
     changefreq: daily
     priority: 0.5
 
-title: "[MySQL] DATABASE란? 간단한 query문"
+title: "[MySQL] DATABASE란? 간단한 SQL Query문"
 excerpt: "모의해킹 취업반 스터디 7기 2주차"
 
 date: 2024-10-23
@@ -15,22 +15,22 @@ tags: [WEB, DATABASE]
 ---
 
 # Database
-DB는 데이터를 저장하고 관리할 수 있는 도구다.
-예시를 들면
-Database -> Excel File
-Table -> Excel Sheet
-
+DB, Database는 데이터를 저장하고 관리할 수 있는 도구다.  
+예시를 들면  
+Database -> Excel File  
+Table -> Excel Sheet  
+  
 아래는 Costomers라는 table 예시다
 <table>
     <thead>
         <tr>
-            <th>CustomerID</th>
-            <th>CustomerName</th>
-            <th>ContactName</th>
-            <th>Address</th>
-            <th>City</th>
-            <th>PostalCode</th>
-            <th>Country</th>
+            <th>아이디</th>
+            <th>고객명</th>
+            <th>관리인</th>
+            <th>주소</th>
+            <th>도시</th>
+            <th>코드</th>
+            <th>국가</th>
         </tr>
     </thead>
     <tbody>
@@ -81,10 +81,11 @@ Table -> Excel Sheet
         </tr>
     </tbody>
 </table>
-Column: 열, 데이터 종류, 카테고리, 세로
-위 예시에서 column 개수는 7개이고,
-Row: 행, 가로 데이터
-위 예시에서 row 개수는 5개이다.
+  
+Column: 열, 데이터 종류, 카테고리, 세로  
+위 예시에서 column 개수는 7개이고,  
+Row: 행, 가로 데이터  
+위 예시에서 row 개수는 5개이다.  
 
 <!-- http://192.168.219.197:1018/phpmyadmin/
 admin
@@ -95,7 +96,7 @@ auto increament
 primary
 
 # SQL(Structed Query Language)
-SQL: 관계형 데이터베이스 관리 시스템(RDBMS)의 데이터를 관리하기 위해 설계한 특수 목적의 프로그래밍 언어이다.
+SQL: 관계형 데이터베이스 관리 시스템(RDBMS)의 데이터를 관리하기 위해 설계한 특수 목적의 프로그래밍 언어이다.  
 ~~WAS가 DB한테 Query를 통해 명령을 알아서 하도록 만든다.~~
 
 ## 주요 SQL 명령어
