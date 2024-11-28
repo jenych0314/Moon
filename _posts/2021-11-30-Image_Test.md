@@ -5,8 +5,8 @@ sitemap:
     changefreq: daily
     priority: 0.5
 
-title: "[github.io] Image test"
-excerpt: "Image test"
+title: "[github.io] Image Test"
+excerpt: "Image Test"
 
 date: 2021-11-30
 last_modified_at: 
