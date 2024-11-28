@@ -22,6 +22,9 @@ tags: [WEB, PHP, DATABASE]
 -> 나는 PHP와 MySQL을 연동시킬 것이다.
 
 # Q. PHP에서 MySQL query를 어떻게 연결하냐?
+크게 3가지 형태로 나눠진다.  
+MySQLi를 **Object**로 관리하거나 **Procedural**(절차 형식을 따르거나), **PDO**(PHP Data Object)라는 프레임워크를 사용한다.
+
 ## MySQLi (Object-Oriented)
 ```php
 $servername = "localhost";
