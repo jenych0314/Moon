@@ -17,9 +17,9 @@ tags: [WEB, PHP, DATABASE]
 # 회고
 1. WAS(Web + Application + Server): 애플리케이션을 수행 -> 주로 동적 서버 컨텐츠를 수행, 주로 데이터베이스 서버와 같이 수행된다.
 2. Database: 데이터를 저장하는 곳
-∴ WAS(Web + Application + Server) <-> DB(서로 상호작용한다)
--> 서로 상호작용하기 위해 연결을 해야 한다. -> WAS에 DB에 접속하기 위한 ID와 PW가 무조건 들어있다~~(Web Shell을 까면 DB 추측을 먼저 해야 한다)~~
--> 나는 PHP와 MySQL을 연동시킬 것이다.
+∴ WAS(Web + Application + Server) <-> DB(서로 상호작용한다)  
+-> 서로 상호작용하기 위해 연결을 해야 한다. -> WAS에 DB에 접속하기 위한 ID와 PW가 무조건 들어있다~~(Web Shell을 까면 DB 추측을 먼저 해야 한다)~~  
+-> 나는 PHP와 MySQL을 연동시킬 것이다.  
 
 # Q. PHP에서 MySQL query를 어떻게 연결하냐?
 크게 3가지 형태로 나눠진다.  
@@ -64,7 +64,8 @@ mysqli_close($conn);
 ```
 
 ## PDO(PHP Data Object)
-PDO: PHP에서 DB에 접속할 때 사용하는 framework이다.
+**PDO**: PHP에서 DB에 접속할 때 사용하는 Framework이다.  
+
 ```php
 $servername = "localhost";
 $username = "username";
