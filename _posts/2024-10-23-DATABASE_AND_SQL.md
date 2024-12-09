@@ -20,7 +20,7 @@ tags: [WEB, DATABASE]
 * DBMS(Data Base Management System): 데이터베이스를 운영 및 관리. 계층형, 망형, 관계형 등 다양한 종류의 DBMS가 존재하며 대부분 관계형 DBMS(RDMBS)의 형태로 사용되고 있다. RDBMS의 데이터베이스는 하나 이상의 행(row)과 열(column)로 이루어진 테이블 형식을 데이터를 제공한다.
 -> DBMS는 엑셀 프로그램 그 자체로 예를 들 수 있겠다.
 아래는 데이터베이스 테이블 구조 예시
-![alt text](image.png)
+![alt text](https://cdn.jsdelivr.net/gh/aliquis-facio/aliquis-facio.github.io@master/_image/2024-12-10-1.png?raw=true)
 
 # SQL(Structed Query Language)
 SQL: 데이터베이스에서 질의, 수정, 삭제 등의 작업을 하는 데이터베이스 관리용 언어이다.
