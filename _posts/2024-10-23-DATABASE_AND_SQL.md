@@ -15,15 +15,15 @@ tags: [WEB, DATABASE]
 ---
 
 # 데이터베이스와 DBMS
-* 데이터베이스: 데이터를 효율적으로 관리하기 위해 구조화한 데이터 집합
+* 데이터베이스: 데이터를 효율적으로 관리하기 위해 구조화한 데이터 집합  
 -> 예시를 들어 설명하자면 데이터베이스가 Excel 파일이라면 테이블은 Excel 시트다.  
-* DBMS(Data Base Management System): 데이터베이스를 운영 및 관리. 계층형, 망형, 관계형 등 다양한 종류의 DBMS가 존재하며 대부분 관계형 DBMS(RDMBS)의 형태로 사용되고 있다. RDBMS의 데이터베이스는 하나 이상의 행(row)과 열(column)로 이루어진 테이블 형식을 데이터를 제공한다.
+* DBMS(Data Base Management System): 데이터베이스를 운영 및 관리. 계층형, 망형, 관계형 등 다양한 종류의 DBMS가 존재하며 대부분 관계형 DBMS(RDMBS)의 형태로 사용되고 있다. RDBMS의 데이터베이스는 하나 이상의 행(row)과 열(column)로 이루어진 테이블 형식을 데이터를 제공한다.  
 -> DBMS는 엑셀 프로그램 그 자체로 예를 들 수 있겠다.
 아래는 데이터베이스 테이블 구조 예시
 ![alt text](https://cdn.jsdelivr.net/gh/aliquis-facio/aliquis-facio.github.io@master/_image/2024-12-10-1.png?raw=true)
 
 # SQL(Structed Query Language)
-SQL: 데이터베이스에서 질의, 수정, 삭제 등의 작업을 하는 데이터베이스 관리용 언어이다.
+SQL: 데이터베이스에서 질의, 수정, 삭제 등의 작업을 하는 데이터베이스 관리용 언어이다.  
 ~~WAS가 DB한테 Query를 통해 명령을 알아서 하도록 만든다.~~
 
 ## 언어적 특성
@@ -44,26 +44,26 @@ SQL: 데이터베이스에서 질의, 수정, 삭제 등의 작업을 하는 데
     <tbody>
         <tr>
             <td>데이터 정의어</td>
-            <td>CREATE<br>
-            ALTER<br>
-            DROP<br>
-            TRUNCATE</td>
+            <td>* CREATE<br>
+            * ALTER<br>
+            * DROP<br>
+            * TRUNCATE</td>
             <td>스키마, 테이블, 도메인, 뷰, 인덱스 생성/변경/삭제할 때 사용</td>
         </tr>
         <tr>
             <td>데이터 제어어</td>
-            <td>COMMIT<br>
-            ROLLBACK<br>
-            GRANT<br>
-            REVOKE</td>
+            <td>* COMMIT<br>
+            * ROLLBACK<br>
+            * GRANT<br>
+            * REVOKE</td>
             <td>데이터에 대한 접근 권한 부여 등 관리 목적으로 사용</td>
         </tr>
         <tr>
             <td>데이터 조작어</td>
-            <td>SELECT<br>
-            INSERT<br>
-            UPDATE<br>
-            DELETE</td>
+            <td>* SELECT<br>
+            * INSERT<br>
+            * UPDATE<br>
+            * DELETE</td>
             <td>데이터베이스에 저장된 데이터를 실질적으로 처리하는 데 사용<br>
             (데이터 조회/추가/수정/삭제 등)</td>
         </tr>
@@ -74,16 +74,20 @@ SQL: 데이터베이스에서 질의, 수정, 삭제 등의 작업을 하는 데
 
 ## 데이터 조작어 사용법
 ### SELECT: 데이터베이스의 데이터를 조회하거나 검색하기 위한 명령어
-SELECT [column] FROM [table] WHERE [condition];
+`SELECT [column] FROM [table] WHERE [condition];`
+e.g. `SELECT * FROM 고객 WHERE 고객명 = '임꺽정';`
 
 ### INSERT INTO: 데이터베이스에 데이터를 추가하기 위한 명령어
-INSERT INTO [table] VALUES [(data1, data2, ...)];
+`INSERT INTO [table] VALUES [(data1, data2, ...)];`
+e.g. `INSERT INTO 고객 VALUES (6, '배트맨', '조커', '고담', '고담', 'DC', '미국');`
 
 ### UPDATE: 데이터베이스의 데이터 수정을 위한 명령어
-UPDATE [table] SET [field1 = data1, field2 = data2...];
+`UPDATE [table] SET [field1 = data1, field2 = data2...];`
+e.g. `UPDATE 고객  SET 고객명 = '조커', 관리인 = '배트맨' WHERE 고객명 = '배트맨';`
 
 ### DELETE: 데이터베이스의 데이터 삭제를 위한 명령어
-DELETE FROM [table] WHERE [filed = data];
+`DELETE FROM [table] WHERE [filed = data];`
+e.g. `DELETE FROM * WHERE 고객명 = '배트맨';`
 
 # 참고
 * [SQL이란?](https://ko.wikipedia.org/wiki/SQL)
