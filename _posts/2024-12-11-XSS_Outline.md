@@ -37,6 +37,7 @@ XSS 공격 방식으로는 Cookie Sniffing, 스크립트 암호화 및 우회, �
 
 ### 3.1. Reflected XSS: 서버의 에코 기능을 이용하자
 사용자에게 입력 받은 값을 서버에서 되돌려주는 곳에서 발생한다.  
+e.g. 에러 메시지, 검색 결과 창, 아이디 중복 체크 등
 
 공격자가 악성 스크립트를 클라이언트에게 직접 전달해 공격하는 방식이다.
 
@@ -45,9 +46,6 @@ URL이 길면 클라이언트가 의심을 가질 수 있기 때문에 Shorten U
 
 서버에 스크립트를 저장하지 않기 때문에 서버에서 이뤄지는 필터링을 피할 수 있다.
 
-파라미터 데이터가 서버 응답에 삽입되어 오는 곳  
-e.g. 아이디 중복 체크  
-링크 생성 -> 클릭  
 흔적이 안 남음, 타겟팅 공격 가능  
 
 ---
@@ -58,12 +56,11 @@ burp, param check, response에 같은 값 있나?
 1. 특수문자 체크
 1. change request method가 가능하냐?
     1. get method 이용
-    img
 1. 링크를 전달 공격
 
 ### 3.2. Stored XSS: 서버에 저장하자
 데이터가 저장되고, 출력(화면에 나오는 곳)되는 곳  
-e.g. 회원가입 페이지, 게시판 글 작성 페이지 등  
+e.g. 데이터베이스, 댓글창, 방문 로그, 회원가입 페이지, 게시판 글 작성 페이지 등  
 삽입한 게시물을 클릭 -> 실행
 광범위 공격, 흔적 남음
 
@@ -84,12 +81,14 @@ e.g. 회원가입 페이지, 게시판 글 작성 페이지 등
 서버의 응답 내에서 악성 스크립트가 포함되지 않지만 브라우저의 응답 페이지에 정상적인 스크립트가 실행되면서 악성 스크립트가 추가되어 실행된다.
 
 ## 4. 공격 구문 예시
-`*` **POC(Proof of Concept)**: 클라이언트측에서 코드가 실행되었음을 알려주는 코드
+**POC(Proof of Concept)**: 클라이언트측에서 코드가 실행되었음을 알려주는 코드  
 e.g.
 * `<script>alert(1);<script>`
 * `<script>prompt(1);<script>`
 * `<script>confirm(1);<script>`
 * `<script>console.log(1);<script>`
+
+---
 
 1. 기본 구문  
 `<script>alert(1)</script>`
@@ -98,13 +97,16 @@ e.g.
 `<scr<script>ipt>alert(1);</scr</script>ipt>`  
 -> script 태그가 필터링되면 갈라져있던 script 태그가 결합되면서 구문 실행
 
-1. `<a>` 태그 이용  
+1. `onmouseover` 이용  
 `<a onmouseover="alert(1)">`  
 -> onmouseover 이벤트를 통해 공격 실행  
 
-1. `<img>` 태그 이용  
+1. `onerror` 이용  
 `<img src=# onerror="alert(1)">`  
 -> 고의적으로 src 주소를 지정 후 onerror 이벤트를 통해 공격 실행  
+
+1. `onload` 이용  
+`<body onload=alert(1)>`  
 
 1. 흔히 사용하지 않는 태그 이용  
 `<ruby onmouseover="alert(1)"></ruby>`  
@@ -114,4 +116,4 @@ e.g.
 * [Cross Site Scripting](https://owasp.org/www-community/attacks/xss/)
 * [XSS란?](https://tibetsandfox.tistory.com/5)
 * [크로스 사이트 스크립팅의 정의 및 공격 유형](https://nordvpn.com/ko/blog/xss-attack/)
-* []()
+* [](https://cheatsheetseries.owasp.org/cheatsheets/XSS_Filter_Evasion_Cheat_Sheet.html)
