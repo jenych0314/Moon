@@ -7,7 +7,7 @@ sitemap:
 title: "[WEB HACKING] XSS란?"
 excerpt: "모의해킹 취업반 스터디 7기 9주차"
 
-date: 2024-12-13
+date: 2024-12-11
 last_modified_at: 2024-12-18
 
 tags: [TIL, WEB, DATABASE, SECURITY]
