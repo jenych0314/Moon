@@ -18,6 +18,7 @@ tags: [TIL, WEB, DATABASE, SECURITY]
 * [2. 공격 방식](#2-xss-공격-방식)
 * [3. 공격 유형](#3-xss-공격-유형)
 * [4. 공격 구문 예시](#4-공격-구문-예시)
+* [5. 공격 순서](#5-공격-순서)
 * [참고](#참고)
 
 # XSS(Cross Site Scripting)란?
