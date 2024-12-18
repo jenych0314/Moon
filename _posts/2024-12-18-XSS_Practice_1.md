@@ -30,9 +30,9 @@ tags: [TIL, WEB]
 ### qna_create.php
 
 ## notice_list.php
-![alt text](https://cdn.jsdelivr.net/gh/aliquis-facio/aliquis-facio.github.io@master/_image/2024-12-18-1.gif?raw=true)
 ![alt text](https://cdn.jsdelivr.net/gh/aliquis-facio/aliquis-facio.github.io@master/_image/2024-12-18-2.gif?raw=true)
 ![alt text](https://cdn.jsdelivr.net/gh/aliquis-facio/aliquis-facio.github.io@master/_image/2024-12-18-3.gif?raw=true)
+![alt text](https://cdn.jsdelivr.net/gh/aliquis-facio/aliquis-facio.github.io@master/_image/2024-12-18-4.gif?raw=true)
 
 ## notice_write.php
 ### notice_write_process.php
