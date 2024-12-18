@@ -117,7 +117,7 @@ e.g.
 -> 필터링을 피하기 위해서 인코딩된 글자를 사용한다.  
 
 1. XSS Using Code Encoding  
-`<META HTTP-EQUIV="refresh" CONTENT="0;url=data:text/html;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg">`  
+<code style="word-break: break-all"><META HTTP-EQUIV="refresh" CONTENT="0;url=data:text/html;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg"></code>
 -> `PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg` = `alert(1)`을 base64로 인코딩했다  
 -> META 태그 안에 base64로 인코딩한 스크립트를 집어넣어 `alert()`의 원형을 완전히 숨길 수 있다.  
 
