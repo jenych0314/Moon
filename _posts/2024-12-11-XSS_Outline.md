@@ -41,7 +41,7 @@ e.g. 에러 메시지, 검색 결과 창, 아이디 중복 체크 등
 
 공격자가 악성 스크립트를 클라이언트에게 직접 전달해 공격하는 방식이다.
 
-특히 URL에 스크립트를 포함시켜 공격하는 경우가 대표적이다.
+주로 이메일, 메신저 등에 포함된 URL에 스크립트를 포함시켜 공격한다.
 URL이 길면 클라이언트가 의심을 가질 수 있기 때문에 Shorten URL (URL 단축)을 이용해 짧은 URL로 만들어 공격하기도 한다.
 
 서버에 스크립트를 저장하지 않기 때문에 서버에서 이뤄지는 필터링을 피할 수 있다.
@@ -59,7 +59,9 @@ burp, param check, response에 같은 값 있나?
 1. 링크를 전달 공격
 
 ### 3.2. Stored XSS: 악성 스크립트를 서버에 저장하자
-공격자가 악성 스크립트를 서버에 저장시킨 다음 클라이언트의 요청/응답 과정을 통해 공격하는 방식이다.
+웹 서버에 악성 스크립트를 저장하는 공격 방법이다.
+공격자는 악성 스크립트가 포함된 글을 작성해 사용자가 접근할 수 있는 페이지에 업로드한다.
+이후 사용자가 해당 게시글을 요청하면 서버에 저장된 악성 스크립트가 사용자 측에서 동작한다.
 
 데이터가 저장되고, 출력(화면에 나오는 곳)되는 곳에서 발생한다.  
 e.g. 데이터베이스, 댓글창, 방문 로그, 회원가입 페이지, 게시판 글 작성 페이지 등  
@@ -78,9 +80,9 @@ e.g. 데이터베이스, 댓글창, 방문 로그, 회원가입 페이지, 게�
 글자 수 제한이 있을 수 있다
 
 ### 3.3. DOM Based XSS
-**문서 객체 모델(DOM: Document Object Model)**: 웹페이지를 여는 즉시 생성되어 사용자가 서버와 상호 작용하지 않고도 페이지의 모든 콘텐츠에 엑세스할 수 있도록 돕는 프로그래밍 인터페이스이다.
+피해자의 브라우저가 HTML 페이지를 분석해 [DOM](#footnote_1)<sup>1</sup>을 생성할 때 악성 스크립트가 DOM의 일부로 구성되어 생성되는 공격이다.
 
-피해자의 브라우저가 HTML 페이지를 분석해 DOM을 생성할 때 악성 스크립트가 DOM의 일부로 구성되어 생성되는 공격이다.
+<span name='footnote_1'>[1] DOM(Document Object Model, 문서 객체 모델): 웹페이지를 여는 즉시 생성되어 사용자가 서버와 상호 작용하지 않고도 페이지의 모든 콘텐츠에 엑세스할 수 있도록 돕는 프로그래밍 인터페이스이다.</span>
 
 서버의 응답 내에서 악성 스크립트가 포함되지 않지만 브라우저의 응답 페이지에 정상적인 스크립트가 실행되면서 악성 스크립트가 추가되어 실행된다.
 
@@ -132,3 +134,4 @@ e.g.
 * [XSS Filter Evasion Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/XSS_Filter_Evasion_Cheat_Sheet.html)
 * [DOM-based XSS 1](https://portswigger.net/web-security/cross-site-scripting/dom-based)
 * [DOM-based XSS 2](https://owasp.org/www-community/attacks/DOM_Based_XSS)
+* [XSS(크로스 사이트 스크립트)란? 공격 유형부터 보안대책까지!](https://www.skshieldus.com/blog-security/security-trend-idx-06)
