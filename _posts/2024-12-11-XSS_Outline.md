@@ -4,27 +4,27 @@ comments: true
 sitemap:
     changefreq: daily
 
-title: "[WEB HACKING] XSS"
+title: "[WEB HACKING] XSS란?"
 excerpt: "모의해킹 취업반 스터디 7기 9주차"
 
 date: 2024-12-13
-last_modified_at: 
+last_modified_at: 2024-12-18
 
 tags: [TIL, WEB, DATABASE, SECURITY]
 ---
 
 # 목차
 * [1. 개요](#1-개요)
-* [](#2-xss-공격-방식)
-* []()
-* []()
-* []()
+* [2. 공격 방식](#2-xss-공격-방식)
+* [3. 공격 유형](#3-xss-공격-유형)
+* [4. 공격 구문 예시](#4-공격-구문-예시)
+* [참고](#참고)
 
 # XSS(Cross Site Scripting)란?
 ## 1. 개요
 **XSS(Cross Site Scripting)** 공격은 `웹 사이트에 악성 스크립트를 삽입하는 공격`이다.
 보통 클라이언트 측에서 악성코드를 사용하여 다른 이용자를 공격한다.  
-* 클라이언트 스크립트: 이용자 브라우저에서 실행되는 스크립트 -> HTML, CSS, JS
+* 클라이언트 스크립트: 이용자 브라우저에서 실행되는 스크립트로 HTML, CSS, JS 등이 있다.
 * 공격 방식: 스크립트를 삽입해 이용자의 브라우저에서 실행되게 만든다
 
 ## 2. XSS 공격 방식
