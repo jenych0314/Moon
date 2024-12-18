@@ -20,15 +20,15 @@ tags: [TIL, WEB, DATABASE, SECURITY]
 * []()
 * []()
 
-# XSS (Cross Site Scripting) 공격
+# XSS(Cross Site Scripting)란?
 ## 1. 개요
-**XSS (Cross Site Scripting)** 공격은 웹 사이트에 악성 스크립트를 삽입하는 공격이다.
+**XSS(Cross Site Scripting)** 공격은 `웹 사이트에 악성 스크립트를 삽입하는 공격`이다.
 보통 클라이언트 측에서 악성코드를 사용하여 다른 이용자를 공격한다.  
-* 클라이언트 스크립트: 이용자 브라우저에서 실행되는 스크립트 -> html, css, js
+* 클라이언트 스크립트: 이용자 브라우저에서 실행되는 스크립트 -> HTML, CSS, JS
 * 공격 방식: 스크립트를 삽입해 이용자의 브라우저에서 실행되게 만든다
 
 ## 2. XSS 공격 방식
-XSS 공격 방식으로는 Cookie Sniffing, 스크립트 암호화 및 우회, 악성 스크립트 유포, Key Logger, Mouse Sniffer, 거짓 정보추가 등이 있다.
+XSS 공격 방식으로는 `Cookie Sniffing`, `스크립트 암호화 및 우회`, `악성 스크립트 유포`, `Key Logger`, `Mouse Sniffer`, `거짓 정보추가` 등이 있다.
 
 ## 3. XSS 공격 유형
 1. Reflected XSS
@@ -58,12 +58,12 @@ burp, param check, response에 같은 값 있나?
     1. get method 이용
 1. 링크를 전달 공격
 
-### 3.2. Stored XSS: 서버에 저장하자
+### 3.2. Stored XSS: 악성 스크립트를 서버에 저장하자
 공격자가 악성 스크립트를 서버에 저장시킨 다음 클라이언트의 요청/응답 과정을 통해 공격하는 방식이다.
 
-데이터가 저장되고, 출력(화면에 나오는 곳)되는 곳  
+데이터가 저장되고, 출력(화면에 나오는 곳)되는 곳에서 발생한다.  
 e.g. 데이터베이스, 댓글창, 방문 로그, 회원가입 페이지, 게시판 글 작성 페이지 등  
-삽입한 게시물을 클릭 -> 실행
+삽입한 게시물을 클릭 -> 실행  
 광범위 공격, 흔적 남음
 
 ---
