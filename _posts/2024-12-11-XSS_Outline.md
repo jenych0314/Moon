@@ -14,15 +14,15 @@ tags: [TIL, WEB, DATABASE, SECURITY]
 ---
 
 # 목차
-* [개요](#1-개요)
-* [](#2-xss-공격-유형)
+* [1. 개요](#1-개요)
+* [](#2-xss-공격-방식)
 * []()
 * []()
 * []()
 
 # XSS (Cross Site Scripting) 공격
 ## 1. 개요
-**XSS (Cross Site Scripting)** 공격은 웹 사이트에 악의적인 스크립트를 삽입하는 공격이다.
+**XSS (Cross Site Scripting)** 공격은 웹 사이트에 악성 스크립트를 삽입하는 공격이다.
 보통 클라이언트 측에서 악성코드를 사용하여 다른 이용자를 공격한다.  
 * 클라이언트 스크립트: 이용자 브라우저에서 실행되는 스크립트 -> html, css, js
 * 공격 방식: 스크립트를 삽입해 이용자의 브라우저에서 실행되게 만든다
@@ -75,12 +75,7 @@ e.g. 회원가입 페이지, 게시판 글 작성 페이지 등
 -> `<'">`
 3. 스크립트 입력하기  
 -> `<script>___<script>`
-* POC(Proof of Concept): 클라이언트측에서 코드가 실행되었음을 알려주는 코드
-    e.g.
-    * `<script>alert(1);<script>`
-    * `<script>prompt(1);<script>`
-    * `<script>confirm(1);<script>`
-    * `<script>console.log(1);<script>`
+
 글자 수 제한이 있을 수 있다
 
 ### 3.3. DOM Based XSS
@@ -89,6 +84,13 @@ e.g. 회원가입 페이지, 게시판 글 작성 페이지 등
 서버의 응답 내에서 악성 스크립트가 포함되지 않지만 브라우저의 응답 페이지에 정상적인 스크립트가 실행되면서 악성 스크립트가 추가되어 실행된다.
 
 ## 4. 공격 구문 예시
+`*` **POC(Proof of Concept)**: 클라이언트측에서 코드가 실행되었음을 알려주는 코드
+e.g.
+* `<script>alert(1);<script>`
+* `<script>prompt(1);<script>`
+* `<script>confirm(1);<script>`
+* `<script>console.log(1);<script>`
+
 1. 기본 구문  
 `<script>alert(1)</script>`
 
