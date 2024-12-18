@@ -14,27 +14,28 @@ last_modified_at:
 tags: [TIL, WEB]
 ---
 
-# index.php
+# XSS 1
+## index.php
 
-# login.html
+## login.html
 
-# signup.html
+## signup.html
 
-## signup.php
+### signup.php
 ![alt text](https://cdn.jsdelivr.net/gh/aliquis-facio/aliquis-facio.github.io@master/_image/2024-12-18-1.png?raw=true)
 
-# qna_board.php
+## qna_board.php
 
-# qna.php
-## qna_create.php
+## qna.php
+### qna_create.php
 
-# notice_list.php
+## notice_list.php
 ![alt text](https://cdn.jsdelivr.net/gh/aliquis-facio/aliquis-facio.github.io@master/_image/2024-12-18-1.gif?raw=true)
 ![alt text](https://cdn.jsdelivr.net/gh/aliquis-facio/aliquis-facio.github.io@master/_image/2024-12-18-2.gif?raw=true)
 ![alt text](https://cdn.jsdelivr.net/gh/aliquis-facio/aliquis-facio.github.io@master/_image/2024-12-18-3.gif?raw=true)
 
-# notice_write.php
-## notice_write_process.php
+## notice_write.php
+### notice_write_process.php
 
-# mypage.php
-## mypage_update.php
+## mypage.php
+### mypage_update.php
