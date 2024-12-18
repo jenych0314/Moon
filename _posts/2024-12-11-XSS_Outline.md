@@ -78,7 +78,7 @@ e.g. 데이터베이스, 댓글창, 방문 로그, 회원가입 페이지, 게�
 글자 수 제한이 있을 수 있다
 
 ### 3.3. DOM Based XSS
-웹페이지를 여는 즉시 생성되는 **문서 객체 모델(DOM: Document Object Model)**은 사용자가 서버와 상호 작용하지 않고도 페이지의 모든 콘텐츠에 엑세스할 수 있도록 돕는 프로그래밍 인터페이스이다.
+**문서 객체 모델(DOM: Document Object Model)**: 웹페이지를 여는 즉시 생성되어 사용자가 서버와 상호 작용하지 않고도 페이지의 모든 콘텐츠에 엑세스할 수 있도록 돕는 프로그래밍 인터페이스이다.
 
 피해자의 브라우저가 HTML 페이지를 분석해 DOM을 생성할 때 악성 스크립트가 DOM의 일부로 구성되어 생성되는 공격이다.
 
@@ -118,6 +118,7 @@ e.g.
 
 1. XSS Using Code Encoding  
 `<META HTTP-EQUIV="refresh" CONTENT="0;url=data:text/html;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg">`  
+-> `PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg` = `alert(1)`을 base64로 인코딩했다  
 -> META 태그 안에 base64로 인코딩한 스크립트를 집어넣어 `alert()`의 원형을 완전히 숨길 수 있다.  
 
 1. 흔히 사용하지 않는 태그 이용  
