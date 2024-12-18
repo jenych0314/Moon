@@ -59,6 +59,8 @@ burp, param check, response에 같은 값 있나?
 1. 링크를 전달 공격
 
 ### 3.2. Stored XSS: 서버에 저장하자
+공격자가 악성 스크립트를 서버에 저장시킨 다음 클라이언트의 요청/응답 과정을 통해 공격하는 방식이다.
+
 데이터가 저장되고, 출력(화면에 나오는 곳)되는 곳  
 e.g. 데이터베이스, 댓글창, 방문 로그, 회원가입 페이지, 게시판 글 작성 페이지 등  
 삽입한 게시물을 클릭 -> 실행
@@ -76,6 +78,8 @@ e.g. 데이터베이스, 댓글창, 방문 로그, 회원가입 페이지, 게�
 글자 수 제한이 있을 수 있다
 
 ### 3.3. DOM Based XSS
+웹페이지를 여는 즉시 생성되는 **문서 객체 모델(DOM: Document Object Model)**은 사용자가 서버와 상호 작용하지 않고도 페이지의 모든 콘텐츠에 엑세스할 수 있도록 돕는 프로그래밍 인터페이스이다.
+
 피해자의 브라우저가 HTML 페이지를 분석해 DOM을 생성할 때 악성 스크립트가 DPM의 일부로 구성되어 생성되는 공격이다.
 
 서버의 응답 내에서 악성 스크립트가 포함되지 않지만 브라우저의 응답 페이지에 정상적인 스크립트가 실행되면서 악성 스크립트가 추가되어 실행된다.
@@ -116,4 +120,4 @@ e.g.
 * [Cross Site Scripting](https://owasp.org/www-community/attacks/xss/)
 * [XSS란?](https://tibetsandfox.tistory.com/5)
 * [크로스 사이트 스크립팅의 정의 및 공격 유형](https://nordvpn.com/ko/blog/xss-attack/)
-* [](https://cheatsheetseries.owasp.org/cheatsheets/XSS_Filter_Evasion_Cheat_Sheet.html)
+* [XSS Filter Evasion Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/XSS_Filter_Evasion_Cheat_Sheet.html)
