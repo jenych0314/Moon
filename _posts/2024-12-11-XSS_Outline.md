@@ -80,7 +80,7 @@ e.g. 데이터베이스, 댓글창, 방문 로그, 회원가입 페이지, 게�
 ### 3.3. DOM Based XSS
 웹페이지를 여는 즉시 생성되는 **문서 객체 모델(DOM: Document Object Model)**은 사용자가 서버와 상호 작용하지 않고도 페이지의 모든 콘텐츠에 엑세스할 수 있도록 돕는 프로그래밍 인터페이스이다.
 
-피해자의 브라우저가 HTML 페이지를 분석해 DOM을 생성할 때 악성 스크립트가 DPM의 일부로 구성되어 생성되는 공격이다.
+피해자의 브라우저가 HTML 페이지를 분석해 DOM을 생성할 때 악성 스크립트가 DOM의 일부로 구성되어 생성되는 공격이다.
 
 서버의 응답 내에서 악성 스크립트가 포함되지 않지만 브라우저의 응답 페이지에 정상적인 스크립트가 실행되면서 악성 스크립트가 추가되어 실행된다.
 
@@ -112,6 +112,14 @@ e.g.
 1. `onload` 이용  
 `<body onload=alert(1)>`  
 
+1. XSS Using Script Via Encoded URI Schemes  
+`<IMG SRC=j&#X41vascript:alert(1)>`  
+-> 필터링을 피하기 위해서 인코딩된 글자를 사용한다.  
+
+1. XSS Using Code Encoding  
+`<META HTTP-EQUIV="refresh" CONTENT="0;url=data:text/html;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg">`  
+-> META 태그 안에 base64로 인코딩한 스크립트를 집어넣어 `alert()`의 원형을 완전히 숨길 수 있다.  
+
 1. 흔히 사용하지 않는 태그 이용  
 `<ruby onmouseover="alert(1)"></ruby>`  
 -> 해당 태그가 필터에서 누락된 경우 공격 실행  
@@ -121,3 +129,5 @@ e.g.
 * [XSS란?](https://tibetsandfox.tistory.com/5)
 * [크로스 사이트 스크립팅의 정의 및 공격 유형](https://nordvpn.com/ko/blog/xss-attack/)
 * [XSS Filter Evasion Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/XSS_Filter_Evasion_Cheat_Sheet.html)
+* [DOM-based XSS 1](https://portswigger.net/web-security/cross-site-scripting/dom-based)
+* [DOM-based XSS 2](https://owasp.org/www-community/attacks/DOM_Based_XSS)
