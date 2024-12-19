@@ -182,8 +182,8 @@ burp, param check, response에 같은 값 있나?
         <tr>
             <td><</td>
             <td>Less Than</td>
-            <td><pre>&lt;</pre></td>
-            <td><pre>&#60;</pre></td>
+            <td><pre>\&lt;</pre></td>
+            <td><pre>\&#60;</pre></td>
         </tr>
         <tr>
             <td>></td>
@@ -194,8 +194,8 @@ burp, param check, response에 같은 값 있나?
         <tr>
             <td>&</td>
             <td>Ampersand</td>
-            <td><pre>&amp;</pre></td>
-            <td><pre>&#38;</pre></td>
+            <td><pre>\&amp;</pre></td>
+            <td><pre>\&#38;</pre></td>
         </tr>
         <tr>
             <td>"</td>
