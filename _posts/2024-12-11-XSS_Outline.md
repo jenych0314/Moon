@@ -161,7 +161,56 @@ burp, param check, response에 같은 값 있나?
 -> `<script>___<script>`
 
 ## 6. 대응방안
-1. HTML 특수문자를 HTML Entity 표현 방법으로 치환하기
+1. HTML 특수문자를 <mark>HTML Entity</mark> 표현 방법으로 치환하기
+
+<table>
+    <thead>
+        <tr>
+            <td>Result</td>
+            <td>Description</td>
+            <td>Name</td>
+            <td>Number</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td> </td>
+            <td>non-breaking space</td>
+            <td>&nbsp;</td>
+            <td>&#160;</td>
+        </tr>
+        <tr>
+            <td><</td>
+            <td>less than</td>
+            <td>&lt;</td>
+            <td>&#60;</td>
+        </tr>
+        <tr>
+            <td>></td>
+            <td>greater than</td>
+            <td>&gt;</td>
+            <td>&#62;</td>
+        </tr>
+        <tr>
+            <td>&</td>
+            <td>ampersand</td>
+            <td>&amp;</td>
+            <td>&#38;</td>
+        </tr>
+        <tr>
+            <td>"</td>
+            <td>double quotation mark</td>
+            <td>&quot;</td>
+            <td>&#34;</td>
+        </tr>
+        <tr>
+            <td>'</td>
+            <td>single quotation mark</td>
+            <td>&apos;</td>
+            <td>&#39; </td>
+        </tr>
+    </tbody>
+</table>
 
 # 참고
 * [Cross Site Scripting](https://owasp.org/www-community/attacks/xss/)
@@ -175,3 +224,4 @@ burp, param check, response에 같은 값 있나?
 * [Requestbin Development](https://glasses96.github.io/posts/24/)
 * [Request Capture like requestbin PHP](https://stackoverflow.com/questions/42685368/request-capture-like-requestbin-php)
 * [PHP-Micro-RequestBin](https://github.com/vinhch/PHP-Micro-RequestBin)
+* [HTML Entities](https://www.w3schools.com/html/html_entities.asp)
