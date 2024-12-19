@@ -5,7 +5,7 @@ sitemap:
     changefreq: daily
     priority: 0.5
 
-title: "[github.io] Github Blog 포스트 리스트 레이아웃 깨짐"
+title: "[GITHUB PAGES] Github Blog 포스트 리스트 레이아웃 깨짐"
 excerpt: ""
 
 date: 2024-11-22

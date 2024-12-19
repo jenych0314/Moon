@@ -5,7 +5,7 @@ sitemap:
     changefreq: daily
     priority: 0.5
 
-title: "[github.io] Google Search 등록하기"
+title: "[GITHUB PAGES] Google Search 등록하기"
 excerpt: ""
 
 date: 2024-11-22

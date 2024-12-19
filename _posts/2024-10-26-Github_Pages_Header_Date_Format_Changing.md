@@ -5,7 +5,7 @@ sitemap:
     changefreq: daily
     priority: 0.5
 
-title: "[github.io] Date Format 변경하기"
+title: "[GITHUB PAGES] Date Format 변경하기"
 excerpt: ""
 
 date: 2024-10-26

@@ -5,7 +5,7 @@ sitemap:
     changefreq: daily
     priority: 0.5
 
-title: "[github.io] 구글 애널리틱스 적용하기"
+title: "[GITHUB PAGES] 구글 애널리틱스 적용하기"
 excerpt: "구글 애널리틱스 적용"
 
 date: 2021-12-09

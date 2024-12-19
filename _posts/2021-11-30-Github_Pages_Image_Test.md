@@ -5,7 +5,7 @@ sitemap:
     changefreq: daily
     priority: 0.5
 
-title: "[github.io] Image Test"
+title: "[GITHUB PAGES] Image Test"
 excerpt: "Image Test"
 
 date: 2021-11-30
