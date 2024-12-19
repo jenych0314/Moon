@@ -176,38 +176,38 @@ burp, param check, response에 같은 값 있나?
         <tr>
             <td> </td>
             <td>Non-Breaking Space</td>
-            <td><code>&nbsp;</code></td>
-            <td><code>&#160;</code></td>
+            <td><pre>&nbsp;</pre></td>
+            <td><pre>&#160;</pre></td>
         </tr>
         <tr>
             <td><</td>
             <td>Less Than</td>
-            <td><code>&lt;</code></td>
-            <td><code>&#60;</code></td>
+            <td><pre>&lt;</pre></td>
+            <td><pre>&#60;</pre></td>
         </tr>
         <tr>
             <td>></td>
             <td>Greater Than</td>
-            <td><code>&gt;</code></td>
-            <td><code>&#62;</code></td>
+            <td><pre>&gt;</pre></td>
+            <td><pre>&#62;</pre></td>
         </tr>
         <tr>
             <td>&</td>
             <td>Ampersand</td>
-            <td><code>&amp;</code></td>
-            <td><code>&#38;</code></td>
+            <td><pre>&amp;</pre></td>
+            <td><pre>&#38;</pre></td>
         </tr>
         <tr>
             <td>"</td>
             <td>Double Quotation Mark</td>
-            <td><code>&quot;</code></td>
-            <td><code>&#34;</code></td>
+            <td><pre>&quot;</pre></td>
+            <td><pre>&#34;</pre></td>
         </tr>
         <tr>
             <td>'</td>
             <td>Single Quotation Mark</td>
-            <td><code>&apos;</code></td>
-            <td><code>&#39;</code></td>
+            <td><pre>&apos;</pre></td>
+            <td><pre>&#39;</pre></td>
         </tr>
     </tbody>
 </table>
