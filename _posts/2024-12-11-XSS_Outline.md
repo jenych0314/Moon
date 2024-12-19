@@ -162,55 +162,7 @@ burp, param check, response에 같은 값 있나?
 
 ## 6. 대응방안
 1. HTML 특수문자를 <mark>HTML Entity</mark> 표현 방법으로 치환하기
-
-<table>
-    <thead>
-        <tr>
-            <td>Result</td>
-            <td>Description</td>
-            <td>Name</td>
-            <td>Number</td>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td> </td>
-            <td>Non-Breaking Space</td>
-            <td><pre>&nbsp;</pre></td>
-            <td><pre>&#160;</pre></td>
-        </tr>
-        <tr>
-            <td><</td>
-            <td>Less Than</td>
-            <td><pre>\&lt;</pre></td>
-            <td><pre>\&#60;</pre></td>
-        </tr>
-        <tr>
-            <td>></td>
-            <td>Greater Than</td>
-            <td><pre>&gt;</pre></td>
-            <td><pre>&#62;</pre></td>
-        </tr>
-        <tr>
-            <td>&</td>
-            <td>Ampersand</td>
-            <td><pre>\&amp;</pre></td>
-            <td><pre>\&#38;</pre></td>
-        </tr>
-        <tr>
-            <td>"</td>
-            <td>Double Quotation Mark</td>
-            <td><pre>&quot;</pre></td>
-            <td><pre>&#34;</pre></td>
-        </tr>
-        <tr>
-            <td>'</td>
-            <td>Single Quotation Mark</td>
-            <td><pre>&apos;</pre></td>
-            <td><pre>&#39;</pre></td>
-        </tr>
-    </tbody>
-</table>
+![Some HTML Entities](https://cdn.jsdelivr.net/gh/aliquis-facio/aliquis-facio.github.io@master/_image/2024-12-19-2.png?raw=true)
 
 # 참고
 * [Cross Site Scripting](https://owasp.org/www-community/attacks/xss/)
