@@ -175,37 +175,37 @@ burp, param check, response에 같은 값 있나?
     <tbody>
         <tr>
             <td> </td>
-            <td>non-breaking space</td>
+            <td>Non-Breaking Space</td>
             <td><code>&nbsp;</code></td>
             <td><code>&#160;</code></td>
         </tr>
         <tr>
             <td><</td>
-            <td>less than</td>
+            <td>Less Than</td>
             <td><code>&lt;</code></td>
             <td><code>&#60;</code></td>
         </tr>
         <tr>
             <td>></td>
-            <td>greater than</td>
+            <td>Greater Than</td>
             <td><code>&gt;</code></td>
             <td><code>&#62;</code></td>
         </tr>
         <tr>
             <td>&</td>
-            <td>ampersand</td>
+            <td>Ampersand</td>
             <td><code>&amp;</code></td>
             <td><code>&#38;</code></td>
         </tr>
         <tr>
             <td>"</td>
-            <td>double quotation mark</td>
+            <td>Double Quotation Mark</td>
             <td><code>&quot;</code></td>
             <td><code>&#34;</code></td>
         </tr>
         <tr>
             <td>'</td>
-            <td>single quotation mark</td>
+            <td>Single Quotation Mark</td>
             <td><code>&apos;</code></td>
             <td><code>&#39;</code></td>
         </tr>
