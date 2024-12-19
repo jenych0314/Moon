@@ -459,6 +459,29 @@ for (int i = 0; i++; i>10) {
 return 0;
 ```
 
+## 8.3. HTML tag
+```
+<code>
+print("Hello, World!")
+</code>
+```
+
+<code>
+print("Hello, World!")
+</code>
+
+---
+
+```
+<pre>
+print("Hello, World!")
+</pre>
+```
+
+<pre>
+print("Hello, World!")
+</pre>
+
 # 9. 표(Table)
 ```
 | 1st | 2nd | 3rd |
@@ -840,6 +863,7 @@ HTML의 각종 태그, `<style>`, `<script>`로 감싸고 그 안에 각각의 �
 * [HTML <ul>](https://www.w3schools.com/tags/tag_ul.asp)
 * [HTML <ol>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol)
 * [HTML <dl>](https://developer.mozilla.org/ko/docs/Web/HTML/Element/dl)
+* [HTML pre tag, code tag](https://www.w3schools.com/tags/tag_pre.asp)
 * [Image Loading 시간](https://derek-mun.com/contents/Contents-Github-page-image-loading-speed.html)
 * [Github Blog 느린 웹 해결하기](https://chinsun9.github.io/2021/05/31/%EA%B9%83%ED%97%88%EB%B8%8C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%8A%90%EB%A6%B0-%EC%9B%B9-%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0/#%EC%83%81%ED%99%A9)
 
