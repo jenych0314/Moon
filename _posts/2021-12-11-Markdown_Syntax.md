@@ -9,7 +9,7 @@ title: "[Markdown] 마크다운 문법 - 마크다운으로 할 수 있는 다�
 excerpt: "내가 써먹자고 정리해둔 마크다운(Markdown)의 기본적인 문법들과 html, css, js 적용 방법들"
 
 date: 2021-12-11
-last_modified_at: 2024-11-24
+last_modified_at: 2024-12-19
 
 tags: [BLOG, MARKDOWN]
 ---
@@ -816,7 +816,7 @@ graph TB
 
 # 14. HTML, CSS, JS
 마크다운에 HTML, CSS, JS 문법을 적용시킬 수 있다.  
-HTML의 각종 태그, <style>, <script>로 감싸고 그 안에 각각의 문법에 맞는 코드를 작성하면 된다.  
+HTML의 각종 태그, `<style>`, `<script>`로 감싸고 그 안에 각각의 문법에 맞는 코드를 작성하면 된다.  
 태그로 감싸져 있는 부분은 마크다운 문법 적용이 안 된다.  
 
 # 참고
