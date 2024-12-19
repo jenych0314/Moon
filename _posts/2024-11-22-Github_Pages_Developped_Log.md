@@ -9,24 +9,24 @@ title: "[GITHUB PAGES] Github Blog 운영 기록"
 excerpt: "블로그 깔끔하게 꾸미고 싶다~"
 
 date: 2024-11-22
-last_modified_at: 2024-11-24
+last_modified_at: 2024-12-19
 
 tags: [BLOG]
 ---
 
 # Created
-1. [](/Github_Pages_Making)
-1. [](/Github_Pages_Google_Analytics)
-1. [](/Markdown_Syntax)
-1. [](/Github_Pages_Image_Test)
+1. [Github Pages 생성하기](/Github_Pages_Making)
+1. [Google Analytics 등록하기](/Github_Pages_Google_Analytics)
+1. [Post 작성하기 위한 Markdown 문법 공부 일지](/Markdown_Syntax)
+1. [Post 작성하기 위한 Image 등록 테스트](/Github_Pages_Image_Test)
 
 # Modified
-1. 2022-10-23-응용통계학 정리 클릭하면 2022-10-31-응용통계학 기댓값, 분산, 표준편차 포스트로 이동함.
+1. 2022-10-23-응용통계학 정리 클릭하면 2022-10-31-응용통계학 기댓값, 분산, 표준편차 포스트로 이동함.  
     -> 파일 제목이 같으면 가장 최신 파일 쪽으로 이동하는 듯.
 1. [포스트 만든 날짜, 수정 날짜 구분해서 올리고 싶음](/Github_Pages_Header_Date_Format_Changing)
 1. [github.io 블로그 구글 검색에 개시하기](/github_google_search_등록)
 1. [sitemap 수정하고 나서 post-list에서 이상하게 보임](/github_blog_post_list_layout_fix)
-1. google search console에 적용이 끝나면 모든 포스트에다가 sitemap 적용시켜줘야 함
+1. Google Search Console에 적용이 끝나면 모든 포스트에다가 sitemap 적용시켜줘야 함
 
 # 수정할 것들
 ## 기능
