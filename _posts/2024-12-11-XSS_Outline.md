@@ -176,38 +176,38 @@ burp, param check, response에 같은 값 있나?
         <tr>
             <td> </td>
             <td>non-breaking space</td>
-            <td>&nbsp;</td>
-            <td>&#160;</td>
+            <td><code>&nbsp;</code></td>
+            <td><code>&#160;</code></td>
         </tr>
         <tr>
             <td><</td>
             <td>less than</td>
-            <td>&lt;</td>
-            <td>&#60;</td>
+            <td><code>&lt;</code></td>
+            <td><code>&#60;</code></td>
         </tr>
         <tr>
             <td>></td>
             <td>greater than</td>
-            <td>&gt;</td>
-            <td>&#62;</td>
+            <td><code>&gt;</code></td>
+            <td><code>&#62;</code></td>
         </tr>
         <tr>
             <td>&</td>
             <td>ampersand</td>
-            <td>&amp;</td>
-            <td>&#38;</td>
+            <td><code>&amp;</code></td>
+            <td><code>&#38;</code></td>
         </tr>
         <tr>
             <td>"</td>
             <td>double quotation mark</td>
-            <td>&quot;</td>
-            <td>&#34;</td>
+            <td><code>&quot;</code></td>
+            <td><code>&#34;</code></td>
         </tr>
         <tr>
             <td>'</td>
             <td>single quotation mark</td>
-            <td>&apos;</td>
-            <td>&#39; </td>
+            <td><code>&apos;</code></td>
+            <td><code>&#39;</code></td>
         </tr>
     </tbody>
 </table>
