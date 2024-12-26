@@ -9,7 +9,7 @@ title: "[GITHUB PAGES] Image Test"
 excerpt: "Image Test"
 
 date: 2021-11-30
-last_modified_at: 
+last_modified_at: 2024-12-27
 
 tags: [BLOG]
 ---
@@ -49,4 +49,4 @@ tags: [BLOG]
 ![1st-wallpaper](https://github.com/aliquis-facio/aliquis-facio.github.io/blob/master/_image/2021-12-01-chess_negative.png?raw=true)
 
 cdn 이용하기
-https://cdn.jsdelivr.net/gh/github_user_name/repo_url@branch_name/file_path
+<https://cdn.jsdelivr.net/gh/github_user_name/repo_url@branch_name/file_path>

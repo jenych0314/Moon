@@ -9,18 +9,18 @@ title: "[LINUX] 부트로더 grub에 대한 설명과 실행레벨 설명"
 excerpt: "리눅스 부트로더 - 부트로더인 LILO, GRUB"
 
 date: 2022-02-18
-last_modified_at: 
+last_modified_at: 2024-12-27
 
 tags: [LINUX]
 ---
 
-## 부트로더
+# 부트로더
 1. 정의: 커널이 올바르게 부팅되기 위해 필요한 작업을 수행하고 최종적으로 운영체제를 부팅시키는 역할담당
 2. 종류
     * LILO: MBR이나 파티션의 시동섹터 안에(만) 위치. **/etc/lilo.conf**
     * GRUB: 리눅스의 기본 부트로더. GNU에서 만든 부트로더. LILO보다 강화된 형태. 
 
-### GRUB 특징
+## GRUB 특징
 * LILO에 비해 설정 및 사용의 편리성
 * 부트 정보가 올바르지 않더라도 부팅 시 이를 바로 수정해 부팅 가능
 * 윈도우 계열 및 기타 OS를 지원해 멀티 부팅 가능
@@ -28,12 +28,12 @@ tags: [LINUX]
 * 네트워크 상에서 부트로더의 설정 수정 가능
 * 커널의 물리적 위치를 기록하지 않고도 커널 파일명과 커널이 위치하고 있는 파티션의 위치만 알고 있으면 시스템 부팅 가능.
 
-### GRUB 장치 명명
-GRUB의 장치 이름은 블록 디바이스 표기법과 다르게 파티션 순서를 알바벳이 아닌 숫자로 표기
-ex) hda, hdb... -> hd0, hd1
+## GRUB 장치 명명
+GRUB의 장치 이름은 블록 디바이스 표기법과 다르게 파티션 순서를 알바벳이 아닌 숫자로 표기  
+ex) hda, hdb... -> hd0, hd1  
 (hd0, 0) -> 첫 번째 하드 디스크의 첫 번째 파티션
 
-### GRUB 환경설정파일(grub.conf)
+## GRUB 환경설정파일(grub.conf)
 * default: 멀티부팅일 경우 기본으로 부팅할 OS의 레이블 번호(0부터 시작)
 * timeout: 정해진 시간이 경과 후 default에 설정된 OS로 부팅
 * splashimage: 배경그림 경로 설정
@@ -42,7 +42,7 @@ ex) hda, hdb... -> hd0, hd1
 * kernal: OS 부팅 시 읽어올 커널 파일 지정
 * initrd: 초기 램 디스크; 부팅 시 초기화에 필요한 루트 디스크의 이미지 파일을 지정
 
-### GRUB 환경설정파일 - 명령어
+## GRUB 환경설정파일 - 명령어
 * boot: 지정한 장치와 커널 명령어로 부팅.
 * cat file_name: 파일의 내용을 확인.
 * clear: 화면을 클리어
@@ -52,30 +52,26 @@ ex) hda, hdb... -> hd0, hd1
 * makeactive: 루트디스크에 존재하는 GRUB의 루트 디바이스를 부팅 가능한 파티션으로 지정
 * root (device_name): 지정한 장치를 부트 파티션으로 지정
 * rootnoverify (device_name): root와 비슷하나 파티션을 마운트 하지 않음. 주로 grub 에서 지원하지 않는 파일 시스템 부팅 시 사용.
-Setup (device_name): 지정 장치로 grub 자동 설치
+* Setup (device_name): 지정 장치로 grub 자동 설치
 
-### GRUB 부트 디스크를 이용한 OS별 부팅 작업
-1. 윈도우로 부팅
+## GRUB 부트 디스크를 이용한 OS별 부팅 작업
+1. 윈도우로 부팅  
 ```
 rootnoverify (hd0, 0)
 makeactive
 chainloader+l
 boot
 ```
-2. 리눅스로 부팅
+
+2. 리눅스로 부팅  
 ```
 root (hd0, 1)
 kernal /boot/vmlinuz-version ro root=/dev/hda2
 boot
 ```
 
-참고
-1. <https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=akohong&logNo=220797668319>
-2. <https://doongdangdoongdangdong.tistory.com/129>
-3. <https://www.hanbit.co.kr/channel/category/category_view.html?cms_code=CMS6259570844>
-
-### linux 실행레벨(runlevel)
-```
+## linux 실행레벨(runlevel)
+```shell
 cat /etc/inittab
 systemctl get-default
 ```
@@ -86,9 +82,6 @@ systemctl get-default
 4. unused
 5. X11(graphic user) *
 6. reboot
-
-참고
-1. <https://helloitstory.tistory.com/25>
 
 _grub은 ide 하드디스크를 장착한 순서대로 인식한다._
 
@@ -154,3 +147,9 @@ cat etc/shadow 패스워드가 암호화되서 저장
 /usr/lib: 실행 파일들을 위한 라이브러리 저장
 /usr/local: 일반적 프로그램 설치
 /usr/src: rpm, 소스 파일들을 저장해 사용
+
+# 참고
+1. <https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=akohong&logNo=220797668319>
+2. <https://doongdangdoongdangdong.tistory.com/129>
+3. <https://www.hanbit.co.kr/channel/category/category_view.html?cms_code=CMS6259570844>
+1. <https://helloitstory.tistory.com/25>

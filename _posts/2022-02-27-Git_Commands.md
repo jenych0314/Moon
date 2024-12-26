@@ -9,11 +9,12 @@ title: "[GIT] GitHub 명령어 정리"
 excerpt: ""
 
 date: 2022-02-27
-last_modified_at: 2024-11-08
+last_modified_at: 2024-12-27
 
 tags: [GIT]
 ---
 
+# Git Commands
 1. `git pull`
 
 1. `git add .`
@@ -34,5 +35,5 @@ tags: [GIT]
 
 1. `git checkout "branch"`
 
-참고
+# 참고
 1. <https://jw910911.tistory.com/77>
