@@ -19,8 +19,11 @@ JS를 이용해 다른 웹페이지로 리다이렉트하는 방법은 두 가�
 `location.href`와 `location.replace`이다.  
 
 ```js
-// Stimulate a Mouse Click
+// Stimulate a Mouse Click 1
 location.href = "example.com"; // 뒤로 가기 가능
+
+// Stimulate a Mouse Click 2
+location.assign("example.com"); // 뒤로 가기 가능
 
 // Stimulate an HTTP Redirect
 location.replace("example.com"); // 뒤로 가기 불가능
@@ -30,3 +33,5 @@ location.replace("example.com"); // 뒤로 가기 불가능
 
 # 참고
 * [How TO - Redirect to Another Webpage](https://www.w3schools.com/howto/howto_js_redirect_webpage.asp)
+* [How to Redirect to Another Webpage using JavaScript?](https://www.geeksforgeeks.org/how-to-redirect-to-another-webpage-using-javascript/)
+* [JavaScript Redirect: How to Redirect to a New URL](https://www.semrush.com/blog/javascript-redirect/)
