@@ -15,8 +15,8 @@ tags: [JS]
 ---
 
 # Page Redirect
-JS를 이용해 다른 웹페이지로 리다이렉트하는 방법은 두 가지 있다.  
-`location.href`와 `location.replace`이다.  
+JS를 이용해 다른 웹페이지로 리다이렉트하는 방법이다.  
+보통 `location.href`나 `location.replace`를 사용한다.  
 
 ```js
 // Stimulate a Mouse Click 1
