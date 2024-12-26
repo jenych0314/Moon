@@ -31,19 +31,17 @@ None
 
 ## Example Code
 ```js
-history.pushState(null, null, 'abracadabra') // domain 변경은 안 되지만
+history.pushState(null, null, 'abracadabra') // hostname은 변경할 수 없지만 pathname은 변경할 수 있다
 ```
 
 <button onclick="changeURL()">URL Change</button>
 <script>
     function changeURL() {
-        console.log(window.location.href);
-        console.log(window.location.hostname);
-        console.log(window.location.pathname);
-        history.pushState(null, null, 'abracadabra');
-        console.log(window.location.href);
-        console.log(window.location.hostname);
-        console.log(window.location.pathname);
+        if (location.pathname === 'abracadabra') {
+            history.pushState(null, null, '');
+        } else {
+            history.pushState(null, null, 'abracadabra');
+        }
     }
 </script>
 
