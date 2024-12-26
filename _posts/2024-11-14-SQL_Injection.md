@@ -9,7 +9,7 @@ title: "[WEB HACKING] SQL Injection 정리"
 excerpt: "모의해킹 취업반 스터디 7기 5주차"
 
 date: 2024-11-13
-last_modified_at: 2024-12-11
+last_modified_at: 2024-12-21
 
 tags: [TIL, WEB, DATABASE, SECURITY]
 ---
@@ -57,11 +57,13 @@ or와 and 연산자
 
 ## 공격 유형에 따른 분류
 ### Union SQL Injection
+[Union SQL Injection](./Union_SQL_Injection.md)
 
 ### Error Based SQL Injection
 [Error Based SQL Injection](./Error_Based_SQL_Injection.md)
 
 ### Blind SQL Injection
+[Blind SQL Injection]()
 
 # sqli
 ## SQL Injection Exploit
@@ -96,6 +98,10 @@ order by ___
 
 # 인증 건너뛰기
 * 이전 페이지에서 건너뛰지 않았는지 확인하기
+
+## 대응 방안
+prepared statement
+white list filtering
 
 # 참고
 * [SQL Injection](https://developer.mozilla.org/ko/docs/Glossary/SQL_Injection)

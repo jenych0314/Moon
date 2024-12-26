@@ -39,3 +39,10 @@ tags: [TIL, WEB]
 
 ## mypage.php
 ### mypage_update.php
+
+# xss2
+notice_list.php의 search 부분은 필터링인가?
+html entity로 치환되고 있어
+
+# xss3
+notice_list.php의 search 부분은 html entity로 치환
