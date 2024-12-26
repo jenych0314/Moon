@@ -30,10 +30,10 @@ pushState(state, unused, url)
 None
 
 ## Example Code
-<script>history.pushState(null, null, 'test')</script>
+<!-- <script>history.pushState(null, null, 'test')</script> -->
 
 ```js
-history.pushState(null, null, 'test') // domain 변경은 안 되지만
+history.pushState(null, null, 'abracadabra') // domain 변경은 안 되지만
 ```
 
 # 참고
