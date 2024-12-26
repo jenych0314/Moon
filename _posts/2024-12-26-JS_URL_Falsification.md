@@ -34,10 +34,14 @@ None
 history.pushState(null, null, 'abracadabra') // domain 변경은 안 되지만
 ```
 
-<button onclick="changeURL()">
+<button onclick="changeURL()">URL Change</button>
 <script>
     function changeURL() {
+        console.log(window.location.href);
+        console.log(window.location.hostname);
         history.pushState(null, null, 'abracadabra');
+        console.log(window.location.href);
+        console.log(window.location.hostname);
     }
 </script>
 
