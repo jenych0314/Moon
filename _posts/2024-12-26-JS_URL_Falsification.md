@@ -24,7 +24,7 @@ pushState(state, unused, url)
 ## Parameters
 * state: 
 * unused: 더 이상 사용되지 않는데 생략이 불가하다고 한다.
-* url: 
+* url: 새롭게 변경할 URL이다.
 
 ## Return Value
 None
@@ -34,10 +34,10 @@ None
 history.pushState(null, null, 'abracadabra') // hostname은 변경할 수 없지만 pathname은 변경할 수 있다
 ```
 
-<button onclick="changeURL()">URL Change</button>
+<button onclick="changeURL()">URL Change!</button>
 <script>
     function changeURL() {
-        if (location.pathname === 'abracadabra') {
+        if (location.pathname == 'abracadabra') {
             history.pushState(null, null, '');
         } else {
             history.pushState(null, null, 'abracadabra');
