@@ -39,9 +39,11 @@ history.pushState(null, null, 'abracadabra') // domain 변경은 안 되지만
     function changeURL() {
         console.log(window.location.href);
         console.log(window.location.hostname);
+        console.log(window.location.pathname);
         history.pushState(null, null, 'abracadabra');
         console.log(window.location.href);
         console.log(window.location.hostname);
+        console.log(window.location.pathname);
     }
 </script>
 
