@@ -22,9 +22,9 @@ pushState(state, unused, url)
 ```
 
 ## Parameters
-* state: 
-* unused: 더 이상 사용되지 않는데 생략이 불가하다고 한다.
-* url: 새롭게 변경할 URL이다.
+* state: 상태값. 브라우저에서 앞/뒤로 갈 때 넘겨줄 데이터
+* unused: 원래는 title(변경할 브라우저 제목)을 넣었다고 한다. 더 이상 사용되지 않고 생략이 불가하다고 한다.
+* url: 변경할 브라우저 URL
 
 ## Return Value
 None
@@ -37,6 +37,7 @@ history.pushState(null, null, 'abracadabra') // hostname은 변경할 수 없지
 <button onclick="changeURL()">URL Change!</button>
 <script>
     function changeURL() {
+        console.log(location.pathname);
         if (location.pathname == 'abracadabra') {
             history.pushState(null, null, '');
         } else {
