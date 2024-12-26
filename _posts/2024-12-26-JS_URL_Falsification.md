@@ -38,7 +38,7 @@ history.pushState(null, null, 'abracadabra') // hostname은 변경할 수 없지
 <script>
     function changeURL() {
         console.log(location.pathname);
-        if (location.pathname == 'abracadabra') {
+        if (location.pathname == '/JS_URL_Falsification/abracadabra') {
             history.pushState(null, null, '');
         } else {
             history.pushState(null, null, 'abracadabra');
