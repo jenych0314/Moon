@@ -30,11 +30,16 @@ pushState(state, unused, url)
 None
 
 ## Example Code
-<!-- <script>history.pushState(null, null, 'test')</script> -->
-
 ```js
 history.pushState(null, null, 'abracadabra') // domain 변경은 안 되지만
 ```
+
+<button onclick="changeURL()">
+<script>
+    function changeURL() {
+        history.pushState(null, null, 'abracadabra');
+    }
+</script>
 
 # 참고
 * [History: pushState() method](https://developer.mozilla.org/en-US/docs/Web/API/History/pushState)
