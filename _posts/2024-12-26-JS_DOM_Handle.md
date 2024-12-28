@@ -9,7 +9,7 @@ title: "[JS] JS로 DOM 객체 접근하기"
 excerpt: "모의해킹 취업반 스터디 7기 11주차"
 
 date: 2024-12-26
-last_modified_at: 
+last_modified_at: 2024-12-27
 
 tags: [JS]
 ---
@@ -187,6 +187,7 @@ iframe = inline frame이다.
 // js
 let iframeDoc = document.querySelector('iframe').contentDocument;
 iframeDoc.body.style.background = "blue";
+iframeDoc.document.getElementById('');
 ```
 
 # 참고
@@ -200,3 +201,4 @@ iframeDoc.body.style.background = "blue";
 * [[JavaScript] JavaScript 문서 로딩 순서](https://creative103.tistory.com/45)
 * [HTML DOM Document write()](https://www.w3schools.com/jsref/met_doc_write.asp)
 * [HTMLIFrameElement: contentDocument property](https://developer.mozilla.org/en-US/docs/Web/API/HTMLIFrameElement/contentDocument)
+* [[JS] iframe 내부 접근](https://velog.io/@sjc0829/JS-iframe-%EB%82%B4%EB%B6%80-%EC%A0%91%EA%B7%BC)
