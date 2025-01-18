@@ -34,12 +34,6 @@ tags: [BLOG]
 7. 뒤에 깔리는 이미지 변경 중.  
 
 ## 다섯번째 도전
-#### 참고
->1. <http://loustler.io/etc/github_pages_blog_google_analytics/>
->2. <https://velog.io/@eona1301/Github-Blog-%EB%B0%A9%EB%AC%B8%EC%9E%90-%ED%86%B5%EA%B3%84Analytics%ED%95%98%EA%B8%B0>
->3. <https://nicecarrot2.tistory.com/34>
->4. <https://analyticsmarketing.co.kr/digital-analytics/google-analytics/1850/>
-
 1. google analytics 추가
 2. google analytics 가입 후 tracking id 챙겨서 config.yml에
 ```
@@ -100,13 +94,7 @@ sudo rm -f /usr/bin/gem
 `cannot load such file -- rubygems.rb (LoadError)`
 이런 오류가 발생
 
-### 참고
-<https://letsget23.tistory.com/entry/Ruby-on-Rails-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0>
-
 4. rvm 설치 중
-### 참고
-<https://github.com/rvm/ubuntu_rvm>
-
 `gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3`  
 `\curl -sSL https://get.rvm.io | bash -s stable`  
 
@@ -144,17 +132,8 @@ gpg:               imported: 1
 깃허브 블로그 관련 문서를 클라우드에 올리고 윈도우에서 시작함.
 
 #### 4트 - 윈도우에서 시작
-참고 사이트
->  <https://junstar92.tistory.com/5>
->  <https://rubyinstaller.org/downloads/>
-
 루비를 다운받고 파워쉘에서 `gem install jekyll` -> 오류발생
 `gcc.exe: fatal error: cannot execute 'cc1': CreateProcess: No such file or directory`
-### 참고
-<https://stackoverflow.com/questions/3848357/createprocess-no-such-file-or-directory>
-
-### 참고
-<https://iingang.github.io/posts/windows-github-set/>
 파워쉘이 아닌  start command prompt with ruby에서 실행하는 것이었음.
 
 윈도우에서는 gem이 호환이 안 되는 것이 많다고 함.
@@ -166,11 +145,23 @@ gpg:               imported: 1
 -> 같은 오류 발생
 bigdecimal 뭐시기 오류가 또 발생함.
 구글링을 열심히 하는 도중 빛과 같은 존재가 나타남.
-### 참고 사이트
-<https://likelionsungguk.github.io/20-12-17/jekyll-Blog-%EB%A7%8C%EB%93%9C%EB%8A%94%EA%B2%8C-%EA%B8%80%EC%93%B0%EB%8A%94-%EA%B2%83%EB%B3%B4%EB%8B%A4-%ED%9E%98%EB%93%A0-%EC%82%AC%EB%9E%8C%EB%93%A4%EC%97%90%EA%B2%8C>  
-~~이분 정말 빛과 소금임. 백만 따봉 드림.~~
 
 gemfile에 `gem 'bigdecimal', '1.3.5.'`를 기입하자 마법처럼 다른 오류가 발생함.  
 `대충 구글 애널리틱스를 기록한 포스트에서 if문이 끝나지 않는다`라는 오류여서 그냥 if문 부분을 삭제함.
 
 ~~너무나 오류와 절친을 맺는 과정이었음.~~
+
+# 참고
+* ~~[404 Not Found](http://loustler.io/etc/github_pages_blog_google_analytics/)~~
+* [[Github Blog] 방문자 통계(Analytics)하기](https://velog.io/@eona1301/Github-Blog-%EB%B0%A9%EB%AC%B8%EC%9E%90-%ED%86%B5%EA%B3%84Analytics%ED%95%98%EA%B8%B0
+)
+* [[Google Analytics] 구글 애널리틱스 내부 트래픽 필터링하기](https://nicecarrot2.tistory.com/34)
+* [[Google Analytics] 새롭게 도입된 글로벌 사이트 태그(gtag) 알아보기](https://analyticsmarketing.co.kr/digital-analytics/google-analytics/1850/
+)
+* [Ruby on Rails 설치하기](https://letsget23.tistory.com/entry/Ruby-on-Rails-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0)
+* [RVM package for Ubuntu](https://github.com/rvm/ubuntu_rvm)
+* [[Github 깃허브/Jekyll] Windows 환경에서 Github Blog 생성하기](https://iingang.github.io/posts/windows-github-set/)
+* [[Github 깃허브/Jekyll] Windows 환경에서 Github Blog 생성하기](https://stackoverflow.com/questions/3848357/createprocess-no-such-file-or-directory)
+* [[Ruby] 루비 설치하기(Windows 10/윈도우 10) / 예제 맛보기](https://junstar92.tistory.com/5)
+* [RubyInstallers](https://rubyinstaller.org/downloads/)
+* ~~[404 Not Found](https://likelionsungguk.github.io/20-12-17/jekyll-Blog-%EB%A7%8C%EB%93%9C%EB%8A%94%EA%B2%8C-%EA%B8%80%EC%93%B0%EB%8A%94-%EA%B2%83%EB%B3%B4%EB%8B%A4-%ED%9E%98%EB%93%A0-%EC%82%AC%EB%9E%8C%EB%93%A4%EC%97%90%EA%B2%8C)~~
