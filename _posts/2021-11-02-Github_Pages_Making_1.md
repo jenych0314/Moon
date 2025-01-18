@@ -9,7 +9,7 @@ title: "[GITHUB PAGES] github.io 만들기 1"
 excerpt: "항상 느낍니다. 왜 안되는거냐?"
 
 date: 2021-11-02
-last_modified_at: 
+last_modified_at: 2025-01-18
 
 tags: [BLOG]
 ---
