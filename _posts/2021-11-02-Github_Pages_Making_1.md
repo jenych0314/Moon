@@ -68,7 +68,6 @@ readme를 읽어봄.
 -> `sudo gem install bundler:2.1.4`
 
 -> 오류: *Could not find public_suffix-4.0.5 in any of the sources (Bundler::GemNotFound)*
-6) http://corecode.pe.kr/2020/08/21/ruby_jekyll_install/
 -> `sudo gem install public_suffix -v 4.0.5`
 
 -> 오류: *Could not find addressable-2.7.0 in any of the sources (Bundler::GemNotFound)*
@@ -127,18 +126,14 @@ readme를 읽어봄.
 
 ~~드디어 다른 종류의 오류... ㅎㅎ~~
 -> 오류: *You have already activated public_suffix 4.0.6, but your Gemfile requires public_suffix 4.0.5. Prepending `bundle exec` to your command may solve this. (Gem::LoadError)*
-7) https://frhyme.github.io/others/jekyll_serve_not_work/
 `bundle exec jekyll serve`
 
 이는, bundle exec를 앞에 붙이고 시작할 경우, 해당 젬을 실행하기 위해 필요한 정확한 라이브러리들을 가져와서 (일종의 가상환경이라고 생각해도 될듯) 실행하게 해준다. 이렇게 하면 되기는 함.
-8) https://frhyme.github.io/others/jekyll_serve_not_work/
 -> (하지만 ^^) 오류:
 1. *Build Warning: Layout 'home' requested in index.markdown does not exist.*
 index.markdown을 열음.
-9) https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 2. '/favicon.ico' not found.
-10) https://frhyme.github.io/blog/jekyll_add_Favicon/
 /assets 폴더 내에 favicon.ico 파일 넣기 (이미 존재함)
 _includes 폴더 내에 head.html의 위쪽에 아래 내용을 추가
 ->
@@ -158,8 +153,6 @@ _includes 폴더 내에 head.html의 위쪽에 아래 내용을 추가
 
 --- 오류 끝 ---
 
-11) https://gmlwjd9405.github.io/2017/10/06/Jekyll-github.io-blog-3.html
-
 7. github에 저장소(repository) 생성하기
 GitHub Pages에 .github.io 블로그를 만드는 방법은 단순히 ‘[github 사용자명].github.io’라는 이름의 원격 저장소(Repository)를 만들면 된다.
 
@@ -175,15 +168,14 @@ Gemfile.lock
 */
 
 9. .github.io 블로그의 로컬 저장소와 github 저장소를 연결하기
-11) https://gmlwjd9405.github.io/2017/10/06/Jekyll-github.io-blog-3.html
-위 블로그를 참조해 만들었기 때문에 'jekyll new [github 사용자명].github.io'를 이용하여 Jekyll 블로그를 로컬에서 실행시킨 사용자이다. 고로 단순히 git의 remote 저장소와 연결해주는 작업만 하면 된다.
+[블로그](https://gmlwjd9405.github.io/2017/10/06/Jekyll-github.io-blog-3.html)를 참조해 만들었기 때문에 'jekyll new [github 사용자명].github.io'를 이용하여 Jekyll 블로그를 로컬에서 실행시킨 사용자이다. 고로 단순히 git의 remote 저장소와 연결해주는 작업만 하면 된다.
 ~/blog/[github 사용자명].github.io 로 이동하여 아래의 명령어를 입력하면 앞으로 git은 해당 디렉터리의 변화를 감지하여 track할 수 있고 로컬에서 작성한 블로그를 GitHub에 호스팅할 수 있다. (git init 명령을 실행한 디렉터리를 working directory라고 부른다.)
-git init // 해당 디렉터리 안에 .git이라는 하위 디렉토리를 만든다.
-git remote add origin [원격 저장소 URL] // git의 remote 저장소와 연결한다.
+`git init` // 해당 디렉터리 안에 .git이라는 하위 디렉토리를 만든다.
+`git remote add origin [원격 저장소 URL]` // git의 remote 저장소와 연결한다.
 Git이 파일을 관리하게 하려면 저장소에 파일을 추가하고 커밋해야 한다. 아래의 명령으로 파일을 추가하고 커밋한다.
-git add .
-git commit -m "Initial commit"
-git push origin master // 원격 저장소에 변경 내용을 올린다.
+`git add .`
+`git commit -m "Initial commit"`
+`git push origin master` // 원격 저장소에 변경 내용을 올린다.
 
 10. .github.io 블로그 확인하기
 브라우저에서 ‘[github 사용자명].github.io’라고 주소를 입력
@@ -192,10 +184,14 @@ git push origin master // 원격 저장소에 변경 내용을 올린다.
 -> 왜 안되는지 잘 모르겠음
 -> 새로운 방법으로 다시 만들기로 함.
 
-참고 사이트: https://zeddios.tistory.com/1222
-참고 사이트: https://zeddios.tistory.com/1223
-
 # 참고
 * [Jekyll을 이용한 .github.io 블로그 만들기[1]](https://gmlwjd9405.github.io/2017/10/06/Jekyll-github.io-blog-1.html)
 * [GitHub Pages에 Jekyll로 블로그 만들기](https://minacle.github.io/post/create-a-blog-with-jekyll-on-github-pages/)
 * [Jekyll을 이용한 .github.io 블로그 만들기[2]](https://gmlwjd9405.github.io/2017/10/06/Jekyll-github.io-blog-2.html)
+* [왕초보를 위한 Github 블로그 만들기 (1)](https://zeddios.tistory.com/1222)
+* [왕초보를 위한 Github 블로그 만들기 (2) - 테마 적용(with Jekyll)](https://zeddios.tistory.com/1223)
+* [Jekyll을 이용한 .github.io 블로그 만들기[3]](https://gmlwjd9405.github.io/2017/10/06/Jekyll-github.io-blog-3.html)
+* [jekyll에 favicon을 추가해줍니다.](https://frhyme.github.io/blog/jekyll_add_Favicon/)
+* [jekyll Themes Docs](https://jekyllrb.com/docs/themes/#overriding-theme-defaults)
+* [왜 jekyll serve가 안될까?](https://frhyme.github.io/others/jekyll_serve_not_work/)
+* [루비/jekyll 설치, bundle update](https://corecode.pe.kr/normal/2020/08/21/ruby_jekyll_install/)
