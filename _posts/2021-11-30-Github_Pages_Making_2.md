@@ -6,7 +6,7 @@ sitemap:
     priority: 0.5
 
 title: "[GITHUB PAGES] github.io 만들기 2"
-excerpt: "항상 느낍니다. 왜 안되는거냐?"
+excerpt: "오류 멈춰!"
 
 date: 2021-11-30
 last_modified_at: 
