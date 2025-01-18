@@ -5,8 +5,8 @@ sitemap:
     changefreq: daily
     priority: 0.5
 
-title: "[LINUX] 리눅스 마스터 2급 기출 문제 오답노트"
-excerpt: ""
+title: "[LINUX] 리눅스 마스터 2급 기출 문제"
+excerpt: "오답노트 1"
 
 date: 2022-06-24
 last_modified_at: 
