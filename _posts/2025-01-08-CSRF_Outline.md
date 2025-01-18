@@ -14,13 +14,20 @@ last_modified_at: 2025-01-18
 tags: [TIL, WEB, SECURITY]
 ---
 
-# CSRF, Cross Site Request Forgery
+# CSRF란?
+## 1. 개요
+**CRSF(Cross Site Request Forgery)**: 
 -> 피해자가 서버로 공격자가 원하는 요청을 하게 만드는 것
 웹 애플리케이션 취약점 중 하나로 사용자가 자신의 의지와 무관하게 공격자가 의도한 행동을 하여 특정 웹페이지를 보안에 취약하게 한다거나 수정, 삭제 등의 작업을 하게 만드는 공격방법을 의미한다. 유명 경매 사이트 옥션의 개인정보 유출 사건에 사용된 공격 방식이다.
 
 ## 취약점
 모든 요청에서 발생 가능
 
+## 공격방식
+
+## 공격유형
+
+## 공격 구문 예시
 ## post method로만 파라미터 전달이 가능할 때 csrf 공격방식
 form tag를 삽입해야 한다 -> XSS로부터 무결해야 한다
 
@@ -36,8 +43,13 @@ document.getElementById('test').submit();
 </script>
 ```
 
-# CSRF 대응방법
-## CSRF Token
+## 공격 순서
+모든 요청에서 CSRF가 발생가능하다
+이 요청은 위조해도 되는가
+이 요청은 함부로 위조할 수 있는가
+
+## 대응방안
+### CSRF Token
 csrf 공격을 막기 위해 만든 random한 token
 마이페이지에 접근할 때 토큰 발행
 
@@ -51,17 +63,17 @@ csrf 공격을 막기 위해 만든 random한 token
 csrf 토큰도 탈취해야 하는구나?
 사용자의 form 태그가 있는 페이지에 접근할 때 csrf 토큰이 발행된다
 
-## referrer check
+### referrer check
 확장성이 떨어질 수 있다
 개발자가 예외처리를 했을 경우
 -> `<meta name='referrer' content='no-referrer'>`
 
-## 요청을 위조할 수 없게 하자
+### 요청을 위조할 수 없게 하자
 파라미터에 모르는 데이터를 넣게 하자 -> 인증정보
 인증정보를 넣는 것!
 
-# SOP / CORS
-## SOP, Same-Origin Policy
+### SOP / CORS
+#### SOP, Same-Origin Policy
 다른 출처의 자원에 접근하지 못하게 브라우저가 막는 것
 
 같은 출처의 기준
@@ -69,7 +81,7 @@ csrf 토큰도 탈취해야 하는구나?
 - 스키마
 - 포트
 
-## CORS, Cross Origin Resource Sharing
+#### CORS, Cross Origin Resource Sharing
 다른 출처에서도 데이터를 쓸 수 있게 함
 
 ACAO Header, Access Controll Allow Origin
@@ -105,11 +117,6 @@ CSRF
 GET 방식이면 프리패스
 POST -> XSS, form tag
 CORS 정책이 잘 적용되어 있지 않다 -> 공격자 서버 만들어서 공격
-
-# CSRF
-모든 요청에서 CSRF가 발생가능하다
-이 요청은 위조해도 되는가
-이 요청은 함부로 위조할 수 있는가
 
 # 참고
 * [CSRF 공격과 방어 기법](https://velog.io/@gwanuuoo/CSRF-%EA%B3%B5%EA%B2%A9%EA%B3%BC-%EB%B0%A9%EC%96%B4-%EA%B8%B0%EB%B2%95)
