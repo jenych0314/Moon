@@ -1,7 +1,18 @@
-# *~ github.io를 만드는 여정~*
+---
+layout: post
+comments: true
+sitemap:
+    changefreq: daily
+    priority: 0.5
 
-## 첫 번째 도전
-<https://blog.naver.com/smooty_and_mess/222556824348t>
+title: "[GITHUB PAGES] github.io 만들기 2"
+excerpt: "항상 느낍니다. 왜 안되는거냐?"
+
+date: 2021-11-30
+last_modified_at: 
+
+tags: [BLOG]
+---
 
 ## 두 번째 도전
 <https://taylantatli.github.io/Moon/about/>

@@ -5,7 +5,7 @@ sitemap:
     changefreq: daily
     priority: 0.5
 
-title: "[GITHUB PAGES] github.io 만들면서 느낀 점"
+title: "[GITHUB PAGES] github.io 만들기 1"
 excerpt: "항상 느낍니다. 왜 안되는거냐?"
 
 date: 2021-11-02
