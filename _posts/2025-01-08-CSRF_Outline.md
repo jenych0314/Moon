@@ -6,10 +6,10 @@ sitemap:
     priority: 0.5
 
 title: "[WEB HACKING] CSRF란?"
-excerpt: "모의해킹 취업반 스터디 7기 12주차"
+excerpt: "모의해킹 취업반 스터디 7기 12 ~ 13주차"
 
 date: 2025-01-09
-last_modified_at: 
+last_modified_at: 2025-01-18
 
 tags: [TIL, WEB, SECURITY]
 ---
