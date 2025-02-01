@@ -24,7 +24,19 @@ mathjax:            true
 sass:
   sass_dir:         _sass
   style:            compressed
-
+defaults:
+  -
+    scope:
+      path: "/_posts/"
+      type: "post"
+    values:
+      layout: "post"
+  -
+    scope:
+      path: "/projects"
+    values:
+      layout: "project"
+      
 # Comments
 disqus_shortname:   github-io-wql9y9o0sz
 
