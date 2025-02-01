@@ -181,7 +181,7 @@ ___
 >>> text
 > * text
 
-# 5. 목록(List)ㅍ
+# 5. 목록(List)
 ## 5.1. Unordered List
 ```
 * non-ordered list
