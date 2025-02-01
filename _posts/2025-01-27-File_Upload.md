@@ -1,3 +1,19 @@
+---
+layout: post
+comments: true
+sitemap:
+    changefreq: daily
+    priority: 0.5
+
+title: "[WEB HACKING] File Upload 취약점"
+excerpt: "모의해킹 취업반 스터디 7기 14주차"
+
+date: 2025-01-27
+last_modified_at: 
+
+tags: [TIL, WEB, SECURITY]
+---
+
 # File Upload
 
 ## 정의
